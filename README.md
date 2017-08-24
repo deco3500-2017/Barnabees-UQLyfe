@@ -3,7 +3,7 @@
 1. [Introduction](#introduction)
 2. [Concept](#concept)
 3. [Team](#team)
- * Team Members
+	* Team Members
 4. [Communications](#communications)
 5. [Plan](#plan)
 6. [Tags](#tags)
@@ -14,7 +14,7 @@
 
 ### Team
 
-Team Members
+Team Members  
 Team Member  | Student Number |Role
 ------------- | ------------- |------------
 A 			  |4       		  |X
