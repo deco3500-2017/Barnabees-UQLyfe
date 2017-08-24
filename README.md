@@ -1,8 +1,8 @@
 # Barnabees-UQLyfe
 
-1. Introduction[Introduction Link]
+1. [Introduction]
 
-###Introduction
+### Introduction
 
 Concept:
 
@@ -15,4 +15,4 @@ Plan:
 Tags:
 
 
-[Introduction Link](#Introduction)
+[Introduction](#Introduction)
