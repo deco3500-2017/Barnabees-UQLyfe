@@ -1,53 +1,6 @@
 # Barnabees-UQLyfe
 
-1. [Introduction](#Introduction)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+1. [Introduction](#introduction)
 
 ### Introduction
 
