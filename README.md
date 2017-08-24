@@ -1,16 +1,21 @@
 # Barnabees-UQLyfe
 
 1. [Introduction](#introduction)
+2. [Concept] (#concept)
+3. [Team] (#team)
+4. [Communications] (#communications)
+5. [Plan] (#plan)
+6. [Tags] (#tags)
 
 ### Introduction
 
-Concept:
+### Concept
 
-Team:
+### Team
 
-Communications:
+### Communications
 
-Plan:
+### Plan
 
-Tags:
+### Tags
 
