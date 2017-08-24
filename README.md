@@ -14,7 +14,8 @@
 
 ### Team
 
-Team Members  
+Team Members
+
 Team Member  | Student Number |Role
 ------------- | ------------- |------------
 A 			  |4       		  |X
