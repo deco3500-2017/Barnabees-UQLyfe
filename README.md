@@ -13,6 +13,16 @@
 
 ### Team
 
+Team Member  | Student Number |Role
+------------- | ------------- |------------
+A 			  |4       		  |X
+B 			  |4      		  |Y
+C 			  |4   			  |Z
+D 			  | 4  			  |after Z
+E			  |4			  |A
+
+
+
 ### Communications
 
 ### Plan
