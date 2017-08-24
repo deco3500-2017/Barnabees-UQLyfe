@@ -10,6 +10,9 @@
 
 ### Introduction
 
+This is to test an image
+
+![Student Image](https://globalcc.files.wordpress.com/2009/07/istock_000003780254xsmall.jpg)
 ### Concept
 
 ### Team
