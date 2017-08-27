@@ -30,7 +30,7 @@ Social & Mobile Theory
 
 ## Team
 
-###Team Members
+### Team Members
 
 Team Member  | Student Number |Role
 ------------- | ------------- |------------
@@ -40,10 +40,10 @@ Tyler Beutel  |43956476   	  |Front End / UX / graphic designer
 Nicole Huang  |44900775		  |Front end programmer and designer
 Glenn Duguid  |42650272		  |Front end programmer and Back end programmer
 
-###Decision Making
+### Decision Making
 Large overarching concept ideas will be discussed and decided on in person when the whole team is together either in workshops or team meetings outside of workshops. More minor details of the project can be discussed in person or via Slack. The team must discuss all decisions that were made during the previous week at each workshop to ensure everyone is caught up and in agreement. Should and disagreements regarding decisions take place, conflict resolution measures will be taken.
 
-###Conflict Resolution
+### Conflict Resolution
 * Any face to face communication that takes place between individual team members should be conducted in a calm and respectful manner by either party. 
 * In the case of poor performance or lack of communication from specific team members, a meeting shall be organised within two days (either online or in person) to allow for proposals to be made that will help ensure future performance is up to group standard.
 * Further unresolved conflict should be addressed in a following group meeting. All group member positions shall be proposed and considered equally. If a group decision needs to be made, it will be discerned through a vote. Regardless if the group meeting is conducted during or outside of class time, communication must remain civil and respectful.
@@ -53,37 +53,37 @@ Large overarching concept ideas will be discussed and decided on in person when 
 
 ## Communications
 
-###Group Meetings
+### Group Meetings
 The group will regularly meet during workshops every week. Workshops are held every Tuesday from 12pm to 2pm. Meetings will be conducted during the workshops and if needed, additional meetings will be arranged. Additional group meetings will be organised if the team deems necessary after workshop each week. Meeting times will be discussed in person and over Slack if needed until a time that everyone can attend is settled on. Additional meeting times should be agreed upon at least 3 days before the decided time. If team members are unable to attend a meeting, an attempt will be made to reschedule the meeting if time permits all members to be contacted early enough. If the team member who is unable to attend advises the team of their circumstances too late, that team member will be expected to follow up with the group on what was discussed and any decisions that were made.
 
-###Team Communication
+### Team Communication
 Team communication will be conducted through the group’s Slack channel (#barnabees) in the deco3500-2017.slack.com group. Slack will be used as communication with the team, tutors, lecturer and other students in the course. Discussion of the project and meeting planning will all occur in slack. Team members are expected to check the Slack channel at least once every two days. 
 
 Slack is becoming more and more prevalent in the industry. It is easy to use and efficient for communication. It allows us to not only get connect with our own small team but also with others in the class should the need rise. It is a platform we all associate with this class and its content already, so it will be automatic to turn to this forum to discuss our project.
 
-###File Sharing and Storage
+### File Sharing and Storage
 A Google Drive folder has been set up to store all the documents, surveys, and other files that the team will be creating. Everyone in the group has access to the folder, so all team members are able to contribute to the documents. Folders will be created if two or more documents are deemed related and should be grouped together. All files and folders will be named appropriately and concisely, clearly denoting their purposes and contents.
 
-###Prototype Management
+### Prototype Management
 Github will be used as a collaboration repository to store prototyping code. All team members have access to the repository. Using Github will help the team collaborate code easily, find issues, and solve these issues in an efficient manner.
 
 
 ## Plan
 
-###Stage 1 - Research and Requirements
+### Stage 1 - Research and Requirements
 * Identify users
 * Create user personas
 * Interview and survey users
 * Identify use context
 * Identify technical platform to be used
 
-###Stage 2 - Design
+### Stage 2 - Design
 * Wireframes
 * Mock-ups
 * System architecture
 * Low fidelity user testing
 
-###Stage 3 - Development
+### Stage 3 - Development
 * Front end development
 * Back end development
 * High fidelity user testing
