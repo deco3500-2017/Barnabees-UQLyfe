@@ -44,7 +44,7 @@ Rohan Singh   |43945126       |Back end programmer
 Mitchell Kiss |43915576       |Front end programmer and designer
 Tyler Beutel  |43956476   	  |Front End / UX / graphic designer
 Nicole Huang  |44900775		  |Front end programmer and designer
-Glenn Duguid  |42650272		  |Front end programmer and Back end programmer
+Glenn Duguid  |42650272		  |Front end and Back end programmer, User testing
 
 ### Decision Making
 Large overarching concept ideas will be discussed and decided on in person when the whole team is together either in workshops or team meetings outside of workshops. More minor details of the project can be discussed in person or via Slack. The team must discuss all decisions that were made during the previous week at each workshop to ensure everyone is caught up and in agreement. Should and disagreements regarding decisions take place, conflict resolution measures will be taken.
