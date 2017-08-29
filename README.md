@@ -51,16 +51,16 @@ Glenn Duguid  |42650272		  |Front end, Back end programmer and UX
 
 ### Roles
 
-*UX* (User Experience)  
+* *UX* (User Experience)  
 Will be the main connection to the identified users, developing surveys and running the interview sessions. Will consider best practice protocols and analyze the gathered results. Overall goal is to guide the iterative development process. 
 
-*Designer*  
+* *Designer*  
 Will govern the overall feel of the system, creating low fidelity prototypes for user testing. Create initial wireframes and mockups to gain insight from user group and help front end developers govern their design.
 
-*Front end programmer*  
+* *Front end programmer*  
 Design and crate a usable front end system to allow users to seamlessly interact with the product. Will initially be guided by user requirements and low fidelity prototypes.
 
-*Back end programmer*  
+* *Back end programmer*  
 Create the back end component of the application to provide a smooth and usable system. Will work in unity with all other roles to ensure that the created elements consider the context of the intended user.
 
 
