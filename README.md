@@ -9,7 +9,7 @@
 6. [Tags](#tags)
 
 ## Introduction
-A number of university students aren’t involved with on-campus activities and social events both within their course and UQ in general, possibly due to their lack of motivation or awareness or they have a lack of incentive to participate in activity outside of their classes.
+A number of university students aren’t involved with on-campus activities and social events both within their course and UQ in general, possibly due to their lack of motivation or awareness. This disconnect could also stem from a lack of incentive to participate in activity outside of their classes.
 
 Currently, students lack a unified and central platform to set up and organise events on campus. Most students engage with University activity through society email lists, Facebook events or word of mouth. Many of these events remain elusive, either due to Facebook’s strict news feed algorithm or just a contemporary lack of email usage. Ultimately, this leaves many students unaware of or deterred by events because of the inconvenient process.
 
@@ -19,13 +19,19 @@ Our project, titled ‘UQ Lyfe’, is a mobile application that gamifies UQ clas
 ## Concept
 The project the team has chosen to develop is driven by a need to increase student involvement in extracurricular activities and also strengthen the sense of community and lifestyle present at the University of Queensland. Additionally, as the campus community can often feel enormous and disconnected, students can lack incentivisation to participate in social events. This product has been labeled UQ Lyfe.
 
-UQ Lyfe, as a platform, is being developed with the primary goal of unifying and gamifying the way that curricular and extra-curricular activity is participated in at the University of Queensland.  This platform needs to appeal to both students who wish to increase activity involvement, and club leaders and teachers who wish to reach out to more people from within the UQ sphere. The application revolves around an experience and levelling system. This system is directly inspired by classic RPG (Role Playing Game) quest logs that allow players to manage what tasks are available for them to complete. This system is typically broken up into main, secondary and miscellaneous sections and ordered by the amount of experience points gained from the completion. from Experience can be earned through various tasks such as attending events, completing tasks, hosting events and having students attend the events you have created. All experience earned contributes to the overall rank associated with the user’s profile. This aim of the rank is to be an overall quantifiable representation of the user’s involvement with UQ. This rank can be compared to other students via a leaderboard system. This app not only aims to motivate students to get involved, but also aims to simply increase awareness of activities on campus and their attendees. Seeing that others are attending an event can spark one’s interest to do the same.
+UQ Lyfe, as a platform, is being developed with the primary goal of unifying and gamifying the way that curricular and extra-curricular activity is participated in at the University of Queensland.  This platform needs to appeal to both students who wish to increase activity involvement, and club leaders and teachers who wish to reach out to more people from within the UQ sphere. The application revolves around an experience and levelling system. This system is directly inspired by classic RPG (Role Playing Game) quest logs that allow players to manage what tasks are available for them to complete.
+
+This system is typically broken up into main, secondary and miscellaneous sections and ordered by the amount of experience points gained from the completion. Experience can be earned through various tasks such as attending events, completing tasks, hosting events and having students attend the events you have created. All experience earned contributes to the overall rank associated with the user’s profile. The aim of this rank is to be an overall quantifiable representation of the user’s involvement with UQ. This rank can be compared to other students via a leaderboard system. This app not only aims to motivate students to get involved, but also aims to simply increase awareness of activities on campus and their attendees. Seeing that others are attending an event can spark one’s interest to do the same.
 
 Our application differs from current UQ methods with the introduction of gamification, leaderboards, social matchmaking, integrated instant messaging, team based cooperation through a faction/school system and map integration, all within one platform. 
 
 Social & Mobile Theory
 * Sense of community with instant messaging, school factions and leaderboards
 * Location services suggest nearby events that will start soon for students 
+* Create a shared information space to provide a centralised sytem for UQ events
+* Increase awareness within the community by representing the participants surroundings
+* Introduce a new form of context for students by creating the experience point system 
+* Establish a social mobile enviroment to facilitate direct interactions 
 
 
 ## Team
@@ -70,20 +76,20 @@ Github will be used as a collaboration repository to store prototyping code. All
 
 ## Plan
 
-### Stage 1 - Research and Requirements
+### Stage 1 - Research and Requirements 12/9/17
 * Identify users
 * Create user personas
 * Interview and survey users
 * Identify use context
 * Identify technical platform to be used
 
-### Stage 2 - Design
+### Stage 2 - Design 28/9/17
 * Wireframes
 * Mock-ups
 * System architecture
 * Low fidelity user testing
 
-### Stage 3 - Development
+### Stage 3 - Development 10/10/17
 * Front end development
 * Back end development
 * High fidelity user testing
