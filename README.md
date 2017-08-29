@@ -15,6 +15,7 @@ Currently, students lack a unified and central platform to set up and organise e
 
 Our project, titled ‘UQ Lyfe’, is a mobile application that gamifies UQ classes and extracurricular experiences, as a way to incentivise students who wouldn’t normally be involved.
 
+
 ![Graphic UQ Lyfe Banner](http://i.imgur.com/Cv8A3rg.jpg)
 
 
