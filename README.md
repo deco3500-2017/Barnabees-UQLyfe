@@ -28,7 +28,7 @@ This system is typically broken up into main, secondary and miscellaneous sectio
 
 Our application differs from current UQ methods with the introduction of gamification, leaderboards, social matchmaking, integrated instant messaging, team based cooperation through a faction/school system and map integration, all within one platform. 
 
-Social & Mobile Theory
+### Social & Mobile Theory
 * Sense of community with instant messaging, school factions and leaderboards
 * Location services suggest nearby events that will start soon for students 
 * Create a shared information space to provide a centralised sytem for UQ events
