@@ -2,6 +2,7 @@
 
 ## Table of Contents
 1. [Introduction](#introduction)
+  * Social & Mobile Theory
 2. [Concept](#concept)
 3. [Team](#team)
 4. [Communications](#communications)
@@ -31,9 +32,9 @@ Our application differs from current UQ methods with the introduction of gamific
 ### Social & Mobile Theory
 * Sense of community with instant messaging, school factions and leaderboards
 * Location services suggest nearby events that will start soon for students 
-* Create a shared information space to provide a centralised sytem for UQ events
-* Increase awareness within the community by representing the participants surroundings
-* Introduce a new form of context for students by creating the experience point system 
+* Create a shared information space to provide a centralised system for UQ events
+* Increase awareness within the community by representing the students surroundings
+* Introduce a new form of context for UQ students by creating the experience point system 
 * Establish a social mobile enviroment to facilitate direct interactions 
 
 
