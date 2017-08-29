@@ -1,7 +1,7 @@
 # Barnabees-UQLyfe
 
 ## Table of Contents
-1. [Introduction](#introduction)
+1. [Introduction](#introduction)  
   * Social & Mobile Theory
 2. [Concept](#concept)
 3. [Team](#team)
