@@ -15,6 +15,7 @@ A number of university students aren’t involved with on-campus activities and 
 Currently, students lack a unified and central platform to set up and organise events on campus. Most students engage with University activity through society email lists, Facebook events or word of mouth. Many of these events remain elusive, either due to Facebook’s strict news feed algorithm or just a contemporary lack of email usage. Ultimately, this leaves many students unaware of or deterred by events because of the inconvenient process.
 
 Our project, titled ‘UQ Lyfe’, is a mobile application that gamifies UQ classes and extracurricular experiences, as a way to incentivise students who wouldn’t normally be involved.
+
 ---
 
 ![Graphic UQ Lyfe Banner](http://i.imgur.com/Cv8A3rg.jpg)
@@ -36,6 +37,7 @@ Our application differs from current UQ methods with the introduction of gamific
 * Increase awareness within the community by representing the students surroundings
 * Introduce a new form of context for UQ students by creating the experience point system 
 * Establish a social mobile enviroment to facilitate direct interactions 
+
 ---
 
 ## Team
@@ -73,6 +75,7 @@ Large overarching concept ideas will be discussed and decided on in person when 
 * In the case of poor performance or lack of communication from specific team members, a meeting shall be organised within two days (either online or in person) to allow for proposals to be made that will help ensure future performance is up to group standard.
 * Further unresolved conflict should be addressed in a following group meeting. All group member positions shall be proposed and considered equally. If a group decision needs to be made, it will be discerned through a vote. Regardless if the group meeting is conducted during or outside of class time, communication must remain civil and respectful.
 * If further dispute continues, either in regards to a decision made or the continued behaviour and contributions of specific team members, a tutor shall be immediately notified of the situation and brought into the dialogue. The proceedings will be explained to the tutor and the tutors advice on how proceed will be followed by all team members.
+
 ---
 
 ## Communications
@@ -90,6 +93,7 @@ A Google Drive folder has been set up to store all the documents, surveys, and o
 
 ### Prototype Management
 Github will be used as a collaboration repository to store prototyping code. All team members have access to the repository. Using Github will help the team collaborate code easily, find issues, and solve these issues in an efficient manner.
+
 ---
 
 ## Plan
@@ -111,6 +115,7 @@ Github will be used as a collaboration repository to store prototyping code. All
 * Front end development
 * Back end development
 * High fidelity user testing
+
 ---
 
 ## Tags
