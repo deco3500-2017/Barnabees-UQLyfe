@@ -49,7 +49,7 @@ Team Member  | Student Number |Role
 Rohan Singh   |43945126       |Back end programmer
 Mitchell Kiss |43915576       |Front end programmer and designer
 Tyler Beutel  |43956476   	  |Front End, UX and designer
-Nicole Huang  |44900775		  |Front end programmer and designer
+Nicole Huang  |44900775		  |Front end programmer, designer and UX
 Glenn Duguid  |42650272		  |Front end, Back end programmer and UX
 
 ### Roles
@@ -81,10 +81,10 @@ Large overarching concept ideas will be discussed and decided on in person when 
 ## Communications
 
 ### Group Meetings
-The group will regularly meet during workshops every week. Workshops are held every Tuesday from 12pm to 2pm. Meetings will be conducted during the workshops and if needed, additional meetings will be arranged. Additional group meetings will be organised if the team deems necessary after workshop each week. Meeting times will be discussed in person and over Slack if needed until a time that everyone can attend is settled on. Additional meeting times should be agreed upon at least 3 days before the decided time. If team members are unable to attend a meeting, an attempt will be made to reschedule the meeting if time permits all members to be contacted early enough. If the team member who is unable to attend advises the team of their circumstances too late, that team member will be expected to follow up with the group on what was discussed and any decisions that were made.
+The group will regularly meet during workshops every week. Workshops are held every Tuesday from 12pm to 2pm. Meetings will be conducted during the workshops and if needed, additional meetings will be arranged. Additional group meetings will be organised if the team deems necessary after workshop each week. Meeting times will be discussed in person and over Facebook if needed until a time that everyone can attend is settled on. Additional meeting times should be agreed upon at least 3 days before the decided time. If team members are unable to attend a meeting, an attempt will be made to reschedule the meeting if time permits all members to be contacted early enough. If the team member who is unable to attend advises the team of their circumstances too late, that team member will be expected to follow up with the group on what was discussed and any decisions that were made.
 
 ### Team Communication
-Team communication will be conducted through Facebook and the group’s Slack channel (#barnabees) in the deco3500-2017.slack.com group. Facebook will be used for more informal conversation as well as scheduling meetings. This is a good option for us because it is a quick communication tool, and everyone regularily checks Facebook so we will all be up to date. Slack will be used as more formal communication with the team, tutors, lecturer and other students in the course. Overarching discussion of the project will be carried through slack. Team members are expected to check Facebook at least once a day, and the Slack channel at least once a week. Slack is becoming more and more prevalent in the industry. It is easy to use and efficient for communication. It allows us to not only get connect with our own small team but also with others in the class should the need rise. It is a platform we all associate with this class and its content already, so it will be automatic to turn to this forum to discuss our project.
+Team communication will be conducted through Facebook messaging and the group’s Slack channel (#barnabees) in the deco3500-2017.slack.com group. Facebook will be used for more informal conversation as well as scheduling meetings. This is a good option for us because it is a quick communication tool, and everyone regularily checks Facebook so we will all be up to date. Slack will be used as more formal communication with the team, tutors, lecturer and other students in the course. Overarching discussion of the project will be carried through slack. Team members are expected to check Facebook at least once a day, and the Slack channel at least once a week. Slack is becoming more and more prevalent in the industry. It is easy to use and efficient for communication. It allows us to not only get connect with our own small team but also with others in the class should the need rise. It is a platform we all associate with this class and its content already, so it will be automatic to turn to this forum to discuss our project.
 
 ### File Sharing and Storage
 A Google Drive folder has been set up to store all the documents, surveys, and other files that the team will be creating. Everyone in the group has access to the folder, so all team members are able to contribute to the documents. Folders will be created if two or more documents are deemed related and should be grouped together. All files and folders will be named appropriately and concisely, clearly denoting their purposes and contents.
@@ -96,23 +96,25 @@ Github will be used as a collaboration repository to store prototyping code. All
 
 ## Plan
 
-### Stage 1 - Research and Requirements 12/9/17
+### Stage 1 - Research and Requirements 
 * Identify users
 * Create user personas
 * Interview and survey users
 * Identify use context
 * Identify technical platform to be used
 
-### Stage 2 - Design 28/9/17
+### Stage 2 - Design 
 * Wireframes
 * Mock-ups
 * System architecture
 * Low fidelity user testing
 
-### Stage 3 - Development 10/10/17
+### Stage 3 - Development 
 * Front end development
 * Back end development
 * High fidelity user testing
+
+Stage 1 will be completed by 1/9/17. Stage 2 will be completed by 22/9/17. Stage 3 will be completed by 27/10/17. As Stage 2 is 3 weeks long, user testing will be completed 1.5 weeks in on 13/9/17 to allow time for further iterations of the low fidelity prototype. Stage 3 is 4 weeks long and requires more time consuming development, so the first round of user testing will be completed 2 weeks in on 13/10/17. Another round of user testing if necessary will be completed by 20/10/17 to allow a week afterwards to polish and refine everything before submission.
 
 ---
 
