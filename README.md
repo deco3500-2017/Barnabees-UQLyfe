@@ -32,10 +32,10 @@ Direct access to the target users will be done through the University of Queensl
 
 UQ Lyfe differs from current methods with the introduction of:
 * Gamification
-* Leaderboards, 
+* Leaderboards
 * Social Matchmaking
 * Integrated Instant Messaging
-* Team based cooperation through a faction/school system and 
+* Team based cooperation through a faction and school system
 * Map and Timetable integration
 
 ### Social & Mobile Theory
@@ -129,7 +129,7 @@ Stage 1 will be completed by 1/9/17. Stage 2 will be completed by 22/9/17. Stage
 ---
 
 ## Tags
-\#activecommunities 
+`#activecommunities`
 \#socialtechnology 
 \#interactive 
 \#socialgaming 
