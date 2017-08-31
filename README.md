@@ -28,7 +28,15 @@ UQ Lyfe, as a platform, is being developed with the primary goal of unifying and
 
 This system is typically broken up into main, secondary and miscellaneous sections and ordered by the amount of experience points gained from the completion. Experience can be earned through various tasks such as attending events, completing tasks, hosting events and having students attend the events you have created. All experience earned contributes to the overall rank associated with the user’s profile. The aim of this rank is to be an overall quantifiable representation of the user’s involvement with UQ. This rank can be compared to other students via a leaderboard system. This app not only aims to motivate students to get involved, but also aims to simply increase awareness of activities on campus and their attendees. Seeing that others are attending an event can spark one’s interest to do the same.
 
-Our application differs from current UQ methods with the introduction of gamification, leaderboards, social matchmaking, integrated instant messaging, team based cooperation through a faction/school system and map integration, all within one platform. 
+Direct access to the target users will be done through the University of Queensland, St Lucia campus. Random participants will be chosen to ensure that the vast array of contextual backgrounds within the userbase are thoroughly represented. Test sessions will also include contextual questions to ensure that the sample size encompasses this diverse environment. As a group, we also intend on having direct contact with those who currently operate and maintain the societies around UQ. This will initial be done using digital means, with later physical interaction introduced to gather results on prototype. By forming these key relationships, it establishes the future content generators as active participants.
+
+UQ Lyfe differs from current methods with the introduction of:
+* Gamification
+* Leaderboards, 
+* Social Matchmaking
+* Integrated Instant Messaging
+* Team based cooperation through a faction/school system and 
+* Map and Timetable integration
 
 ### Social & Mobile Theory
 * Sense of community with instant messaging, school factions and leaderboards
@@ -105,6 +113,7 @@ Github will be used as a collaboration repository to store prototyping code. All
 
 ### Stage 2 - Design 
 * Wireframes
+* Minimum Viable Product
 * Mock-ups
 * System architecture
 * Low fidelity user testing
@@ -115,6 +124,7 @@ Github will be used as a collaboration repository to store prototyping code. All
 * High fidelity user testing
 
 Stage 1 will be completed by 1/9/17. Stage 2 will be completed by 22/9/17. Stage 3 will be completed by 27/10/17. As Stage 2 is 3 weeks long, user testing will be completed 1.5 weeks in on 13/9/17 to allow time for further iterations of the low fidelity prototype. Stage 3 is 4 weeks long and requires more time consuming development, so the first round of user testing will be completed 2 weeks in on 13/10/17. Another round of user testing if necessary will be completed by 20/10/17 to allow a week afterwards to polish and refine everything before submission.
+
 
 ---
 
