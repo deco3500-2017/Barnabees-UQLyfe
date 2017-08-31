@@ -102,43 +102,40 @@ Github will be used as a collaboration repository to store prototyping code. All
 
 ---
 
-## Plan
+## Plan (complete)
 
-### Stage 1 - Research and Requirements 
+### Stage 1 - Research and Requirements (12/09)
 * Identify users
 * Create user personas
 * Interview and survey users
+* Storyboard of use
 * Identify use context
 * Identify technical platform to be used
 
-### Stage 2 - Design 
-* Wireframes
+### Stage 2 - Design (3/10)
 * Minimum Viable Product
+* Wireframes
 * Mock-ups
+* Paper prototype
 * System architecture
 * Low fidelity user testing
 
-### Stage 3 - Development 
+### Stage 3 - Development (17/10)
 * Front end development
 * Back end development
 * High fidelity user testing
 
-Stage 1 will be completed by 1/9/17. Stage 2 will be completed by 22/9/17. Stage 3 will be completed by 27/10/17. As Stage 2 is 3 weeks long, user testing will be completed 1.5 weeks in on 13/9/17 to allow time for further iterations of the low fidelity prototype. Stage 3 is 4 weeks long and requires more time consuming development, so the first round of user testing will be completed 2 weeks in on 13/10/17. Another round of user testing if necessary will be completed by 20/10/17 to allow a week afterwards to polish and refine everything before submission.
+### Stage 4 - Final Delivery (27/10)
+* Deliver final prototype
 
+The derived plan has been determined with respect to the deliverable standups. This will help to receive heuristic advice from our peers and teachers, who can be considered experts in the problem scope. The short development cycles within the Agile framework provide the ability to rapidly adapt to unforeseen user requirements, receive up to date feedback and encourage collaborative design. The data established form the user test sessions will provide guidance to the development of each prototype iteration, with a reliable test being complete at least a week before final prototype standup.
 
 ---
 
 ## Tags
 `#activecommunities`
-\#socialtechnology 
-\#interactive 
-\#socialgaming 
-\#competitive 
-\#awareness
-
-
-
-
-
-
-
+`#socialtechnology` 
+`#interactive` 
+`#socialgaming` 
+`#competitive` 
+`#awareness`
