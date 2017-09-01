@@ -32,7 +32,7 @@ The groups initial feasibility research showed that there was a clear need for a
 
 Types of User
 User | Applicable Conent | Involvement
---- | --- | --- |
+-------- | ------------- | -----------
 Students that would like to fill gaps within their studies with social interactions | Consumer | Low
 Those who would like to belong to a community within their degree | Consumer | Medium
 People who want a more social connect to the University | Consumer | High
