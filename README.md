@@ -31,6 +31,7 @@ This system is typically broken up into main, secondary and miscellaneous sectio
 The groups initial feasibility research showed that there was a clear need for a social application like UQ Lyfe. The broad userbase within the campus introduces some difficulties in defining audience, however it was evident that the target users could be broken down into deferring levels of involvement. Another segmentation level was content creators, those who create activities and content consumers who attend events and level-up their experience. Once aspect that the group has determined that needs to be tested further, is the consumers motivation to use the application. As we have hypothesized above, we believe that competition may be the driving incentive to get involved, however a more tangible reward may be necessary. Some initial ideas were UQU gift cards, exclusive events or discounts to food vendors around the University. This will be elaborated on with concrete data as development continues.
 
 Types of User
+
 User | Applicable Conent | Involvement
 -------- | ------------- | -----------
 Students that would like to fill gaps within their studies with social interactions | Consumer | Low
