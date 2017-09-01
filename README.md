@@ -28,6 +28,18 @@ UQ Lyfe, as a platform, is being developed with the primary goal of unifying and
 
 This system is typically broken up into main, secondary and miscellaneous sections and ordered by the amount of experience points gained from the completion. Experience can be earned through various tasks such as attending events, completing tasks, hosting events and having students attend the events you have created. All experience earned contributes to the overall rank associated with the user’s profile. The aim of this rank is to be an overall quantifiable representation of the user’s involvement with UQ. This rank can be compared to other students via a leaderboard system. This app not only aims to motivate students to get involved, but also aims to simply increase awareness of activities on campus and their attendees. Seeing that others are attending an event can spark one’s interest to do the same.
 
+The groups initial feasibility research showed that there was a clear need for a social application like UQ Lyfe. The broad userbase within the campus introduces some difficulties in defining audience, however it was evident that the target users could be broken down into deferring levels of involvement. Another segmentation level was content creators, those who create activities and content consumers who attend events and level-up their experience. Once aspect that the group has determined that needs to be tested further, is the consumers motivation to use the application. As we have hypothesized above, we believe that competition may be the driving incentive to get involved, however a more tangible reward may be necessary. Some initial ideas were UQU gift cards, exclusive events or discounts to food vendors around the University. This will be elaborated on with concrete data as development continues.
+
+Types of User
+User | Applicable Conent | Involvement
+--- | --- | --- |
+Students that would like to fill gaps within their studies with social interactions | Consumer | Low
+Those who would like to belong to a community within their degree | Consumer | Medium
+People who want a more social connect to the University | Consumer | High
+Competitive student that wants to be seen as the person on top of the leaderboard | Consumer | High
+Student that would like a study group to help on a difficult course | Creator | Medium
+Societies that want to reach a larger segment of the campus | Creator | High
+
 Direct access to the target users will be done through the University of Queensland, St Lucia campus. Random participants will be chosen to ensure that the vast array of contextual backgrounds within the userbase are thoroughly represented. Test sessions will also include contextual questions to ensure that the sample size encompasses this diverse environment. As a group, we also intend on having direct contact with those who currently operate and maintain the societies around UQ. This will initial be done using digital means, with later physical interaction introduced to gather results on prototype. By forming these key relationships, it establishes the future content generators as active participants.
 
 UQ Lyfe differs from current methods with the introduction of:
