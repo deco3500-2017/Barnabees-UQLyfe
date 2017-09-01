@@ -10,7 +10,7 @@
 ---
 
 ## Introduction
-A number of university students aren’t involved with on-campus activities and social events both within their course and UQ in general, possibly due to their lack of motivation or awareness. This disconnect could also stem from a lack of incentive to participate in activity outside of their classes.
+A number of university students aren’t involved with on-campus activities and social events both within their course and UQ in general, possibly due to their lack of motivation or awareness. This disconnection could also stem from a lack of incentive to participate in activity outside of their classes.
 
 Currently, students lack a unified and central platform to set up and organise events on campus. Most students engage with University activity through society email lists, Facebook events or word of mouth. Many of these events remain elusive, either due to Facebook’s strict news feed algorithm or just a contemporary lack of email usage. Ultimately, this leaves many students unaware of or deterred by events because of the inconvenient process.
 
@@ -26,7 +26,7 @@ The project the team has chosen to develop is driven by a need to increase stude
 
 UQ Lyfe, as a platform, is being developed with the primary goal of unifying and gamifying the way that curricular and extra-curricular activity is participated in at the University of Queensland.  This platform needs to appeal to both students who wish to increase activity involvement, and club leaders and teachers who wish to reach out to more people from within the UQ sphere. The application revolves around an experience and levelling system. This system is directly inspired by classic RPG (Role Playing Game) quest logs that allow players to manage what tasks are available for them to complete.
 
-This system is typically broken up into main, secondary and miscellaneous sections and ordered by the amount of experience points gained from the completion. Experience can be earned through various tasks such as attending events, completing tasks, hosting events and having students attend the events you have created. All experience earned contributes to the overall rank associated with the user’s profile. The aim of this rank is to be an overall quantifiable representation of the user’s involvement with UQ. This rank can be compared to other students via a leaderboard system. This app not only aims to motivate students to get involved, but also aims to simply increase awareness of activities on campus and their attendees. Seeing that others are attending an event can spark one’s interest to do the same.
+This system is typically broken up into main, secondary and miscellaneous sections and ordered by the amount of experience points gained from the completion. Experience can be earned through various tasks such as attending events, completing tasks, hosting events and having students attend the events you have created. All experience earned contributes to the overall rank associated with the user’s profile. The aim of this rank is to be an overall quantifiable representation of the user’s involvement within UQ. This rank can be compared to other students via a leaderboard system. This app not only aims to motivate students to get involved, but also aims to simply increase awareness of activities on campus and their attendees. Seeing that others are attending an event can spark one’s interest to do the same.
 
 The groups initial feasibility research showed that there was a clear need for a social application like UQ Lyfe. The broad userbase within the campus introduces some difficulties in defining audience, however it was evident that the target users could be broken down into deferring levels of involvement. Another segmentation level was content creators, those who create activities and content consumers who attend events and level-up their experience. Once aspect that the group has determined that needs to be tested further, is the consumers motivation to use the application. As we have hypothesized above, we believe that competition may be the driving incentive to get involved, however a more tangible reward may be necessary. Some initial ideas were UQU gift cards, exclusive events or discounts to food vendors around the University. This will be elaborated on with concrete data as development continues.
 
@@ -56,7 +56,7 @@ Societies that want to reach a larger segment of the campus | Creator | High |
 * Create a shared information space to provide a centralised system for UQ events
 * Increase awareness within the community by representing the students surroundings
 * Introduce a new form of context for UQ students by creating the experience point system 
-* Establish a social mobile enviroment to facilitate direct interactions 
+* Establish a social mobile environment to facilitate direct interactions 
 
 ---
 
