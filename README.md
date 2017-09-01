@@ -32,18 +32,6 @@ The groups initial feasibility research showed that there was a clear need for a
 
 Direct access to the target users will be done through the University of Queensland, St Lucia campus. Random participants will be chosen to ensure that the vast array of contextual backgrounds within the userbase are thoroughly represented. Test sessions will also include contextual questions to ensure that the sample size encompasses this diverse environment. As a group, we also intend on having direct contact with those who currently operate and maintain the societies around UQ. This will initial be done using digital means, with later physical interaction introduced to gather results on prototype. By forming these key relationships, it establishes the future content generators as active participants.
 
-
-Types of User  
-
-User | Applicable Conent | Involvement |
--------- | ------------- | ----------- |
-Students that would like to fill gaps within their studies with social interactions | Consumer | Low |
-Those who would like to belong to a community within their degree | Consumer | Medium |
-People who want a more social connect to the University | Consumer | High |
-Competitive student that wants to be seen as the person on top of the leaderboard | Consumer | High |
-Student that would like a study group to help on a difficult course | Creator | Medium |
-Societies that want to reach a larger segment of the campus | Creator | High |
-
 UQ Lyfe differs from current methods with the introduction of:
 * Gamification
 * Leaderboards
@@ -51,6 +39,16 @@ UQ Lyfe differs from current methods with the introduction of:
 * Integrated Instant Messaging
 * Team based cooperation through a faction and school system
 * Map and Timetable integration
+
+### Types of User  
+User | Applicable Content | Involvement |
+-------- | ------------- | ----------- |
+Students that would like to fill gaps within their studies with social interactions | Consumer | Low |
+Those who would like to belong to a community within their degree | Consumer | Medium |
+People who want a more social connect to the University | Consumer | High |
+Competitive student that wants to be seen as the person on top of the leaderboard | Consumer | High |
+Student that would like a study group to help on a difficult course | Creator | Medium |
+Societies that want to reach a larger segment of the campus | Creator | High |
 
 ### Social & Mobile Theory
 * Sense of community with instant messaging, school factions and leaderboards
