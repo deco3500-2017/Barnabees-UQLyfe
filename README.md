@@ -10,7 +10,7 @@
 ---
 
 ## Introduction
-A number of university students aren’t involved with on-campus activities and social events both within their course and UQ in general, possibly due to their lack of motivation or awareness. This disconnection could also stem from a lack of incentive to participate in activity outside of their classes.
+A number of university students aren’t involved with on-campus activities and social events within their campus. The cause for this lack of engagement can come down to a variety of issues, such as a lack of personal motivation or a lack of awareness. This disconnection could also stem from a lack of incentive to participate in activity outside of their classes.
 
 Currently, students lack a unified and central platform to set up and organise events on campus. Most students engage with University activity through society email lists, Facebook events or word of mouth. Many of these events remain elusive, either due to Facebook’s strict news feed algorithm or just a contemporary lack of email usage. Ultimately, this leaves many students unaware of or deterred by events because of the inconvenient process.
 
