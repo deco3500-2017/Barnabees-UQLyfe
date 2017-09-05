@@ -153,3 +153,4 @@ The derived plan has been determined with respect to the deliverable standups. T
 `#socialgaming` 
 `#competitive` 
 `#awareness`
+`#communities`
