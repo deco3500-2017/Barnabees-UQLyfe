@@ -1,0 +1,43 @@
+User 1: Jemma Benzie
+User 2: Curtis Hooper
+
+Join the Rick and Morty Trivia Event at the Red Room.
+
+User 1
+•	Clicks the social tag within a couple of seconds.
+•	Clicked on the Rick and Morty event but noted that it would be hard to identify amongst other listings.
+•	Joined event.
+•	Says the process was relatively simple but could be made less convoluted at the start, especially with the various tags.
+
+User 2
+•	Quickly navigates and finds event, doesn’t have any problems identifying and joining the event.
+•	Despite this, claims that the page is too messy and suggests that this could be due to the size of the screen and the fidelity of the prototype.
+•	Also suggests that the menus should be split up more, possibly having tags on a different page to the event listings.
+
+
+Find Map and Menu
+
+User 1
+•	Clicked on map with ease but didn’t quite understand that it was supposed to be swiped.
+•	Noted that the map may be taking up too much screen at the bottom and would be better suited as a menu option.
+•	Perhaps the whole interface should be split up into a grid menu like applications on a phone's desktop.
+•	Could use button for menu other than the burger menu.
+
+User 2
+•	Navigates map easily.
+•	Though the map was pretty simple overall. Didn’t really understand why there would need to be a map function without GPS navigation to the event. (Don’t you just need the building number?).
+•	Again, needs a simpler way to go back and forth between menus.
+
+
+Create Event
+
+User 1
+•	Finds the create event button very easily, says that it is clear and apparent.
+•	Form is simple to fill out but how the whole map functionality would work was unclear.
+•	Do you really need to drop a pin or should it just automatically put it on the building you choose?
+User 2
+•	Create button is easy to find
+•	Form could be made to look a little bit better, icons and such are probably way too small for the screen size.
+•	Perhaps split the questions up to multiple screens that you can go through linearly akin to how you set up a new apple phone.
+•	Doesn't really understand what is on the map, says it’s possibly due to how non interactive the page is.
+•	What do you see after you’ve created the event? Can you  manage and delete events?
