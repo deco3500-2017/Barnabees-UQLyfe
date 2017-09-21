@@ -1,0 +1,17 @@
+body{
+	color:blue;
+}
+
+div{
+	height:15.8cm;
+	width: 7.78cm;
+	border: solid 1px;
+	overflow:auto;
+	display:inline-block;
+	float:right;
+}
+
+p{
+	display:inline-block;
+	
+}
