@@ -43,7 +43,7 @@ $('#testForm').submit(function(event){
 	event.preventDefault();
 	createdEvent.eventName = $('#userEvent').val();
 	createdEvent.eventTime = $('#userTime').val();
-	$("div").append(createdEvent.eventName + " at "+ createdEvent.eventTime + " <br>   DATE: " + createdEvent.eventDay + "/" + createdEvent.eventMonth + "/" + createdEvent.eventYear +"<br>");
+	$("div#add").append(createdEvent.eventName + " at "+ createdEvent.eventTime + " <br>   DATE: " + createdEvent.eventDay + "/" + createdEvent.eventMonth + "/" + createdEvent.eventYear +"<br>");
 })
 
 //used to check a badge status. gold etc refer to the level the badge must be on to recieve badge
