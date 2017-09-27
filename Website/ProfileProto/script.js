@@ -2,7 +2,7 @@ var createdEvent = {"eventName":"", "eventTime" : 0, "eventDay" : 0, "eventMonth
 
 //this is a test to understand the profile system with badges. not 100% that this is the best method, however we need to use an int to add show progress
 var person1 = {'name':'John Wick', 'photo':'path_to_photo', 'level':0, 'badges':{
-	'sport':50,
+	'sport':5,
 	'food':150,
 	'misc':0,
 	'faculty':0,
@@ -13,32 +13,13 @@ var person1 = {'name':'John Wick', 'photo':'path_to_photo', 'level':0, 'badges':
 		//badges that do not fit into the standard 6 tags will go here, the same function to test the colour (gold, silver, bronze) will work for this.
 	}
 };
+var check= checkBadgeColour(person1, 'sport', false, 200, 100, 40);
 
 $(document).ready(function(){
 	
-	//array would be used to show progress on a bar with currentScore and what img path (_name)
-	/* var sportIcon = checkBadgeColour(person1, 'sport', false, 200, 100, 40);
-	console.log(sportIcon);
-	$('.name').html('SPORT BADGE: Current Level ' + sportIcon[1]);
-	$('#low').html(sportIcon[3]);
-	$('#high').html(sportIcon[2]);
 	
-	var progress1 = sportIcon [0] - sportIcon[3];
-	var progress2 = (sportIcon[2] - sportIcon [0]);
-	
-	var percent1 = (progress1/(progress1+progress2)) *100;
-	var percent2 = (progress2/(progress1+progress2)) *100;
-	
-
-	$('#extraProgress').css('width', percent2);
-	$('#progressBar').css('width',percent1);
-	
-	var foodIcon = checkBadgeColour(person1, 'food', false, 200, 100, 40);
-	console.log(foodIcon); */
-	
-	var check = checkBadgeColour(person1, 'sport', false, 200, 100, 40);
 	console.log(check);
-	$('#displayPerson').append('This is an example of what the current structure of the person JSON is. <br>Name: ' + person1.name + '<br> Badge for sport: ' + check[0] + '<br>Progress: ' + check[1] + '<br> High Point: '+check[2][0] + '<br>Current: ' + check[2][1] + '<br>Low Point: ' +check[2][2]);
+	$('#displayPerson').append('This is an example of what the current structure of the person JSON is. <br>Name: ' + person1.name + '<br> Badge for sport: ' + check[0] + '<br>Progress: ' + check[1] + '<br><br>THESE WOULD BE USED FOR DISPLAY <br> High Point: '+check[2][0] + '<br>Current: ' + check[2][1] + '<br>Low Point: ' +check[2][2]);
 	
 });
 
@@ -47,6 +28,24 @@ $('#testForm').submit(function(event){
 	createdEvent.eventName = $('#userEvent').val();
 	createdEvent.eventTime = $('#userTime').val();
 	$("div#add").append(createdEvent.eventName + " at "+ createdEvent.eventTime + " <br>   DATE: " + createdEvent.eventDay + "/" + createdEvent.eventMonth + "/" + createdEvent.eventYear +"<br>");
+})
+$('#addSport').submit(function(event){
+	event.preventDefault();
+	
+	if(isNaN($('#numberSport').val()/2) == false){
+		var addValue = parseInt($('#numberSport').val());
+		console.log(addValue);
+		
+		//add to badge
+		addBadge(person1, 'sport', false, addValue);
+		
+		$('#displayPerson').empty();
+		
+		check= checkBadgeColour(person1, 'sport', false, 200, 100, 40);
+		
+		$('#displayPerson').append('This is an example of what the current structure of the person JSON is. <br>Name: ' + person1.name + '<br> Badge for sport: ' + check[0] + '<br>Progress: ' + check[1] + '<br><br>THESE WOULD BE USED FOR DISPLAY <br> High Point: '+check[2][0] + '<br>Current: ' + check[2][1] + '<br>Low Point: ' +check[2][2]);
+	}
+	
 })
 
 //used to check a badge status. gold etc refer to the level the badge must be on to recieve badge
@@ -65,6 +64,7 @@ function checkBadgeColour(user, badge, unique, gold, silver, bronze){
 	
 	if(currentScore >= bronze){
 		if(currentScore < silver){
+			//display bronze
 			badgeColour = "bronze";
 			progressPercentage = calculatePercentage(currentScore, silver, bronze);
 			
@@ -72,22 +72,49 @@ function checkBadgeColour(user, badge, unique, gold, silver, bronze){
 		}
 		if(currentScore < gold){
 			//display silver
-			//return [currentScore, '_silver', gold, silver];
+			badgeColour = "silver";
+			progressPercentage = calculatePercentage(currentScore, gold, silver);
+			
+			return [badgeColour,progressPercentage,[gold, currentScore, silver]];
 			
 		}
 		else{
 			//has to be gold ie >= gold
-			//return [currentScore, '_gold', 9999, gold];
+			badgeColour = "gold";
+			progressPercentage = calculatePercentage(currentScore, 99999, gold);
+			
+			return [badgeColour,progressPercentage,[99999, currentScore, gold]];
 			
 		}
 	}
 	else{
 		//no badge
-		//return [currentScore, '_none', bronze, 0];
+		badgeColour = "none";
+		progressPercentage = calculatePercentage(currentScore, bronze, 0);
+			
+		return [badgeColour,progressPercentage,[bronze, currentScore, 0]];
 	}
 }
 
-
+//used to add exp to a badge when a user attends event
+function addBadge(user, badge, unique, amount){
+	var currentScore = 0;
+	if(unique == true){
+		currentScore = user.uniqueBadges[badge];
+	}
+	else{
+		currentScore = user.badges[badge];
+	}
+	currentScore = currentScore + amount;
+	
+	if(unique == true){
+		user.uniqueBadges[badge] = currentScore;
+	}
+	else{
+		user.badges[badge] = currentScore;
+		console.log(user.badges[badge]);
+	}
+}
 //((currentScore - bronze)/(silver - bronze)) * 100;
 function calculatePercentage(score, high, low){
 	return ((score - low)/(high-low))*100;
