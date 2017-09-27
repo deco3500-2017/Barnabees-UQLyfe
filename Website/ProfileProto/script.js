@@ -14,7 +14,7 @@ var person1 = {'name':'John Wick', 'photo':'path_to_photo', 'level':0, 'badges':
 	}
 };
 var check= checkBadgeColour(person1, 'sport', false, 200, 100, 40);
-var check2= checkBadgeColour(person1, 'food', false, 200, 100, 40);
+var check2= checkBadgeColour(person1, 'food', false, 400, 200, 100);
 $(document).ready(function(){
 	
 	
@@ -62,7 +62,7 @@ $('#addFood').submit(function(event){
 		
 		$('#displayPerson2').empty();
 		
-		check2= checkBadgeColour(person1, 'food', false, 200, 100, 40);
+		check2= checkBadgeColour(person1, 'food', false, 400, 200, 100);
 		quickDisplay(check2, '#displayPerson2', 'FOOD');
 		//$('#displayPerson').append('This is an example of what the current structure of the person JSON is. <br>Name: ' + person1.name + '<br> Badge for sport: ' + check[0] + '<br>Progress: ' + check[1] + '<br><br>THESE WOULD BE USED FOR DISPLAY <br> High Point: '+check[2][0] + '<br>Current: ' + check[2][1] + '<br>Low Point: ' +check[2][2]);
 	}
