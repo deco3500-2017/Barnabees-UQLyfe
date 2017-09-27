@@ -20,8 +20,8 @@ $(document).ready(function(){
 	
 	console.log(check);
 	//$('#displayPerson').append('This is an example of what the current structure of the person JSON is. <br>Name: ' + person1.name + '<br> Badge for sport: ' + check[0] + '<br>Progress: ' + check[1] + '<br><br>THESE WOULD BE USED FOR DISPLAY <br> High Point: '+check[2][0] + '<br>Current: ' + check[2][1] + '<br>Low Point: ' +check[2][2]);
-	quickDisplay(check, '#displayPerson', 'SPORT');
-	quickDisplay(check2, '#displayPerson2', 'FOOD');
+	quickDisplay(check, '#displayPerson', 'sport');
+	quickDisplay(check2, '#displayPerson2', 'food');
 	
 });
 
@@ -44,7 +44,7 @@ $('#addSport').submit(function(event){
 		$('#displayPerson').empty();
 		
 		check= checkBadgeColour(person1, 'sport', false, 200, 100, 40);
-		 quickDisplay(check, '#displayPerson', 'SPORT');
+		 quickDisplay(check, '#displayPerson', 'sport');
 		
 		//$('#displayPerson').append('This is an example of what the current structure of the person JSON is. <br>Name: ' + person1.name + '<br> Badge for sport: ' + check[0] + '<br>Progress: ' + check[1] + '<br><br>THESE WOULD BE USED FOR DISPLAY <br> High Point: '+check[2][0] + '<br>Current: ' + check[2][1] + '<br>Low Point: ' +check[2][2]);
 	}
@@ -63,7 +63,7 @@ $('#addFood').submit(function(event){
 		$('#displayPerson2').empty();
 		
 		check2= checkBadgeColour(person1, 'food', false, 400, 200, 100);
-		quickDisplay(check2, '#displayPerson2', 'FOOD');
+		quickDisplay(check2, '#displayPerson2', 'food');
 		//$('#displayPerson').append('This is an example of what the current structure of the person JSON is. <br>Name: ' + person1.name + '<br> Badge for sport: ' + check[0] + '<br>Progress: ' + check[1] + '<br><br>THESE WOULD BE USED FOR DISPLAY <br> High Point: '+check[2][0] + '<br>Current: ' + check[2][1] + '<br>Low Point: ' +check[2][2]);
 	}
 	
@@ -141,5 +141,12 @@ function calculatePercentage(score, high, low){
 }
 
 function quickDisplay(results, where, badge){
-	$(where).append('<br><br><br>Name: ' + person1.name + '<br> Badge for '+badge+': ' + results[0] + '<br>Progress: ' + results[1] + '<br><br>THESE WOULD BE USED FOR DISPLAY <br> High Point: '+results[2][0] + '<br>Current: ' + results[2][1] + '<br>Low Point: ' +results[2][2]);
+	var image ="";
+	if(badge == 'sport'){
+		image = 'sport_';
+	}
+	if(badge == 'food'){
+		image = 'food_';
+	}
+	$(where).append('<br><br><br>Name: ' + person1.name + '<br> Badge for '+badge+': ' + results[0] +' <img src="'+image+results[0]+'.png">' + '<br>Progress: ' + results[1] + '<br><br>THESE WOULD BE USED FOR DISPLAY <br> High Point: '+results[2][0] + '<br>Current: ' + results[2][1] + '<br>Low Point: ' +results[2][2]);
 }
