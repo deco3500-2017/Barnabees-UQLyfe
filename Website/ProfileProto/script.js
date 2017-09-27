@@ -17,7 +17,7 @@ var person1 = {'name':'John Wick', 'photo':'path_to_photo', 'level':0, 'badges':
 $(document).ready(function(){
 	
 	//array would be used to show progress on a bar with currentScore and what img path (_name)
-	var sportIcon = checkBadgeColour(person1, 'sport', false, 200, 100, 40);
+	/* var sportIcon = checkBadgeColour(person1, 'sport', false, 200, 100, 40);
 	console.log(sportIcon);
 	$('.name').html('SPORT BADGE: Current Level ' + sportIcon[1]);
 	$('#low').html(sportIcon[3]);
@@ -34,8 +34,11 @@ $(document).ready(function(){
 	$('#progressBar').css('width',percent1);
 	
 	var foodIcon = checkBadgeColour(person1, 'food', false, 200, 100, 40);
-	console.log(foodIcon);
+	console.log(foodIcon); */
 	
+	var check = checkBadgeColour(person1, 'sport', false, 200, 100, 40);
+	console.log(check);
+	$('#displayPerson').append('This is an example of what the current structure of the person JSON is. <br>Name: ' + person1.name + '<br> Badge for sport: ' + check[0] + '<br>Progress: ' + check[1] + '<br> High Point: '+check[2][0] + '<br>Current: ' + check[2][1] + '<br>Low Point: ' +check[2][2]);
 	
 });
 
@@ -49,7 +52,8 @@ $('#testForm').submit(function(event){
 //used to check a badge status. gold etc refer to the level the badge must be on to recieve badge
 function checkBadgeColour(user, badge, unique, gold, silver, bronze){
 	var currentScore = 0;
-
+	var badgeColour = "";
+	var progressPercentage = 0;
 	
 	//used to get unique score vs standard badge
 	 if(unique == true){
@@ -61,21 +65,30 @@ function checkBadgeColour(user, badge, unique, gold, silver, bronze){
 	
 	if(currentScore >= bronze){
 		if(currentScore < silver){
-			//display bronze badge
+			badgeColour = "bronze";
+			progressPercentage = calculatePercentage(currentScore, silver, bronze);
 			
-			return [currentScore, '_bronze', silver, bronze];
+			return [badgeColour,progressPercentage,[silver, currentScore, bronze]];
 		}
 		if(currentScore < gold){
 			//display silver
-			return [currentScore, '_silver', gold, silver];
+			//return [currentScore, '_silver', gold, silver];
+			
 		}
 		else{
 			//has to be gold ie >= gold
-			return [currentScore, '_gold', 9999, gold];
+			//return [currentScore, '_gold', 9999, gold];
+			
 		}
 	}
 	else{
 		//no badge
-		return [currentScore, '_none', bronze, 0];
+		//return [currentScore, '_none', bronze, 0];
 	}
+}
+
+
+//((currentScore - bronze)/(silver - bronze)) * 100;
+function calculatePercentage(score, high, low){
+	return ((score - low)/(high-low))*100;
 }
