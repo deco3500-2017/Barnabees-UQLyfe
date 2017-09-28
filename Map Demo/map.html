@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	<script src="events.js"></script>
+	<link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+  	<div id="event-content">
+  		<h1> Event Listings <h1>
+  		<h2>Rick and Morty Trivia Night</h2>
+  		<button class="button" onclick="changeMarker(markers[0])">Rick and Morty Trivia Night</button>
+  		<h2>Marketing & Memes</h2>
+  		<button class="button" onclick="changeMarker(markers[1])">Marketing & Memes</button>
+  		<p id="
+  		<h2>Soccer Sundays</h2>
+  		<h2>Marketing & Memes</h2>
+  		<h2>Smarties & Science</h2>
+  	<div>
+  	<div id="map-content">
+    	<h1>UQLyfe Map Demonstration</h3>
+     	<button class="button" onclick="hideMarkers()">Back to Event Page</button>
+    	<div id="map"></div>
+    	
+    </div>
+    <script>
+    	var map;
+    	var marker;
+    	var markers=[];
+    	    	
+      function initMap() {
+     	myLatLng = new google.maps.LatLng(-27.4974511, 153.0154073);
+        map = new google.maps.Map( document.getElementById( 'map' ), {
+            zoom: 17,
+            center: myLatLng,
+            mapTypeId: google.maps.MapTypeId.ROADMAP
+        });
+       
+       loadEvents();
+    
+}
+
+	function loadEvents(){
+		for (var i=0; i<events.length; i++){
+       		var myLatLng = new google.maps.LatLng( events[i].location.latitude, events[i].location.longitude);
+       		var description = events[i].description;
+       		var title = events[i].eventName;
+       		
+       		marker = new google.maps.Marker( {position: myLatLng, map: map} );
+       		markers.push(marker);
+       		marker.setVisible(false);
+       		console.log(markers);
+       }
+	}
+	
+	function changeMarker(marker){
+		hideMarkers();
+		revealMarker(marker);
+	}
+	
+	function hideMarkers(){
+		for (var i=0; i<markers.length; i++){
+			markers[i].setVisible(false);
+		}
+	}
+	
+	function revealMarker(marker){
+		marker.setVisible(true);
+	}
+
+function moveMarker(latitude, longitude) {
+    
+    //delayed so you can see it move
+    setTimeout( function(){ 
+    
+        marker.setPosition( new google.maps.LatLng( latitude, longitude ) );
+        //map.panTo( new google.maps.LatLng( latitude, longitude ) );
+        
+    }, 1500 );
+
+};
+
+
+
+    </script>
+    
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAOujPO0o1rviGsN1YNVxjfv5z59OZ4wFQ
+
+&callback=initMap">
+	
+    </script>
+    
+  </body>
+</html>
