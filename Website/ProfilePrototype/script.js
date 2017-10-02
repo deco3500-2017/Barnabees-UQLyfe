@@ -148,5 +148,5 @@ function quickDisplay(results, where, badge){
 	if(badge == 'food'){
 		image = 'food_';
 	}
-	$(where).append('<br><br><br>Name: ' + person1.name + '<br> Badge for '+badge+': ' + results[0] +' <img src="'+image+results[0]+'.png">' + '<br>Progress: ' + results[1] + '<br><br>THESE WOULD BE USED FOR DISPLAY <br> High Point: '+results[2][0] + '<br>Current: ' + results[2][1] + '<br>Low Point: ' +results[2][2] + '<br> <progress value="'+ results[1] +'" max="100"></progress>');
+	$(where).append('<br><br><br>Name: ' + person1.name + '<br> Badge for '+badge+': ' + results[0] +' <img src="'+image+results[0]+'.png">' + '<br>Progress: ' + results[1] + '<br> <progress value="'+ results[1] +'" max="100"></progress><br><br>THESE WOULD BE USED FOR DISPLAY <br> High Point: '+results[2][0] + '<br>Current: ' + results[2][1] + '<br>Low Point: ' +results[2][2] );
 }
