@@ -1,21 +1,29 @@
 #map {
-        height: 1000px;
-        width: 575px;
+        height: 300px;
+        width: 323.43px;
        }
        
-#map-content{
-       	 position: absolute;
+#phone-content{
+		height: 575px;
+		width: 323.43px;
+		border-style: solid;
+       	position: absolute;
         top: 50%;
         left: 50%;
         margin-right: -50%;
-        transform: translate(-50%, -50%) }
+        transform: translate(-50%, -50%) };
        }
-    
-#event-content{
-       margin-left: 3%;
-    }
-    
+       
+#h3{
+	font-family: "Verdana";
+	font-size: 20px;
+	margin-left: 20px;
+	color: blue;
+}
+
 .button{
+	width: 323.43px;
+	text-align: center;
 	background-color: #47105d; /* UQ Trademark Purple */
     border: none;
     color: white;
@@ -24,4 +32,5 @@
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
+    margin-top: 8px;
 }
