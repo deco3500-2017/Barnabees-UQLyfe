@@ -17,20 +17,19 @@ var check= checkBadgeColour(person1, 'sport', false, 200, 100, 40);
 var check2= checkBadgeColour(person1, 'food', false, 400, 200, 100);
 $(document).ready(function(){
 	
-	
-	console.log(check);
-	//$('#displayPerson').append('This is an example of what the current structure of the person JSON is. <br>Name: ' + person1.name + '<br> Badge for sport: ' + check[0] + '<br>Progress: ' + check[1] + '<br><br>THESE WOULD BE USED FOR DISPLAY <br> High Point: '+check[2][0] + '<br>Current: ' + check[2][1] + '<br>Low Point: ' +check[2][2]);
+	$('#structure').append(JSON.stringify(person1, undefined, 2));
+
 	quickDisplay(check, '#displayPerson', 'sport');
 	quickDisplay(check2, '#displayPerson2', 'food');
 	
 });
 
-$('#testForm').submit(function(event){
+/* $('#testForm').submit(function(event){
 	event.preventDefault();
 	createdEvent.eventName = $('#userEvent').val();
 	createdEvent.eventTime = $('#userTime').val();
 	$("div#add").append(createdEvent.eventName + " at "+ createdEvent.eventTime + " <br>   DATE: " + createdEvent.eventDay + "/" + createdEvent.eventMonth + "/" + createdEvent.eventYear +"<br>");
-})
+}) */
 $('#addSport').submit(function(event){
 	event.preventDefault();
 	
@@ -149,4 +148,6 @@ function quickDisplay(results, where, badge){
 		image = 'food_';
 	}
 	$(where).append('<br><br><br>Name: ' + person1.name + '<br> Badge for '+badge+': ' + results[0] +' <img src="'+image+results[0]+'.png">' + '<br>Progress: ' + results[1] + '<br> <progress value="'+ results[1] +'" max="100"></progress><br><br>THESE WOULD BE USED FOR DISPLAY <br> High Point: '+results[2][0] + '<br>Current: ' + results[2][1] + '<br>Low Point: ' +results[2][2] );
+	$('#structure').empty();
+	$('#structure').append(JSON.stringify(person1, undefined, 2));
 }
