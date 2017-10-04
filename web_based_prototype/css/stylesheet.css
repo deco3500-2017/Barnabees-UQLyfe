@@ -6,6 +6,17 @@
 
 }
 
+#home{
+	background-image: url("../images/home.png");
+	background-repeat: no-repeat;
+	background-color: Transparent;
+	border: none;
+	height: 46px;
+	width: 57px;
+	margin-top: 6px;
+	margin-left: 6px;
+}
+
 header {
 	background-color: #856088;
 	color: #fff;
@@ -30,11 +41,11 @@ body {
 
 #frame {
 	background-color: #fafafa;
-	height: 50%;
-	width: 50%;
+	height: 75%;
+	width: 21.187%;
 	position: absolute;
 	margin: auto;
-	top: 40%;
+	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
 
@@ -70,3 +81,24 @@ body {
 	src: url(fonts/century_gothic.ttf);
 	
 }
+
+.button{
+	background-color: #856088;
+	height: 200px;
+	width: 200px;
+	border: none;
+	border-radius: 5px;
+	margin-left: 40px;
+	margin-top: 40px;	
+	font-family: centuryGothic;
+	font-weight: bold;
+	font-size: 27px;
+}
+
+.heading{
+	font-family: centuryGothic;
+	font-size: 10px;
+	
+}
+
+
