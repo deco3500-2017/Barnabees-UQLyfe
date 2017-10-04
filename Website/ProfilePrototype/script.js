@@ -1,18 +1,28 @@
 var createdEvent = {"eventName":"", "eventTime" : 0, "eventDay" : 0, "eventMonth" : 0, "eventYear"  : 0, "tag" : "Food" };
 
 //this is a test to understand the profile system with badges. not 100% that this is the best method, however we need to use an int to add show progress
-var person1 = {'name':'John Wick', 'photo':'path_to_photo', 'level':0, 'badges':{
+var person1 = {'name':'TEMPLATE', 'photo':'path_to_photo', 'level':0,'date_created':0,'events_created':0,'events_attended':0,'events_missed':0, 'badges':{
 	'sport':0,
-	'food':150,
-	'misc':0,
+	'study':0,
 	'faculty':0,
-	'official':0,
-	'something':0},
-	'uniqueBadges':{
-		//??? SHOULD THESE JUST GO IN THE ABOVE BADGE LIST TO MAKE FUNCTION EASIER (there is a check in function)???
-		//badges that do not fit into the standard 6 tags will go here, the same function to test the colour (gold, silver, bronze) will work for this.
+	'food':0,
+	'clubs':0,
+	'misc':0,
+	'hass':0,
+	'bel':0,
+	'eait':0,
+	'habs':0,
+	'med':0,
+	'sci':0,
+	'total_events':0,
+	'events_in_period':0,
+	'attendence_rate':0,
+	'certain_level':0,
+	'message_numbers':0,
+	'share_number':0
 	}
 };
+// To get level score - SQRT(level) will give you a number, than convert to int (drop the decimal) WOULD need to keep decimal as percent of progress.
 var check= checkBadgeColour(person1, 'sport', false, 200, 100, 40);
 var check2= checkBadgeColour(person1, 'food', false, 400, 200, 100);
 $(document).ready(function(){
@@ -69,7 +79,7 @@ $('#addFood').submit(function(event){
 })
 //used to check a badge status. gold etc refer to the level the badge must be on to recieve badge
 function checkBadgeColour(user, badge, unique, gold, silver, bronze){
-	var currentScore = 0;
+	var currentScore = user.badges[badge];
 	var badgeColour = "";
 	var progressPercentage = 0;
 	
