@@ -10,7 +10,7 @@ var person1 = {'name':'Perzon Wun', 'photo':'img/hass_gold.png', 'level':0,'date
 	'eait':0,
 	'habs':0,
 	'med':0,
-	'sci':0,
+	'sci':14,
 	'total_events':0,
 	'events_in_period':0,
 	'attendence_rate':0,
@@ -48,6 +48,7 @@ var silverArray = [];
 var goldArray = [];
 
 var displayCount = 1;
+var selectionCount = 1;
 
 $(document).ready(function(){
 	
@@ -76,7 +77,7 @@ $(document).ready(function(){
 	displayMedals();
 });
 
-$(document).on('click', '.badgebox', function(){
+$(document).on('click', '#badgebox-wrap .badgebox', function(){
 	$('#progress').empty();
 	var id = $(this).attr('id');
 	var medalStats = medal[id];
@@ -84,37 +85,56 @@ $(document).on('click', '.badgebox', function(){
 	$('#progress').append(medalStats[2] + '<br>Progress %: ' + medalStats[1] + '<br>High: ' + medalStats[3][0] + '<br>Current: ' +medalStats[3][1] + '<br>Low: ' +medalStats[3][2]);
 });
 
+//sets image
+$(document).on('click', '#profileChoices .badgebox', function(){
+	
+	//sets photo for person1 to the clicked on image
+	person1.photo  = ($(this).children('img').attr('src'));
+	
+	$('#userPhoto').attr('src', person1.photo);
+});
 
+$('#profile').on('click', function(){
+	var totalNumber = goldArray.length  + silverArray.length + bronzeArray.length;
+	
+	if ($('#profileChoices .badgebox').length == 0){
+		for(i=0; i< totalNumber; i++){
+			$('#profileChoices').append('<div class="badgebox"><img class="badge" /></div>');
+		}
+		displaySelectArray(goldArray, "gold");
+		displaySelectArray(silverArray, "silver");
+		displaySelectArray(bronzeArray, "bronze");
+	}else{
+		$('#profileChoices').empty();
+		selectionCount=1;
+	}
+	
+	
+	
+})
 
-
-
-function displayArray(medalArray, medal){
-	for(i=0; i < medalArray.length ; i++){
-		
-		console.log(i);
-		console.log(displayCount);
-		
-		$('.badgebox:nth-of-type('+ (displayCount) +')').attr("id", medalArray[i][2]);
+function displaySelectArray(medalArray, medal){
+	for(i=0; i <  medalArray.length; i++){
+		$('#profileChoices .badgebox:nth-of-type('+ (selectionCount) +')').attr("id", medalArray[i][2]);
 		 
-		$('.badgebox:nth-of-type('+ (displayCount) +') .badge').attr("src","img/" + medalArray[i][2]+ "_" + medal + ".png");
+		$('#profileChoices .badgebox:nth-of-type('+ (selectionCount) +') .badge').attr("src","img/" + medalArray[i][2]+ "_" + medal + ".png");
+		selectionCount++;
+	}
+}
+
+
+
+function displayArray(medalArray, medal ){
+	for(i=0; i < medalArray.length ; i++){
+		$('#badgebox-wrap .badgebox:nth-of-type('+ (displayCount) +')').attr("id", medalArray[i][2]);
+		 
+		$('#badgebox-wrap .badgebox:nth-of-type('+ (displayCount) +') .badge').attr("src","img/" + medalArray[i][2]+ "_" + medal + ".png");
 		displayCount++;
 		
 	}
 }
 
 function displayMedals( ){
-	
-/* 	for(i=0; i < goldArray.length ; i++){
-		
-		console.log(i);
-		console.log(goldArray[i][2]);
-		
-		$('.badgebox:nth-of-type('+ (i+1) +')').attr("id", goldArray[i][2]);
-		 
-		$('.badgebox:nth-of-type('+ (i+1) +') .badge').attr("src", goldArray[i][2]+"_gold");
-		
-	} */
-	
 	displayArray(goldArray, "gold");
 	displayArray(silverArray, "silver");
 	displayArray(bronzeArray, "bronze");

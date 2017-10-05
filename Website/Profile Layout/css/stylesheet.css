@@ -62,3 +62,12 @@ body {
     background-color: silver;
     border-radius: 50%;
 }
+
+/********** TEMP **********/
+#profileChoices{  
+	display: flex;
+    flex-wrap: wrap;
+}
+#userPhoto{
+	height:100%;
+}
