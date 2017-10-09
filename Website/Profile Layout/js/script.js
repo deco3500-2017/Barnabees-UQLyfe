@@ -1,4 +1,4 @@
-var person1 = {'name':'Perzon Wun', 'photo':'img/hass_gold.png', 'level':0,'date_created':"1 - 2 - 2017",'events_created':0,'events_attended':0,'events_missed':0, 'badges':{
+var person1 = {'name':'Perzon Wun', 'photo':'img/hass_gold.png', 'levelNumber':18,'date_created':"1 - 2 - 2017",'events_created':0,'events_attended':0,'events_missed':0, 'badges':{
 	'sport':6,
 	'study':7,
 	'faculty':35,
@@ -75,14 +75,25 @@ $(document).ready(function(){
 	
 	sortAllArrays();
 	displayMedals();
+	
+	var levelArray = getLevel(person1);
+	console.log(levelArray);
+	$('#testBox').colorbox({height:"80%"});
+
+ 	$('#stat2').append(levelArray[0]);
+	$('#stat3').append(levelArray[1]);
 });
+
+
 
 $(document).on('click', '#badgebox-wrap .badgebox', function(){
 	$('#progress').empty();
 	var id = $(this).attr('id');
 	var medalStats = medal[id];
 	
-	$('#progress').append(medalStats[2] + '<br>Progress %: ' + medalStats[1] + '<br>High: ' + medalStats[3][0] + '<br>Current: ' +medalStats[3][1] + '<br>Low: ' +medalStats[3][2]);
+	//$('#progress').append(medalStats[2] + '<br>Progress %: ' + medalStats[1] + '<br>High: ' + medalStats[3][0] + '<br>Current: ' +medalStats[3][1] + '<br>Low: ' +medalStats[3][2]);
+	
+	$.colorbox({height:"75%" , width:"70%" , html: medalStats[2] + '<br>Progress %: ' + medalStats[1] + '<br>High: ' + medalStats[3][0] + '<br>Current: ' +medalStats[3][1] + '<br>Low: ' +medalStats[3][2]});
 });
 
 //sets image
@@ -108,10 +119,15 @@ $('#profile').on('click', function(){
 		$('#profileChoices').empty();
 		selectionCount=1;
 	}
-	
-	
-	
+
 })
+
+function getLevel(user){
+	var rawLevel = Math.sqrt(user.levelNumber);
+	var level = parseInt(rawLevel);
+	
+	return [level, rawLevel % level];
+}
 
 function displaySelectArray(medalArray, medal){
 	for(i=0; i <  medalArray.length; i++){
