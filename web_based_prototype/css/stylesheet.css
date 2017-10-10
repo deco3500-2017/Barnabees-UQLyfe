@@ -101,4 +101,110 @@ body {
 	
 }
 
+#progressBar1Dark{
+	background-color: #44146f;
+	height: 50px;
+	width: 50px;
+	border-radius: 5px;
+	margin-left: 25%;
+	margin-right: 0px;
+	margin-top: 5%;
+}
+
+h2{ 
+	color: #fafafa;
+	text-align: center;
+	vertical-align: middle;
+	line-height: 50px;
+}
+
+#progressBar2{
+	background-color: #856088;
+	height: 50px;
+	width: 50px;
+	border-radius: 5px;
+	margin-left: 44%;
+	margin-top: -12.5%;
+
+}
+
+#progressBar2Dark{
+	background-color: #44146f;
+	height: 50px;
+	width: 50px;
+	border-radius: 5px;
+	margin-left: 44%;
+	margin-top: -12.5%;
+
+}
+
+#progressBar3{
+	background-color: #856088;
+	height: 50px;
+	width: 50px;
+	border-radius: 5px;
+	margin-left: 63%;
+	margin-top: -12.5%;
+}
+
+#progressBar3Dark{
+	background-color: #44146f;
+	height: 50px;
+	width: 50px;
+	border-radius: 5px;
+	margin-left: 63%;
+	margin-top: -12.5%;
+}
+
+h1{
+	text-align: center;
+	margin-bottom: 10px;
+	margin-top: 2%;
+}
+
+label{
+	margin: 10px;
+}
+
+input, textarea{
+	background-color: #856088;	
+	color: #fafafa;
+    width: 90%;
+    padding: 10px 10px;
+    margin: 8px 10px;
+    display: inline-block;
+    border-radius: 5px;
+    resize: none;
+}
+
+input::placeholder, textarea::placeholder, select::placeholder{
+	color: #fafafa;
+	font-style: italic;
+}
+
+select{
+	background-color: #856088;	
+    width: 90%;
+    padding: 10px 10px;
+    margin: 8px 10px ;
+    display: inline-block;
+    border-radius: 5px;
+    color: #fafafa;
+}
+
+#start_time, #end_time{
+	width: 30%;
+}
+#next{
+	background-color: #44146f;
+	width: 25%;
+	margin-right: 10px;
+	float:right;
+}
+
+
+
+
+
+
 
