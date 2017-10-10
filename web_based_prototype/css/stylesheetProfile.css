@@ -65,7 +65,7 @@ body {
 
 /********** TEMP **********/
 #profileChoices{  
-	display: flex;
+	display: none;
     flex-wrap: wrap;
 }
 #userPhoto{
