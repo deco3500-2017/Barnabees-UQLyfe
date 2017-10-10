@@ -95,7 +95,11 @@ $(document).on('click', '#badgebox-wrap .badgebox', function(){
 	
 	//$('#progress').append(medalStats[2] + '<br>Progress %: ' + medalStats[1] + '<br>High: ' + medalStats[3][0] + '<br>Current: ' +medalStats[3][1] + '<br>Low: ' +medalStats[3][2]);
 	
-	$.colorbox({height:"75%" , width:"70%" , html: '<img src="'+ image +'">' + medalStats[2] + '<br><br><br>Progress %: ' + medalStats[1] + '<br>High: ' + medalStats[3][0] + '<br>Current: ' +medalStats[3][1] + '<br>Low: ' +medalStats[3][2]});
+	$.colorbox({
+        height:"75%" , 
+        width:"70%" , 
+        html: "<h2>" + medalStats[2] + "</h2>" + '<img src="'+ image +'">' + '<br><br><br>Progress %: ' + medalStats[1] + '<br>High: ' + medalStats[3][0] + '<br>Current: ' +medalStats[3][1] + '<br>Low: ' +medalStats[3][2] + '</div>'
+    });
 });
 
 //sets images
@@ -124,7 +128,13 @@ $('#profile').on('click', function(){
 	displayReady = '<div id = "selectionChoices">' + displayReady + '</div>' ;
 	console.log(displayReady);
 	
-	$.colorbox({height:"80%" , width: '80%', html :displayReady + '</div>'});
+//	$.colorbox({height:"80%" , width: '80%', html :displayReady + '</div>'});
+	$.colorbox({
+        height:"80%", 
+        width: '80%', 
+        html: "<h2>SET YOUR ICON</h2>" + displayReady + '</div>'
+    });
+    
 	//$('#profileChoices').css('display', 'flex');
 
 })

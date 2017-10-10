@@ -43,3 +43,40 @@
         #cboxNext:hover{background-position:bottom right;}
         #cboxClose{position:absolute; top:5px; right:5px; display:block; background:url(images/controls.png) no-repeat top center; width:38px; height:19px; text-indent:-9999px;}
         #cboxClose:hover{background-position:bottom center;}
+
+
+
+
+
+
+/******************** UQ-Lyfe Edit **********************/
+
+
+/* Initial tweaks */
+
+#cboxContent { background-color: #fafafa; }
+#cboxLoadedContent { border: none; }
+#colorbox, #cboxContent, #cboxLoadedContent { border-radius: 10px; }
+
+
+/* Added content */
+
+@font-face {
+	font-family: centuryGothic;
+	src: url(fonts/century_gothic.ttf);
+	
+}
+
+#cboxLoadedContent > h2 {   
+    font-family: "centuryGothic";
+    font-weight: bold;
+    height: 45px;
+    color: white;
+    background-color: #856088;
+    text-align: center;
+    line-height: 45px;
+}
+
+/********************************************************/
+
+
