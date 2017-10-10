@@ -3,7 +3,7 @@ $(document).ready(function(){
     // When you click a 'button' with a 'page' attribute
     //   set the src of the 'mainFrame' to the value.
     $("#mainFrame").on( "load", function() {
-        $("#mainFrame").contents().on("click", "button", function() {
+        $("#mainFrame").contents().on("click", "button, a", function() {
             if ( $(this).attr("page") != undefined) {
                 $("#mainFrame").attr("src", $(this).attr("page") );
             }
