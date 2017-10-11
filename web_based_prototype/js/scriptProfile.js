@@ -1,4 +1,4 @@
-var person1 = {'name':'Perzon Wun', 'photo':'img/hass_gold.png', 'levelRaw':18,'date_created':"1 - 2 - 2017",'events_created':0,'events_attended':0,'events_missed':0, 'badges':{
+var person1 = {'name':'Perzon Wun', 'photo':'images/badges/hass_gold.png', 'levelRaw':18,'date_created':"1 - 2 - 2017",'events_created':0,'events_attended':0,'events_missed':0, 'badges':{
 	'sport':6,
 	'study':7,
 	'faculty':35,
@@ -95,10 +95,14 @@ $(document).on('click', '#badgebox-wrap .badgebox', function(){
 	
 	//$('#progress').append(medalStats[2] + '<br>Progress %: ' + medalStats[1] + '<br>High: ' + medalStats[3][0] + '<br>Current: ' +medalStats[3][1] + '<br>Low: ' +medalStats[3][2]);
 	
-	$.colorbox({height:"75%" , width:"70%" , html: '<img src="'+ image +'">' + medalStats[2] + '<br><br><br>Progress %: ' + medalStats[1] + '<br>High: ' + medalStats[3][0] + '<br>Current: ' +medalStats[3][1] + '<br>Low: ' +medalStats[3][2]});
+	$.colorbox({
+        height:"75%" , 
+        width:"70%" , 
+        html: "<h2>" + medalStats[2] + "</h2>" + '<img src="'+ image +'">' + '<br><br><br>Progress %: ' + medalStats[1] + '<br>High: ' + medalStats[3][0] + '<br>Current: ' +medalStats[3][1] + '<br>Low: ' +medalStats[3][2] + '</div>'
+    });
 });
 
-//sets image
+//sets images
 $(document).on('click', '#selectionChoices .badgebox', function(){
 	
 	//sets photo for person1 to the clicked on image
@@ -124,7 +128,13 @@ $('#profile').on('click', function(){
 	displayReady = '<div id = "selectionChoices">' + displayReady + '</div>' ;
 	console.log(displayReady);
 	
-	$.colorbox({height:"80%" , width: '80%', html :displayReady + '</div>'});
+//	$.colorbox({height:"80%" , width: '80%', html :displayReady + '</div>'});
+	$.colorbox({
+        height:"80%", 
+        width: '80%', 
+        html: "<h2>SET YOUR ICON</h2>" + displayReady + '</div>'
+    });
+    
 	//$('#profileChoices').css('display', 'flex');
 
 })
@@ -140,7 +150,7 @@ function displaySelectArray(medalArray, medal){
 	for(i=0; i <  medalArray.length; i++){
 		$('#profileChoices .badgebox:nth-of-type('+ (selectionCount) +')').attr("id", medalArray[i][2]);
 		 
-		$('#profileChoices .badgebox:nth-of-type('+ (selectionCount) +') .badge').attr("src","img/" + medalArray[i][2]+ "_" + medal + ".png");
+		$('#profileChoices .badgebox:nth-of-type('+ (selectionCount) +') .badge').attr("src","images/badges/" + medalArray[i][2]+ "_" + medal + ".png");
 		selectionCount++;
 	}
 }
@@ -151,7 +161,7 @@ function displayArray(medalArray, medal ){
 	for(i=0; i < medalArray.length ; i++){
 		$('#badgebox-wrap .badgebox:nth-of-type('+ (displayCount) +')').attr("id", medalArray[i][2]);
 		 
-		$('#badgebox-wrap .badgebox:nth-of-type('+ (displayCount) +') .badge').attr("src","img/" + medalArray[i][2]+ "_" + medal + ".png");
+		$('#badgebox-wrap .badgebox:nth-of-type('+ (displayCount) +') .badge').attr("src","images/badges/" + medalArray[i][2]+ "_" + medal + ".png");
 		displayCount++;
 		
 	}
