@@ -42,8 +42,8 @@ body {
 
 #frame {
 	background-color: #fafafa;
-	height: 480px;
-	width: 300px;
+	height: 1000px;
+	width: 550px;
 	position: absolute;
 	margin: auto;
 	top: 50%;
@@ -81,7 +81,11 @@ body {
 @font-face {
 	font-family: centuryGothic;
 	src: url(fonts/century_gothic.ttf);
-	
+}
+
+@font-face {
+	font-family: centuryGothicBold;
+	src: url(fonts/century_gothic_bold.ttf);
 }
 
 .button{
@@ -241,5 +245,51 @@ select{
 	float:right;
 }
 
+.date-heading{
+	color:  #834088;
+	text-align: left;
+	margin-top: 10px;
+	font-family: centuryGothicBold;
+	
+}
+
+.event-card{
+	height: 100%;
+	width: 95%;
+	background-color: #856088;
+	overflow: hidden;
+	margin-top: 10px;
+}
+
+.event-card h2{
+	font-family: centuryGothicBold;
+	text-align: left;
+	margin-left: 26%;
+	color: #fff;
+}
+
+.event-card p{
+	color: #fff;
+	margin-left: 26%;
+	font-size: 18px;
+	
+}
+
+.card-left{
+	float: left;
+	width: 25%;
+   
+    background-color: grey;
+    padding-bottom: 100%;
+    margin-bottom: -100%;
+	
+	background-color: #834088;
+}
+
+
+.card-left h1{
+	font-family: centuryGothicBold;
+	color: #fff;
+}
 
 
