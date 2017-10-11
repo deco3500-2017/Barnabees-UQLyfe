@@ -1,25 +1,25 @@
 <!DOCTYPE html>
 <html>
   <head>
-	<script src="events.js"></script>
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="js/events.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/stylesheet.css">
   </head>
   <body>
-  	<div id="phone-content">
+  
   		<div id="h3">
     		<h3>Events</h3>
     	</div>
     	<div id="event-scroll" style="overflow-y: scroll; height:215px;">
-  		<button class="button" onclick="changeMarker(markers[0], events[0].location.latitude, events[0].location.longitude)">Rick and Morty Trivia Night</button>
-  		<button class="button" onclick="changeMarker(markers[1],events[1].location.latitude, events[1].location.longitude)">Marketing & Memes</button>
-  		<button class="button">Event 3</button>
-  		<button class="button">Event 4</button>
-  		<button class="button">Event 5</button>
-     	<button class="button" onclick="hideMarkers()">Back to Event Page</button>
+  		<button class="mapbutton" onclick="changeMarker(markers[0], events[0].location.latitude, events[0].location.longitude)">Rick and Morty Trivia Night</button>
+  		<button class="mapbutton" onclick="changeMarker(markers[1],events[1].location.latitude, events[1].location.longitude)">Marketing & Memes</button>
+  		<button class="mapbutton">Event 3</button>
+  		<button class="mapbutton">Event 4</button>
+  		<button class="mapbutton">Event 5</button>
+     	<button class="mapbutton" onclick="hideMarkers()">Back to Event Page</button>
      </div>
     	<div id="map"></div>
     	
-    </div>
+   
     <script>
     	var map;
     	var marker;

@@ -101,4 +101,41 @@ body {
 	
 }
 
+/* Map Page */
+#map {
+        height: 300px;
+        width: 323.43px;
+       }
+       
+#phone-content{
+		height: 575px;
+		width: 323.43px;
+		border-style: solid;
+       	position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%) ;
+       }
+       
+#h3{
+	font-family: "Verdana";
+	font-size: 20px;
+	margin-left: 20px;
+	color: blue;
+}
+
+.mapbutton{
+	width: 323.43px;
+	text-align: center;
+	background-color: #47105d; /* UQ Trademark Purple */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 8px;
+}
+
 
