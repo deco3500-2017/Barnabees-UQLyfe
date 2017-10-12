@@ -69,7 +69,7 @@ $(document).ready(function(){
 	
 	var levelPercent = levelArray[1] *100;
 	console.log(levelArray);
-	$('.progress-inside').css('width', levelPercent);
+	$('#user-level .progress-inside').css('width', levelPercent);
 });
 
 

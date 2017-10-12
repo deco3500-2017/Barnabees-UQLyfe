@@ -81,9 +81,12 @@ body {
 #stat-wrap{
 	text-align:center;
 }
-
+#user-level{
+	padding-bottom:2%;
+}
 .progress-outside{
-	width:150px;
+	margin:0 auto;
+	width:40%;
 	height:20px;
 	border: 2px solid black;
     border-radius: 5px;
