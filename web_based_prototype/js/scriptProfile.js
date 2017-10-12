@@ -1,46 +1,8 @@
-var person1 = {'name':'Perzon Wun', 'photo':'images/badges/hass_gold.png', 'levelRaw':18,'date_created':"1 - 2 - 2017",'events_created':0,'events_attended':0,'events_missed':0, 'badges':{
-	'sport':6,
-	'study':7,
-	'faculty':35,
-	'food':25,
-	'clubs':0,
-	'misc':0,
-	'hass':50,
-	'bel':0,
-	'eait':0,
-	'habs':0,
-	'med':0,
-	'sci':14,
-	'total_events':0,
-	'events_in_period':0,
-	'attendence_rate':0,
-	'certain_level':0,
-	'message_numbers':11,
-	'share_number':0
-	}
-};
+var users = '';
+var person1 = {};
 
 //this objects holds the results from the score, returning an array -> [badgeColour,progressPercentage,badge,[high, currentScore, low]]
-var medal = {
-	'sport':checkBadgeColour(person1, "sport", 20, 10, 5),
-	'study':checkBadgeColour(person1, "study", 20, 10, 5),
-	'faculty':checkBadgeColour(person1, "faculty", 20, 10, 5),
-	'food':checkBadgeColour(person1, "food", 20, 10, 5),
-	'clubs':checkBadgeColour(person1, "clubs", 20, 10, 5),
-	'misc':checkBadgeColour(person1, "misc", 20, 10, 5),
-	'hass':checkBadgeColour(person1, "hass", 20, 10, 5),
-	'bel':checkBadgeColour(person1, "bel", 20, 10, 5),
-	'eait':checkBadgeColour(person1, "eait", 20, 10, 5),
-	'habs':checkBadgeColour(person1, "habs", 20, 10, 5),
-	'med':checkBadgeColour(person1, "med", 20, 10, 5),
-	'sci':checkBadgeColour(person1, "sci", 20, 10, 5),
-	'total_events':checkBadgeColour(person1, "total_events", 20, 10, 5),
-	'events_in_period':checkBadgeColour(person1, "events_in_period", 20, 10, 5),
-	'attendence_rate':checkBadgeColour(person1, "attendence_rate", 20, 10, 5),
-	'certain_level':checkBadgeColour(person1, "certain_level", 20, 10, 5),
-	'message_numbers':checkBadgeColour(person1, "message_numbers", 20, 10, 5),
-	'share_number':checkBadgeColour(person1, "share_number", 20, 10, 5)
-};
+var medal = {};
 
 var noneArray = [];
 var bronzeArray = [];
@@ -51,6 +13,29 @@ var displayCount = 1;
 var selectionCount = 1;
 
 $(document).ready(function(){
+	
+	users = JSON.parse(sessionStorage.users);
+	person1 = users[1];
+	medal = {
+		'sport':checkBadgeColour(person1, "sport", 20, 10, 5),
+		'study':checkBadgeColour(person1, "study", 20, 10, 5),
+		'faculty':checkBadgeColour(person1, "faculty", 20, 10, 5),
+		'food':checkBadgeColour(person1, "food", 20, 10, 5),
+		'clubs':checkBadgeColour(person1, "clubs", 20, 10, 5),
+		'misc':checkBadgeColour(person1, "misc", 20, 10, 5),
+		'hass':checkBadgeColour(person1, "hass", 20, 10, 5),
+		'bel':checkBadgeColour(person1, "bel", 20, 10, 5),
+		'eait':checkBadgeColour(person1, "eait", 20, 10, 5),
+		'habs':checkBadgeColour(person1, "habs", 20, 10, 5),
+		'med':checkBadgeColour(person1, "med", 20, 10, 5),
+		'sci':checkBadgeColour(person1, "sci", 20, 10, 5),
+		'total_events':checkBadgeColour(person1, "total_events", 20, 10, 5),
+		'events_in_period':checkBadgeColour(person1, "events_in_period", 20, 10, 5),
+		'attendence_rate':checkBadgeColour(person1, "attendence_rate", 20, 10, 5),
+		'certain_level':checkBadgeColour(person1, "certain_level", 20, 10, 5),
+		'message_numbers':checkBadgeColour(person1, "message_numbers", 20, 10, 5),
+		'share_number':checkBadgeColour(person1, "share_number", 20, 10, 5)
+	};
 	
 	$('#username').html(person1.name);
 	
@@ -109,6 +94,10 @@ $(document).on('click', '#selectionChoices .badgebox', function(){
 	person1.photo  = ($(this).children('img').attr('src'));
 	
 	$('#userPhoto').attr('src', person1.photo);
+	
+	sessionStorage.removeItem("users");
+	sessionStorage.setItem('users', JSON.stringify(users));
+	
 	$.colorbox.close();
 });
 

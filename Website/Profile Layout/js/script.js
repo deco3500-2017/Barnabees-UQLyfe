@@ -1,4 +1,4 @@
-var person1 = {'name':'Perzon Wun', 'photo':'img/hass_gold.png', 'levelRaw':18,'date_created':"1 - 2 - 2017",'events_created':0,'events_attended':0,'events_missed':0, 'badges':{
+/* var person1 = {'name':'Perzon Wun', 'photo':'img/hass_gold.png', 'levelRaw':18,'date_created':"1 - 2 - 2017",'events_created':0,'events_attended':0,'events_missed':0, 'badges':{
 	'sport':6,
 	'study':7,
 	'faculty':35,
@@ -18,10 +18,28 @@ var person1 = {'name':'Perzon Wun', 'photo':'img/hass_gold.png', 'levelRaw':18,'
 	'message_numbers':11,
 	'share_number':0
 	}
-};
+}; */
+
+//uses saved session variable
+var users = '';
+var person1 = {};
 
 //this objects holds the results from the score, returning an array -> [badgeColour,progressPercentage,badge,[high, currentScore, low]]
-var medal = {
+var medal = {};
+
+var noneArray = [];
+var bronzeArray = [];
+var silverArray = [];
+var goldArray = [];
+
+var displayCount = 1;
+var selectionCount = 1;
+
+$(document).ready(function(){
+	
+	users = JSON.parse(sessionStorage.users);
+	person1 = users[1];
+	medal = {
 	'sport':checkBadgeColour(person1, "sport", 20, 10, 5),
 	'study':checkBadgeColour(person1, "study", 20, 10, 5),
 	'faculty':checkBadgeColour(person1, "faculty", 20, 10, 5),
@@ -41,20 +59,11 @@ var medal = {
 	'message_numbers':checkBadgeColour(person1, "message_numbers", 20, 10, 5),
 	'share_number':checkBadgeColour(person1, "share_number", 20, 10, 5)
 };
-
-var noneArray = [];
-var bronzeArray = [];
-var silverArray = [];
-var goldArray = [];
-
-var displayCount = 1;
-var selectionCount = 1;
-
-$(document).ready(function(){
+	
+	$('#userPhoto').attr('src', person1.photo);
 	
 	$('#username').html(person1.name);
 	
-	console.log(medal);
 	$.each(medal, function(key, val){
 		//key is the name of the badge
 		//val is its values
@@ -102,9 +111,14 @@ $(document).on('click', '#badgebox-wrap .badgebox', function(){
 $(document).on('click', '#selectionChoices .badgebox', function(){
 	
 	//sets photo for person1 to the clicked on image
-	person1.photo  = ($(this).children('img').attr('src'));
+	users[1].photo  = ($(this).children('img').attr('src'));
 	
 	$('#userPhoto').attr('src', person1.photo);
+	
+	console.log(users);
+	sessionStorage.removeItem("users");
+	sessionStorage.setItem('users', JSON.stringify(users));
+	
 	$.colorbox.close();
 });
 

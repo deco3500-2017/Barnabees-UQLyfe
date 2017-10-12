@@ -1,4 +1,4 @@
-var person1 = {'name':'Perzon Wun', 'photo':'img/hass_gold.png', 'levelNumber':18,'date_created':"1 - 2 - 2017",'events_created':0,'events_attended':0,'events_missed':0, 'badges':{
+var pers1 = {"name":'Perzon Wun', "photo":'img/hass_gold.png', "levelNumber":18,"date_created":"1 - 2 - 2017","events_created":0,'events_attended':0,"events_missed":0, "badges":{
 	'sport':6,
 	'study':7,
 	'faculty':35,
@@ -18,9 +18,9 @@ var person1 = {'name':'Perzon Wun', 'photo':'img/hass_gold.png', 'levelNumber':1
 	'message_numbers':11,
 	'share_number':0
 	}
-};
+}
 
-var person2 = {'name':'John Blow', 'photo':'img/hass_gold.png', 'levelNumber':10,'date_created':"1 - 5 - 2017",'events_created':0,'events_attended':0,'events_missed':0, 'badges':{
+var pers2 = {"name":'John Blow', "photo":'img/hass_gold.png', "levelNumber":10,"date_created":"1 - 5 - 2017","events_created":0,"events_attended":0,"events_missed":0, "badges":{
 	'sport':6,
 	'study':7,
 	'faculty':35,
@@ -40,17 +40,17 @@ var person2 = {'name':'John Blow', 'photo':'img/hass_gold.png', 'levelNumber':10
 	'message_numbers':11,
 	'share_number':0
 	}
-};
+}
 
 
-var user = {'1': person1; '2': person2};
+var allUser = {'1': pers1, '2': pers2};
 
-var userString = JSON.stringify(user);
+var userString = JSON.stringify(allUser);
+
+
 
 $(document).ready(function(){
-	
-	sessionStorage.setItem("users", userString);
-	console.log(JSON.parse(sessionStorage.users));
-})
-	
-function 
+	if(!(sessionStorage.getItem("users"))){
+		sessionStorage.setItem("users", userString);
+	};
+});
