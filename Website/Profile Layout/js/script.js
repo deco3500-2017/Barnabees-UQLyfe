@@ -116,6 +116,7 @@ $(document).on('click', '#selectionChoices .badgebox', function(){
 	$('#userPhoto').attr('src', person1.photo);
 	
 	console.log(users);
+	
 	sessionStorage.removeItem("users");
 	sessionStorage.setItem('users', JSON.stringify(users));
 	

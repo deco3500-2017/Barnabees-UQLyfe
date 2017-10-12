@@ -38,8 +38,8 @@ $(document).ready(function(){
 	};
 	
 	$('#username').html(person1.name);
-	
-	console.log(medal);
+	$('#userPhoto').attr('src', person1.photo);
+
 	$.each(medal, function(key, val){
 		//key is the name of the badge
 		//val is its values
@@ -66,7 +66,10 @@ $(document).ready(function(){
 	$('#testBox').colorbox({height:"80%"});
 
  	$('#stat2').append(levelArray[0]);
-	$('#stat3').append(levelArray[1]);
+	
+	var levelPercent = levelArray[1] *100;
+	console.log(levelArray);
+	$('.progress-inside').css('width', levelPercent);
 });
 
 
@@ -74,17 +77,19 @@ $(document).ready(function(){
 $(document).on('click', '#badgebox-wrap .badgebox', function(){
 	$('#progress').empty();
 	var id = $(this).attr('id');
-	var image = $(this).siblings('img.badge').attr('src');
-	console.log(image);
+	var image = $(this).children('img').attr('src');
 	var medalStats = medal[id];
+	
+	console.log(image);
 	
 	//$('#progress').append(medalStats[2] + '<br>Progress %: ' + medalStats[1] + '<br>High: ' + medalStats[3][0] + '<br>Current: ' +medalStats[3][1] + '<br>Low: ' +medalStats[3][2]);
 	
 	$.colorbox({
         height:"75%" , 
         width:"70%" , 
-        html: "<h2>" + medalStats[2] + "</h2>" + '<img src="'+ image +'">' + '<br><br><br>Progress %: ' + medalStats[1] + '<br>High: ' + medalStats[3][0] + '<br>Current: ' +medalStats[3][1] + '<br>Low: ' +medalStats[3][2] + '</div>'
+        html: "<h2>" + medalStats[2] + "</h2>" + '<img id="displayMedal" src="'+ image +'">' + '<br><br><div id="medalProgress" class="progress-outside"><div class="progress-inside"></div></div><br>Progress %: ' + medalStats[1] + '<br>High: ' + medalStats[3][0] + '<br>Current: ' +medalStats[3][1] + '<br>Low: ' +medalStats[3][2] + '</div>'
     });
+	$("#medalProgress .progress-inside").css('width', medalStats[1]);
 });
 
 //sets images
@@ -129,6 +134,7 @@ $('#profile').on('click', function(){
 })
 
 function getLevel(user){
+	console.log(user);
 	var rawLevel = Math.cbrt(user.levelRaw);
 	var level = parseInt(rawLevel);
 	

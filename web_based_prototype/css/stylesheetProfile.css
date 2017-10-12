@@ -81,3 +81,18 @@ body {
 #stat-wrap{
 	text-align:center;
 }
+
+.progress-outside{
+	width:150px;
+	height:20px;
+	border: 2px solid black;
+    border-radius: 5px;
+}
+.progress-inside{
+	width:50%;
+	height:100%;
+	background-color:#33caff;
+}
+#displayMedal{
+	height:40%;
+}

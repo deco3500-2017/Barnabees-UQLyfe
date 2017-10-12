@@ -1,4 +1,4 @@
-var pers1 = {"name":'Perzon Wun', "photo":'img/hass_gold.png', "levelNumber":18,"date_created":"1 - 2 - 2017","events_created":0,'events_attended':0,"events_missed":0, "badges":{
+var pers1 = {"name":'Perzon Wun', "photo":'images/badges/hass_gold.png', "levelRaw":650,"date_created":"1 - 2 - 2017","events_created":0,'events_attended':0,"events_missed":0, "badges":{
 	'sport':6,
 	'study':7,
 	'faculty':35,
@@ -20,7 +20,7 @@ var pers1 = {"name":'Perzon Wun', "photo":'img/hass_gold.png', "levelNumber":18,
 	}
 }
 
-var pers2 = {"name":'John Blow', "photo":'img/hass_gold.png', "levelNumber":10,"date_created":"1 - 5 - 2017","events_created":0,"events_attended":0,"events_missed":0, "badges":{
+var pers2 = {"name":'John Blow', "photo":'img/hass_gold.png', "levelRaw":10,"date_created":"1 - 5 - 2017","events_created":0,"events_attended":0,"events_missed":0, "badges":{
 	'sport':6,
 	'study':7,
 	'faculty':35,
