@@ -67,11 +67,11 @@ $(document).ready(function(){
 
  	$('#level').append(levelArray[0]);
 	
-	
-	
+
 	var levelPercent = levelArray[1] *100;
-	console.log(levelArray);
+
 	$('#user-level .progress-inside').css('width', levelPercent+"%");
+	$("#user-level .progress-inside").prepend("<div class='percent'>"+ parseInt(levelPercent) +"%</div>");
 });
 
 
@@ -97,10 +97,10 @@ $(document).on('click', '#badgebox-wrap .badgebox', function(){
         html: "<h2>" + details[0] + "</h2>" + '<img id="displayMedal" src="'+ image +'">' + '<br><p id="progress-badge" class="center"> '+ current+'/'+high +' </p><br><div id="medalProgress" class="progress-outside"><div class="progress-inside"></div></div><div id="description">Description<div>'+ details[1] +'</div></div>'
     });
 	$("#medalProgress .progress-inside").css('width', medalStats[1]+"%");
-	$("#medalProgress .progress-inside").prepend("<div id='percent'>"+ medalStats[1] +"%</div>");
+	$("#medalProgress .progress-inside").prepend("<div class='percent'>"+ parseInt(medalStats[1]) +"%</div>");
 	
 	if(medalStats[1] < 15){
-		$('#percent').css('padding-right','0');
+		$('#medalProgress .percent').css('padding-right','0');
 	}
 });
 
