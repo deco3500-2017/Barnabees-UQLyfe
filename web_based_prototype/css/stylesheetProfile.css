@@ -22,8 +22,12 @@ body {
     text-align: center;
     margin-top: 10px;
     height: 30px;
+	font-size:1.5em;
 }
-
+#level{
+	height:auto;
+	text-align:center;
+}
 
 
 /********** STATS ************/
@@ -83,19 +87,54 @@ body {
 }
 #user-level{
 	padding-bottom:2%;
+	text-align:center;
+	display:inline;
 }
 .progress-outside{
 	margin:0 auto;
 	width:40%;
-	height:20px;
-	border: 2px solid black;
-    border-radius: 5px;
+	height:30px;
+	border: 4px solid #d1d1d1;
+    border-radius: 4px;
+	display:block;
+	overflow:visible;
+	background-color:#f2f2f2;
 }
 .progress-inside{
 	width:50%;
 	height:100%;
 	background-color:#33caff;
+	border-radius: 0 4px 4px 0;
+	padding:0;	
+}
+#medalProgress.progress-outside{
+	width:75%;
 }
 #displayMedal{
 	height:40%;
+	display:block;
+	margin: 0 auto;
+}
+#percent{
+	float:right;
+	padding-right:10px;
+}
+#description{
+	padding: 3%;
+	padding-top: 40px;
+	font-size:1.2em;
+
+}
+#description div{
+	font-size:12pt;
+	padding-top:10px;
+}
+#progress-badge{
+	padding-bottom:2%;
+}
+.clearfix{
+	overflow:auto;
+}
+.center{
+	text-align:center;
 }

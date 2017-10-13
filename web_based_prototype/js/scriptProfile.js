@@ -65,11 +65,13 @@ $(document).ready(function(){
 	console.log(levelArray);
 	$('#testBox').colorbox({height:"80%"});
 
- 	$('#stat2').append(levelArray[0]);
+ 	$('#level').append(levelArray[0]);
+	
+	
 	
 	var levelPercent = levelArray[1] *100;
 	console.log(levelArray);
-	$('#user-level .progress-inside').css('width', levelPercent);
+	$('#user-level .progress-inside').css('width', levelPercent+"%");
 });
 
 
@@ -80,16 +82,26 @@ $(document).on('click', '#badgebox-wrap .badgebox', function(){
 	var image = $(this).children('img').attr('src');
 	var medalStats = medal[id];
 	
-	console.log(image);
+	console.log(medalStats[2]);
+	//[name, description]
+	var details = medalDetails(medalStats[2]);
 	
-	//$('#progress').append(medalStats[2] + '<br>Progress %: ' + medalStats[1] + '<br>High: ' + medalStats[3][0] + '<br>Current: ' +medalStats[3][1] + '<br>Low: ' +medalStats[3][2]);
+	var high = medalStats[3][0];
+	var current = medalStats[3][1];
+	var low = medalStats[3][2];
 	
+	//should put a switch in here to get description and real name
 	$.colorbox({
         height:"75%" , 
         width:"70%" , 
-        html: "<h2>" + medalStats[2] + "</h2>" + '<img id="displayMedal" src="'+ image +'">' + '<br><br><div id="medalProgress" class="progress-outside"><div class="progress-inside"></div></div><br>Progress %: ' + medalStats[1] + '<br>High: ' + medalStats[3][0] + '<br>Current: ' +medalStats[3][1] + '<br>Low: ' +medalStats[3][2] + '</div>'
+        html: "<h2>" + details[0] + "</h2>" + '<img id="displayMedal" src="'+ image +'">' + '<br><p id="progress-badge" class="center"> '+ current+'/'+high +' </p><br><div id="medalProgress" class="progress-outside"><div class="progress-inside"></div></div><div id="description">Description<div>'+ details[1] +'</div></div>'
     });
-	$("#medalProgress .progress-inside").css('width', medalStats[1]);
+	$("#medalProgress .progress-inside").css('width', medalStats[1]+"%");
+	$("#medalProgress .progress-inside").prepend("<div id='percent'>"+ medalStats[1] +"%</div>");
+	
+	if(medalStats[1] < 15){
+		$('#percent').css('padding-right','0');
+	}
 });
 
 //sets images
@@ -124,7 +136,7 @@ $('#profile').on('click', function(){
 	
 //	$.colorbox({height:"80%" , width: '80%', html :displayReady + '</div>'});
 	$.colorbox({
-        height:"80%", 
+        height:"50%", 
         width: '80%', 
         html: "<h2>SET YOUR ICON</h2>" + displayReady + '</div>'
     });
@@ -132,6 +144,91 @@ $('#profile').on('click', function(){
 	//$('#profileChoices').css('display', 'flex');
 
 })
+
+function medalDetails(name){
+	var description ='';
+	var realName ='';
+	
+	switch(name){
+		case 'sport':
+			description = "Sport description";
+			realName = 'Sport';
+			break;
+		case 'study':
+			description = "Study description";
+			realName = 'Study';
+			break;
+		case 'faculty':
+			description = "faculty description";
+			realName = 'Faculty';
+			break;
+		case 'food':
+			description = "food description";
+			realName = 'Food';
+			break;
+		case 'clubs':
+			description = "clubs description";
+			realName = 'Clubs';
+			break;
+		case 'misc':
+			description = "misc description";
+			realName = 'Miscellaneous';
+			break;
+		case 'hass':
+			description = "hass description";
+			realName = 'Humanities and Social Sciences';
+			break;
+		case 'bel':
+			description = "bel description";
+			realName = 'Business, Economics and Law';
+			break;
+		case 'eait':
+			description = "eait description";
+			realName = 'Engineering, Architecture and Information Technology';
+			break;
+		case 'habs':
+			description = "habs description";
+			realName = 'Health and Behavioural Sciences';
+			break;
+		case 'med':
+			description = "med description";
+			realName = 'Medicine';
+			break;
+		case 'sci':
+			description = "sci description";
+			realName = 'Science';
+			break;
+		case 'total_events':
+			description = "Total events description";
+			realName = 'Total Events Attended';
+			break;
+		case 'total_events':
+			description = "Total events description";
+			realName = 'Total Events Attended';
+			break;
+		case 'events_in_period':
+			description = "Events in a Period description";
+			realName = 'Events in a Period';
+			break;
+		case 'attendence_rate':
+			description = "Attendence Rate description";
+			realName = 'Attendence Rate';
+			break;
+		case 'certain_level':
+			description = "Certain level description";
+			realName = 'Certain Level';
+			break;
+		case 'message_numbers':
+			description = "Message numbers description";
+			realName = 'Messages Sent';
+			break;
+		case 'share_number':
+			description = "Share numbers description";
+			realName = 'Total Share';
+			break;
+	}
+	return [realName, description];
+}
 
 function getLevel(user){
 	console.log(user);
@@ -149,8 +246,6 @@ function displaySelectArray(medalArray, medal){
 		selectionCount++;
 	}
 }
-
-
 
 function displayArray(medalArray, medal ){
 	for(i=0; i < medalArray.length ; i++){
@@ -212,9 +307,9 @@ function checkBadgeColour(user, badge, gold, silver, bronze){
 		else{
 			//has to be gold ie >= gold
 			badgeColour = "gold";
-			progressPercentage = calculatePercentage(currentScore, 99999, gold);
+			progressPercentage = calculatePercentage(currentScore, currentScore, gold);
 			
-			return [badgeColour,progressPercentage,badge,[99999, currentScore, gold]];
+			return [badgeColour,progressPercentage,badge,[currentScore, currentScore, gold]];
 			
 		}
 	}

@@ -6,7 +6,7 @@ var pers1 = {"name":'Perzon Wun', "photo":'images/badges/hass_gold.png', "levelR
 	'clubs':0,
 	'misc':0,
 	'hass':50,
-	'bel':0,
+	'bel':1,
 	'eait':0,
 	'habs':0,
 	'med':0,
