@@ -1,4 +1,4 @@
-var pers1 = {"name":'Perzon Wun', "photo":'images/badges/hass_gold.png', "levelRaw":650,"date_created":"1 - 2 - 2017","events_created":0,'events_attended':0,"events_missed":0, "badges":{
+var pers1 = {"name":'Perzon Wun', "photo":'', "levelRaw":650,"date_created":"1 - 2 - 2017","events_created":0,'events_rsvp':10,"events_missed":2, "badges":{
 	'sport':6,
 	'study':7,
 	'faculty':35,

@@ -38,7 +38,7 @@ $(document).ready(function(){
 	};
 	
 	$('#username').html(person1.name);
-	$('#userPhoto').attr('src', person1.photo);
+	
 
 	$.each(medal, function(key, val){
 		//key is the name of the badge
@@ -61,17 +61,37 @@ $(document).ready(function(){
 	sortAllArrays();
 	displayMedals();
 	
+	//if the user doesnt have a picture, adds the highest value
+	if(person1.photo == ''){
+		if(goldArray.length > 0){
+			person1.photo = "images/badges/" + goldArray[0][2]+ "_gold.png";
+		}
+		else if(silverArray.length > 0){
+			person1.photo = "images/badges/" + silverArray[0][2]+ "_silver.png";
+		}
+		else if(bronzeArray.length > 0){
+			person1.photo = "images/badges/" + bronzeArray[0][2]+ "_bronze.png";
+		}
+		else{
+			person1.photo = 'images/badges/clubs_none.png';
+		}
+	}
+	$('#userPhoto').attr('src', person1.photo);
+	
 	var levelArray = getLevel(person1);
-	console.log(levelArray);
 	$('#testBox').colorbox({height:"80%"});
 
  	$('#level').append(levelArray[0]);
-	
-
 	var levelPercent = levelArray[1] *100;
 
 	$('#user-level .progress-inside').css('width', levelPercent+"%");
 	$("#user-level .progress-inside").prepend("<div class='percent'>"+ parseInt(levelPercent) +"%</div>");
+	
+	var total_attendence_rate = (parseFloat(person1.events_rsvp) - parseFloat(person1.events_missed))/parseFloat(person1.events_rsvp);
+	
+	$('#stat1').append('<br>' + person1.events_created);
+	$('#stat2').append('<br>' + total_attendence_rate*100 +"%");
+	$('#stat3').append('<br>' + person1.date_created);
 });
 
 
@@ -118,7 +138,7 @@ $(document).on('click', '#selectionChoices .badgebox', function(){
 	$.colorbox.close();
 });
 
-$('#profile').on('click', function(){
+$('#changeProfile').on('click', function(){
 	var totalNumber = goldArray.length  + silverArray.length + bronzeArray.length;
 	
 	if ($('#profileChoices .badgebox').length == 0){
@@ -195,7 +215,7 @@ function medalDetails(name){
 			realName = 'Medicine';
 			break;
 		case 'sci':
-			description = "sci description";
+			description = "sci description Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam consectetur facilisis velit a efficitur. Nullam ullamcorper tellus in mattis fermentum. Pellentesque varius augue quis mauris efficitur, at fermentum mauris aliquet. ";
 			realName = 'Science';
 			break;
 		case 'total_events':

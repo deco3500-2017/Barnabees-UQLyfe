@@ -60,7 +60,10 @@ body {
 	transform: translate(-50%, -50%);
 	font-size: 25px;
 }
-
+#logo img{
+	margin-top:12px;
+	height:45px;
+}
 #mainFrame {
 	position: absolute;
 	top: 60px;
