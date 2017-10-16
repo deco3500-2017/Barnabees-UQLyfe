@@ -169,6 +169,7 @@ body {
 	display: inline-block;
 	margin-right: 5%;
 	margin-left: 5%;
+	margin-top: 5%;
 
 }
 
@@ -231,7 +232,7 @@ h1{
 
 h2{
 	text-align: center;
-	margin-bottom: 10px;
+	margin-top: 20%;
 	clear: left;
 	font-family: centuryGothicBold;
 	color: #856088;
@@ -285,9 +286,11 @@ select{
 }
 #next{
 	background-color: #44146f;
-	width: 25%;
-	margin-right: 7%;
+	width: 15%;
+	height: 25%;
+	margin-right: 9%;
 	float:right;
+	margin-bottom: 2%;
 }
 
 .date-heading{
