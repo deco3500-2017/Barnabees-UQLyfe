@@ -45,11 +45,12 @@ body {
 	height: 1000px;
 	width: 550px;
 	position: absolute;
+	/*
 	margin: auto;
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
-
+	*/
 }
 
 #logo {
@@ -112,8 +113,9 @@ body {
 
 /* Map Page */
 #map {
-        height: 300px;
-        width: 323.43px;
+		margin-top: 20px;
+        height: 500px;
+        width: 100%;
        }
        
 #phone-content{
@@ -135,7 +137,7 @@ body {
 }
 
 .mapbutton{
-	width: 323.43px;
+	width: 100%;
 	text-align: center;
 	background-color: #47105d; /* UQ Trademark Purple */
     border: none;
