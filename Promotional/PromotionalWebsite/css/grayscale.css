@@ -60,7 +60,7 @@ a {
   #mainNav .navbar-brand {
     font-weight: 700; }
   #mainNav a {
-    color: white; }
+    color: #856088; }
   #mainNav .navbar-nav .nav-item {
     -webkit-transition: background 0.3s ease-in-out;
     -moz-transition: background 0.3s ease-in-out;
@@ -86,7 +86,8 @@ a {
         padding-top: 10px;
         padding-bottom: 10px;
         border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-        background: black; }
+        background: black;
+		color: #856088}
       #mainNav .nav-link.active {
         outline: none;
         background-color: rgba(255, 255, 255, 0.3); }
@@ -234,4 +235,20 @@ body {
 }
 #about img{
 	width:40%;
+}
+#contact img{
+	width:100%;
+	margin-top:5%;
+}
+#contact p,ol{
+	text-align:left;
+}
+#contact h4{
+	margin-top:10%;
+}
+.column {
+    float: left;
+    width: 50%;
+    padding: 10px;
+	text-align:left;
 }

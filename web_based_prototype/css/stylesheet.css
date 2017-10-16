@@ -42,14 +42,17 @@ body {
 
 #frame {
 	background-color: #fafafa;
-	height: 1000px;
-	width: 550px;
+	height: 100%;
+	width: 100%;
+	max-width: 550px;
 	position: absolute;
+	display: block;
+	
 	/*
 	margin: auto;
 	top: 50%;
 	left: 50%;
-	transform: translate(-50%, -50%);
+
 	*/
 }
 
