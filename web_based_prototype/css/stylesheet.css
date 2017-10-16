@@ -43,6 +43,7 @@ body {
 #frame {
 	background-color: #fafafa;
 	height: 100%;
+	
 	width: 100%;
 	max-width: 550px;
 	position: absolute;
@@ -159,6 +160,82 @@ body {
 .parent{
 	overflow: hidden;
 	text-align: center;
+}
+
+#button1{
+	background: url(../images/home_icons/events.png) no-repeat;
+	background-color: #856088;
+	background-position: center;
+	background-size: 70% 70%;
+}
+
+#button2{
+	background: url(../images/home_icons/my_events.png) no-repeat;
+	background-color: #856088;
+	background-position: center;
+	background-size: 70% 70%;
+}
+
+#button3{
+	background: url(../images/home_icons/create_event.png) no-repeat;
+	background-color: #856088;
+	background-position: center;
+	background-size: 70% 70%;
+}
+
+#button4{
+	background: url(../images/home_icons/chat.png) no-repeat;
+	background-color: #856088;
+	background-position: center;
+	background-size: 70% 70%;
+}
+
+#button5{
+	background: url(../images/home_icons/profile.png) no-repeat;
+	background-color: #856088;
+	background-position: center;
+	background-size: 70% 70%;
+}
+
+#studyBtn{
+	background: url(../images/tag_icons/study.png) no-repeat;
+	background-color: #856088;
+	background-position: center;
+	background-size: 70% 70%;
+}
+
+#sportsBtn{
+	background: url(../images/tag_icons/sports.png) no-repeat;
+	background-color: #856088;
+	background-position: center;
+	background-size: 70% 70%;
+}
+
+#foodBtn{
+	background: url(../images/tag_icons/food.png) no-repeat;
+	background-color: #856088;
+	background-position: center;
+	background-size: 70% 70%;
+}
+
+#clubsBtn{
+	background: url(../images/tag_icons/clubs.png) no-repeat;
+	background-color: #856088;
+	background-position: center;
+	background-size: 70% 70%;
+}
+
+#miscBtn{
+	background: url(../images/tag_icons/misc.png) no-repeat;
+	background-color: #856088;
+	background-position: center;
+	background-size: 70% 70%;
+}
+
+
+
+.button a{
+	opacity: 0;
 }
 
 #progressBar1Dark{
