@@ -37,7 +37,7 @@ header a{
 body {
 	width: 100%;
 	height: 100%;
-    padding: 10px;
+   
 }
 
 #frame {
@@ -213,7 +213,7 @@ body {
 
 }
 
-h2{ 
+#eventcard h2{ 
 	color: #fafafa;
 	text-align: center;
 	vertical-align: middle;
@@ -225,6 +225,16 @@ h1{
 	margin-bottom: 10px;
 	margin-top: 5%;
 	clear: left;
+	font-family: centuryGothicBold;
+	color: #856088;
+}
+
+h2{
+	text-align: center;
+	margin-bottom: 10px;
+	clear: left;
+	font-family: centuryGothicBold;
+	color: #856088;
 }
 
 label{
@@ -327,4 +337,47 @@ select{
 	color: #fff;
 }
 
+#chat-bar{
+	height: 25px;
+	width: 100%;
+	background-color: #856088;
+}
 
+#chat-bar p{
+	padding-left: 5px;
+	color: #fff;
+	float:left;
+	font-size: 18px;
+	font-family: centuryGothicBold;
+}
+
+#attendees{
+	float:left;
+	margin-left: 70%;
+}
+
+#chat-footer{
+	position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 100px;
+    width: 100%;
+    overflow:hidden;
+}
+
+#chat-break{
+	height: 10px;
+	width: 100%;
+	background-color: #856088;
+}
+
+#message{
+	float:right;
+	background-color: #fff;
+	width: 80%;
+}
+
+#send{
+	width: 50px;
+	float:right;
+}
