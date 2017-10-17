@@ -361,6 +361,7 @@ select{
 	float: left;
 	clear: none;
 }
+
 #next{
 	background-color: #44146f;
 	width: 15%;
@@ -368,6 +369,20 @@ select{
 	margin-right: 9%;
 	float:right;
 	margin-bottom: 2%;
+}
+
+#next-tags{
+	background-color: #44146f;
+	width: 190px;
+	height: 80px;
+	margin-right: 40px;
+	margin-top: 90px;
+	float:right;
+	margin-bottom: 2%;
+}
+
+#content{
+	margin: 25px;
 }
 
 .date-heading{
@@ -458,6 +473,10 @@ select{
 	float:right;
 	background-color: #fff;
 	width: 80%;
+}
+
+#message p{
+	color: #fff;
 }
 
 #send{
