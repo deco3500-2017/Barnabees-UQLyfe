@@ -11,8 +11,10 @@ $(document).ready(function(){
     });
     
     // When you click the 'home' button in index.html
-    $("#home").click(function(){
-        $("#mainFrame").attr("src", "home.html" );
+    $("button, a").click(function(){
+        if ( $(this).attr("page") != undefined) {
+            $("#mainFrame").attr("src", $(this).attr("page") );
+        }
     })
  
 })  
