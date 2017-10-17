@@ -40,21 +40,25 @@ body {
    
 }
 
-#frame {
-	background-color: #fafafa;
-	height: 100%;
-	
-	width: 100%;
-	max-width: 550px;
-	position: absolute;
-	display: block;
-	
-	/*
-	margin: auto;
-	top: 50%;
-	left: 50%;
 
-	*/
+#phone {
+    background-image: url("../images/phone.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: 0px auto;
+    position: relative;
+    height: 520px;
+    width: 272px;
+}
+
+#frame {
+    position: absolute;
+	background-color: #fafafa;
+	display: block;
+    top: 47px;
+    bottom: 46px;
+    left: 16px;
+    right: 17px;
 }
 
 #logo {
@@ -85,6 +89,9 @@ body {
 ::-webkit-scrollbar {
 	display: none;
 }
+
+
+
 
 @font-face {
 	font-family: centuryGothic;
