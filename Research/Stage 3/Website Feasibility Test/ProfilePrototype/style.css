@@ -1,0 +1,29 @@
+.input{
+	float:right;
+}
+.bar{
+	display:inline;
+	width:100%;
+
+}
+
+#progressBarContainer{
+	display:inline-block;
+	width: 100px;
+	background-color: green;
+	overflow:auto;
+}
+#progressBar{
+	display:inline-block;
+	background-color: blue;
+	width:50px;
+	overflow:auto;
+}
+#extraProgress{
+	display:inline-block;
+	background-color: green;
+	width:100px;
+}
+img{
+	height: 40px;
+}

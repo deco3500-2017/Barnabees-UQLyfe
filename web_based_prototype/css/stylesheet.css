@@ -303,6 +303,8 @@ body {
 	text-align: center;
 	vertical-align: middle;
 	line-height: 50px;
+	margin-top: 0px;
+	float: left;
 }
 
 h1{
@@ -316,7 +318,6 @@ h1{
 
 h2{
 	text-align: center;
-	clear: left;
 	font-family: centuryGothicBold;
 	color: #856088;
 }
@@ -417,10 +418,13 @@ select{
 	background-color: #834088;
 }
 
-
 .card-left h1{
 	font-family: centuryGothicBold;
 	color: #fff;
+}
+
+.card-right{
+	padding: 5px;
 }
 
 #chat-bar{
