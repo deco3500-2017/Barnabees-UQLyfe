@@ -78,12 +78,22 @@ body {
 	top: 60px;
 	left: 0px;
 	right: 0px;
-	bottom: 0px;
-/*	height: 100%;*/
-    height: calc(100% - 60px);
+    height: calc(100% - 100px);
 	width: 100%;
     padding-bottom: 0px;
 	
+}
+
+#bottom-tabs {
+    position: absolute;
+    bottom: 0px;
+    height: 40px;
+    width: 100%;
+}
+
+#bottom-tabs > button {
+    width: 18%;
+    height: 35px;
 }
 
 ::-webkit-scrollbar {
