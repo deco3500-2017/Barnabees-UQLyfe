@@ -332,10 +332,16 @@ h2{
 	color: #856088;
 }
 
+#progress{
+	margin-top: 20%;
+}
+
 label{
-	margin-top: 5%;
+	margin-top: 2%;
 	float: left;
 	clear: left;
+	margin-left: 2%;
+	font-size: 18px;
 }
 
 #to{
@@ -346,6 +352,7 @@ label{
 input, textarea{
 	background-color: #856088;	
 	color: #fafafa;
+	font-size: 16px;
     width: 90%;
     padding: 10px 10px;
     margin: 8px 10px;
@@ -356,13 +363,16 @@ input, textarea{
     clear: left;
 }
 
-textarea::placeholder, select::placeholder{
+textarea::placeholder{
 	color: #fafafa;
 	font-style: italic;
+	font-size: 16px;
+	opacity: .5;
 }
 
 select{
 	background-color: #856088;	
+	font-size: 16px;
     width: 90%;
     padding: 10px 10px;
     margin: 8px 10px ;
@@ -373,11 +383,20 @@ select{
     clear: left;
 }
 
+#selectPlaceholder{
+	color: #fafafa;
+	font-style: italic;
+	font-size: 16px;
+	opacity: .5;	
+}
+
 #start_time, #end_time{
 	width: 30%;
 	float: left;
 	clear: none;
+
 }
+
 #next{
 	background-color: #44146f;
 	width: 15%;
@@ -385,6 +404,24 @@ select{
 	margin-right: 9%;
 	float:right;
 	margin-bottom: 2%;
+}
+
+#next-tags{
+	background-color: #44146f;
+	width: 190px;
+	height: 80px;
+	margin-right: 40px;
+	margin-top: 90px;
+	float:right;
+	margin-bottom: 2%;
+}
+
+#content{
+	margin: 25px;
+}
+
+#next a{
+	opacity: 1;
 }
 
 .date-heading{
@@ -475,6 +512,10 @@ select{
 	float:right;
 	background-color: #fff;
 	width: 80%;
+}
+
+#message p{
+	color: #fff;
 }
 
 #send{
