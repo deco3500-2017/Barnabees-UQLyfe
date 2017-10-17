@@ -61,6 +61,16 @@ body {
     right: 17px;
 }
 
+#mobile-frame {
+    position: absolute;
+	background-color: #fafafa;
+	display: block;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+}
+
 #logo {
 	float: right;
 	position: absolute;
