@@ -2,15 +2,16 @@
 <html>
 <head>
 	<link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+	<script type="text/javascript" src='js/tags.js'></script>
 </head>
 <body>
 	
 	<h1>Select Tags</h1>
-		<button class="button" id="studyBtn" page="events.html"><a href="events.html">Study</a></button>
-		<button class="button" id="sportsBtn" page="events.html"><a href="events.html">Sports</a></button>
-		<button class="button" id="foodBtn" page="events.html"><a href="events.html">Food</a></button>
-		<button class="button" id="clubsBtn" page="events.html"><a href="events.html">Clubs</a></button>
-		<button class="button" id="miscBtn" page="events.html"><a href="events.html">Miscellaneous</a></button>
+		<button class="button" id="studyBtn" onClick=addTag("study")>Study</button>
+		<button class="button" id="sportsBtn" onClick=addTag("sports")>Sports</button>
+		<button class="button" id="foodBtn" onClick=addTag("food")>Food</button>
+		<button class="button" id="clubsBtn" onClick=addTag("clubs")>Clubs</button>
+		<button class="button" id="miscBtn" onClick=addTag("miscButton")>Miscellaneous</button>
 		<button class="button" id="next-tags" page="events.html"><a href="events.html">Next</a></button>
 </body>
 </html>
