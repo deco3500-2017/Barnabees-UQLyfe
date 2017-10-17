@@ -24,8 +24,8 @@
 			<label for="event_name">Event Name</label>
 			<textarea type="text" id="event_name" name=" event_name" placeholder="Event Name"></textarea>
 			<label for="affiliation">Affiliation</label>
-			<select id="affiliation" name="affiliation" placeholder="Select">
-				<option value="selectPlaceholder" id="selectPlaceholder">Select</option>
+			<select id="affiliation" name="affiliation">
+				<option value="" disabled selected hidden, id="selectPlaceholder">Select</option>
 	      		<option value="clubs_societies">Clubs/Societies</option>
 	     		<option value="faculty">Faculty</option>
 	      		<option value="independent">Independent</option>
@@ -39,6 +39,7 @@
 	    	<textarea type="text" id="end_time" name= "end_time" placeholder="End"></textarea>
 	    	<label for="capacity">Capacity</label>
 	    	<select id="capacity" name="capacity">
+	    		<option value="" disabled selected hidden, id="selectPlaceholder">Select</option>
 	      		<option value="25">25</option>
 	     		<option value="50">50</option>
 	      		<option value="100">100</option>
@@ -48,6 +49,7 @@
 	    	</select>
 	    	<label for="membership">Membership</label>
 	    	<select id="membership" name="membership">
+	    		<option value="" disabled selected hidden, id="selectPlaceholder">Select</option>
 	      		<option value="yes">Yes</option>
 	     		<option value="no">No</option>
 	     	</select>
