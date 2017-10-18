@@ -25,7 +25,13 @@ $(document).ready(function(){
 
 $('.event-card').on('click',function(){
 	$(this).children('.card-right').children('p').slideToggle('slow');
-	$(this).children('.card-left').children('.building').slideToggle('slow');
+	$(this).children('.card-left').children('.building').slideToggle('slow',function(){
+		var bottom = $(this).offset().top + $(this).outerHeight();
+		var windowBottom = $('body').offset().top + $(this).outerHeight();
+		console.log(windowBottom);
+	});
+	
+	
 })
 $('.attend').on('click', function(){
 	var title = $(this).siblings('h2').html();
