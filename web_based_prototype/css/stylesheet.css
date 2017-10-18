@@ -225,12 +225,12 @@ body {
 }
 
 #studyBtn, #sportsBtn, #foodBtn, #clubsBtn, #miscBtn{
-	height: 100px;
-	width: 100px;
+	height: 120px;
+	width: 120px;
 	float: left;
 	clear: left;
 	margin: 2%;
-	margin-left: 40%;
+	margin-left: 20%;
 }
 
 #studyBtn{
@@ -273,7 +273,7 @@ body {
 	float:left;
 	clear:none;
 	margin-top: 7%;
-	font-size: 30px;
+	font-size: 25px;
 }
 
 .button a{
@@ -379,7 +379,10 @@ h2{
 	border-radius: 5px;
 }
 #dummy2{
-	border: 355px solid #fafafa;
+	background-color: red;
+	border-top: 360px solid #fafafa;
+	border-left: 10px solid #fafafa;
+	border-bottom: 375px solid #fafafa;
 	border-radius: 5px;
 }
 
