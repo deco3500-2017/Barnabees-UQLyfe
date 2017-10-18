@@ -5,7 +5,9 @@
 	font-family: "centuryGothic";
 
 }
-
+.indexButton{
+	height:100%;
+}
 #home{
 	background-image: url("../images/home.png");
 	background-repeat: no-repeat;
@@ -13,7 +15,7 @@
 	border: none;
 	height: 46px;
 	width: 57px;
-	margin-top: 6px;
+	margin-top: 14px;
 	margin-left: 6px;
 }
 
@@ -81,7 +83,7 @@ body {
 }
 #logo img{
 	margin-top:12px;
-	height:45px;
+	height:35px;
 }
 #mainFrame {
 	position: absolute;
