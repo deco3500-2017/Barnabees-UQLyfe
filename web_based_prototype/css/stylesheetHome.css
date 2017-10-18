@@ -7,3 +7,18 @@
 .building{
 	display:none;
 }
+.card-right img{
+	height:10%;
+	width:10%;
+	float: right;
+}
+h1{
+	font-size:1em;
+	margin-top:14%;
+}
+.event-card h2{
+	font-size:1.2em;
+}
+.event-card p{
+	font-size:0.8em;
+}
