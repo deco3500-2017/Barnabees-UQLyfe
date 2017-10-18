@@ -7,18 +7,21 @@
 .building{
 	display:none;
 }
+.attend{
+	text-align:center;
+	background-color:#834088;
+	padding-bottom:5px;
+	margin-top:10px;
+}
 .card-right img{
 	height:10%;
 	width:10%;
 	float: right;
 }
-h1{
+ h1{
 	font-size:1em;
-	margin-top:14%;
-}
-.event-card h2{
-	font-size:1.2em;
+	margin-top:13%;
 }
 .event-card p{
-	font-size:0.8em;
+	padding-top:5px;
 }

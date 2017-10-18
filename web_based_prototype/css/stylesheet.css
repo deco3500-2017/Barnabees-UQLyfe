@@ -5,7 +5,9 @@
 	font-family: "centuryGothic";
 
 }
-
+.indexButton{
+	height:100%;
+}
 #home{
 	background-image: url("../images/home.png");
 	background-repeat: no-repeat;

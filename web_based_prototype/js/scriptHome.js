@@ -20,13 +20,14 @@ $(document).ready(function(){
 	setTime('#time1');
 	setTime('#time2');
 	setTime('#time3');
+	setTime('#time4');
 });
 
 $('.event-card').on('click',function(){
 	$(this).children('.card-right').children('p').slideToggle('slow');
 	$(this).children('.card-left').children('.building').slideToggle('slow');
 })
-$('#attend').on('click', function(){
+$('.attend').on('click', function(){
 	var title = $(this).siblings('h2').html();
 	var time = $(this).parent('.card-right').parent('.event-card').children('.card-left').children('h1').html();
 	console.log(time);
