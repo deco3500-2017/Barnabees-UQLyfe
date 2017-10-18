@@ -224,6 +224,15 @@ body {
 	background-size: 70% 70%;
 }
 
+#studyBtn, #sportsBtn, #foodBtn, #clubsBtn, #miscBtn{
+	height: 100px;
+	width: 100px;
+	float: left;
+	clear: left;
+	margin: 2%;
+	margin-left: 40%;
+}
+
 #studyBtn{
 	background: url(../images/tag_icons/study.png) no-repeat;
 	background-color: #856088;
@@ -236,6 +245,7 @@ body {
 	background-color: #856088;
 	background-position: center;
 	background-size: 70% 70%;
+
 }
 
 #foodBtn{
@@ -259,7 +269,12 @@ body {
 	background-size: 70% 70%;
 }
 
-
+#tag_labels{
+	float:left;
+	clear:none;
+	margin-top: 7%;
+	font-size: 30px;
+}
 
 .button a{
 	opacity: 0;
@@ -346,17 +361,46 @@ h2{
 	margin-top: 20%;
 }
 
+#eventForm{
+	margin: 2%;
+	border: 3px solid #856088;
+	border-radius: 5px;
+}
+
+#map{
+	padding: 20%;
+	border: 5px solid #856088;
+	border-radius: 5px;
+
+}
+
+#dummy{
+	border: 10px solid #fafafa;
+	border-radius: 5px;
+}
+#dummy2{
+	border: 355px solid #fafafa;
+	border-radius: 5px;
+}
+
+#done{
+	margin-top: 7%;
+	background-color: #44146f;
+}
+
 label{
 	margin-top: 2%;
 	float: left;
 	clear: left;
 	margin-left: 2%;
+	margin-right: 2%;
 	font-size: 18px;
 }
 
 #to{
 	float: left;
 	clear: none;
+
 }
 
 input, textarea{
@@ -400,20 +444,26 @@ select{
 	opacity: .5;	
 }
 
-#start_time, #end_time{
-	width: 30%;
+#start_time{
+	width: 40%;
+	float: left;
+	clear: left;
+}
+
+#end_time{
+	width: 40%;
 	float: left;
 	clear: none;
-
 }
 
 #next{
 	background-color: #44146f;
-	width: 15%;
-	height: 25%;
+	width: 20%;
+	height: 50%;
 	margin-right: 9%;
 	float:right;
 	margin-bottom: 2%;
+	margin-top: 2%
 }
 
 #next-tags{
