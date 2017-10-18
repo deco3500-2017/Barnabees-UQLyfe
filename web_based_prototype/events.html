@@ -2,13 +2,22 @@
 <html>
 <head>
 	<script type="text/javascript" src='js/jquery.js'></script>
+	<script type="text/javascript" src='js/tags.js'></script>
+	<script type="text/javascript" src="js/scriptHome.js"></script>
 	<link rel="stylesheet" href="css/colorbox.css" />
 	<link rel="stylesheet" type="text/css" href="css/stylesheet.css">
 	
 </head>
 <body>
+	<script>
+		window.onload = function() {
+  			displayTags();
+		};
+	</script>
 		<div id="content">
-		<h1>Attending</h1>
+		
+		<h1>Tags Selected:</h1>
+		<p id="selectedTags">Sample Tags</p>
 		<h2 class="date-heading">Monday, 15th of October</h2>
 		 <div class="event-card">
 		 	<div class="card-left">
@@ -51,7 +60,7 @@
 		 	<p>Yo- You- You have to come to the red room Morty! There's trivia at the red room - bring you friends Morty!</p>
 		 	</div>
 		 </div>
-		<h1>Created</h1>
+		
 		</div>
 </body>
 </html>
