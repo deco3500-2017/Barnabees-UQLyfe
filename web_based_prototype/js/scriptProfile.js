@@ -112,9 +112,9 @@ $(document).on('click', '#badgebox-wrap .badgebox', function(){
 	
 	//should put a switch in here to get description and real name
 	$.colorbox({
-        height:"75%" , 
-        width:"70%" , 
-        html: "<h2>" + details[0] + "</h2>" + '<img id="displayMedal" src="'+ image +'">' + '<br><p id="progress-badge" class="center"> '+ current+'/'+high +' </p><br><div id="medalProgress" class="progress-outside"><div class="progress-inside"></div></div><div id="description">Description<div>'+ details[1] +'</div></div>'
+        height:"90%" , 
+        width:"90%" , 
+        html: "<h2>" + details[0] + "</h2>" + '<img id="displayMedal" src="'+ image +'">' + '<p id="progress-badge" class="center"> '+ current+'/'+high +' </p><br><div id="medalProgress" class="progress-outside"><div class="progress-inside"></div></div><div id="description">Description<div>'+ details[1] +'</div></div>'
     });
 	$("#medalProgress .progress-inside").css('width', medalStats[1]+"%");
 	$("#medalProgress .progress-inside").prepend("<div class='percent'>"+ parseInt(medalStats[1]) +"%</div>");
@@ -156,7 +156,7 @@ $('#changeProfile').on('click', function(){
 	
 //	$.colorbox({height:"80%" , width: '80%', html :displayReady + '</div>'});
 	$.colorbox({
-        height:"50%", 
+        height:"80%", 
         width: '80%', 
         html: "<h2>SET YOUR ICON</h2>" + displayReady + '</div>'
     });

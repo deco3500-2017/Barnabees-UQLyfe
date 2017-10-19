@@ -13,15 +13,21 @@
 	padding-bottom:5px;
 	margin-top:10px;
 }
-.card-right img{
-	height:10%;
-	width:10%;
-	float: right;
-}
+
  h1{
 	font-size:1em;
 	margin-top:13%;
 }
 .event-card p{
 	padding-top:5px;
+}
+.arrow{
+	width:10%;
+	right:50%;
+	float: right;
+}
+.tick{
+	height:8%;
+	width:8%;
+	float:right;
 }
