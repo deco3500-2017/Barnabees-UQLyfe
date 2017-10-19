@@ -12,6 +12,8 @@ var originalHour = d.getHours();
 
 var maxHour = originalHour +1;
 
+var attendingEvents ='';
+
 
 $(document).ready(function(){
 	
@@ -36,13 +38,34 @@ $('.event-card').on('click',function(){
 $('.attend').on('click', function(){
 	var title = $(this).siblings('h2').html();
 	var time = $(this).parent('.card-right').parent('.event-card').children('.card-left').children('h1').html();
-	console.log(time);
-	var testJSON = {'title':title,'time':time};
-	console.log(testJSON);
+	var descriptionClick= $(this).siblings('p').html();
+	
+	var newEvent = {"eventName": title, "description": descriptionClick, "time":time, "location": {"latitude": -27.4974511,
+	"longitude": 153.0154073}
+	}
+	var attendingEvents = JSON.parse(sessionStorage.attending);
+	//this cant be set to 3. it has to be able to be changed
+	//console.log(Object.keys(attendingEvents).length); use this to get current JSON size!
+	var currentSize = Object.keys(attendingEvents).length +1;
+	var currentSizeString = (currentSize.toString());
+	
+	//console.log(currentSizeString);
+	
+	var tester = {};
+	//tester[currentSize] = newEvent;
+	
+	//console.log(tester);
 	
 	//would actually need to check if users is set in storage then reset if it is
-	sessionStorage.setItem('attending', JSON.stringify(testJSON));
 	
+	attendingEvents[currentSize] = newEvent;
+	
+	//attendingEvents = $.extend(attendingEvents, tester);
+	
+	console.log(attendingEvents);
+	
+	sessionStorage.removeItem('attending');
+	sessionStorage.setItem('attending', JSON.stringify(attendingEvents));
 	//would also need to include a secont storage that holds all events
 })
 

@@ -11,18 +11,19 @@ body {
 
 /********** USER ************/
 #profile {
-    width: 160px;
-    height: 160px;
+    width: 100px;
+    height: 100px;
     border-radius: 50%;
-    background-color: ;
+    background-color: ; 
     margin: 0px auto;
+	text-align:center;
 }
 
 #username {
     text-align: center;
     margin-top: 10px;
     height: 30px;
-	font-size:1.5em;
+	font-size:1.2em;
 }
 #level{
 	height:auto;
@@ -32,11 +33,11 @@ body {
 #changeProfile{
 	background-color:grey;
 	border-radius:50%;
-	width: 30px;
-	height: 30px;
+	width: 25px;
+	height: 25px;
 	position:absolute;
-	right:39%;
-	top:14%;
+	right:30%;
+	top:25%;
 }
 #changeProfile img{
 	height:100%;
@@ -48,14 +49,15 @@ body {
     flex-wrap: nowrap;
     width: 100%;
     height: 50px;
-    margin-bottom: 15px;
-    margin-top: 30px;
+    padding-bottom: 15px;
+    margin-top: 10px;
 	border-bottom: 4px solid #d1d1d1;
 }
 
 .stat {
     width: calc(100%/3);
     height: 50px;
+	font-size:0.8em;
 }
 
 
@@ -69,15 +71,15 @@ body {
 
 .badgebox {
     width: calc(100%/4);
-    height: 80px;
+    height: 60px;
     float: left;
 }
 
 .badge {
     display: block;
     margin: 0px auto;
-    width: 70px;
-    height: 70px;
+    width: 50px;
+    height: 50px;
     background-color: silver;
     border-radius: 50%;
 }
@@ -85,7 +87,7 @@ body {
 #selectionChoices { padding: 7%; }
 
 #selectionChoices > .badgebox {
-    width: calc(100%/4);
+    width: calc(100%/3);
 }
 
 /********** TEMP **********/
@@ -98,6 +100,7 @@ body {
 }
 #stat-wrap{
 	text-align:center;
+	font-size:0.8em;
 }
 #user-level{
 	padding-bottom:2%;
@@ -106,9 +109,9 @@ body {
 }
 .progress-outside{
 	margin:0 auto;
-	width:40%;
-	height:30px;
-	border: 4px solid #d1d1d1;
+	width:80%;
+	height:15px;
+	border: 1px solid #d1d1d1;
     border-radius: 4px;
 	display:block;
 	overflow:visible;
@@ -122,10 +125,11 @@ body {
 	padding:0;	
 }
 #medalProgress.progress-outside{
+	height:7%;
 	width:75%;
 }
 #displayMedal{
-	height:40%;
+	height:20%;
 	display:block;
 	margin: 0 auto;
 }
@@ -133,25 +137,25 @@ body {
 	float:right;
 	padding-right:10px;
 	color:#353535;
-	font-size:0.9em;
+	font-size:0.6em;
 	
 }
 #description{
 	padding: 3%;
 	padding-left:13%;
 	padding-right:13%;
-	padding-top: 40px;
-	font-size:1.2em;
+	padding-top: 10px;
+	font-size:0.8em;
 
 }
 #description div{
-	font-size:12pt;
+
 	padding-top:10px;
 }
 #progress-badge{
 	padding-bottom:2%;
 	font-weight:bold;
-	font-size:1.2em;
+	font-size:0.8em;
 }
 .clearfix{
 	overflow:auto;
