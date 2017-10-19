@@ -19,15 +19,41 @@
 	</div>
 	<h1>Select Tag</h1>
 	<div id="eventForm">
-		<button class="button" id="studyBtn" page="createEvent2.html"><a href="createEvent2.html">Study</a></button>
+		<button class="button" id="studyBtn" onclick="changePic(1)" page="createEvent2.html" href="createEvent2.html"/>
 		<label for="sport" id="tag_labels">Study</label>
-		<button class="button" id="sportsBtn" page="createEvent2.html"><a href="createEvent2.html">Sports</a></button>
+		<button class="button" id="sportsBtn" onclick="changePic(2)" page="createEvent2.html" href="createEvent2.html"/>
 		<label for="sport" id="tag_labels">Sport</label>
 		<button class="button" id="foodBtn" page="createEvent2.html"><a href="createEvent2.html">Food</a></button>
 		<label for="food" id="tag_labels">Food</label>
 		<button class="button" id="clubsBtn" page="createEvent2.html"><a href="createEvent2.html">Clubs</a></button>
 		<label for="clubs" id="tag_labels">Clubs</label>
 		<button class="button" id="miscBtn" page="createEvent2.html"><a href="createEvent2.html">Miscellaneous</a></button>
+	<script>
+	var id = 0;
+	function changePic(id) {
+		switch(id) {
+			case 1:
+				document.getElementById("studyBtn").style.background = "url('images/tag_icons/study_check.png') no-repeat";
+				document.getElementById("studyBtn").style.backgroundSize = "90% 90%";
+				document.getElementById("studyBtn").style.backgroundPosition = "center";
+				document.getElementById("studyBtn").style.backgroundColor = "#856088";
+				
+				break;
+				
+			case 2:
+				document.getElementById("sportsBtn").style.background = "url('images/tag_icons/sports_check.png') no-repeat";
+				document.getElementById("sportsBtn").style.backgroundSize = "90% 90%";
+				document.getElementById("sportsBtn").style.backgroundPosition = "center";
+				document.getElementById("sportsBtn").style.backgroundColor = "#856088";
+
+				break;
+				
+			default:
+				console.log("yeeboi");
+		}
+	}
+	
+	</script>
 		<label for="misc" id="tag_labels">Miscellaneous</label>
 		<div id="dummy2"></div>
 	</div>
