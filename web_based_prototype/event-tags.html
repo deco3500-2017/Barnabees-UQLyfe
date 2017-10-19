@@ -7,11 +7,61 @@
 <body>
 	
 	<h1>Select Tags</h1>
-		<button class="button" id="studyBtn" onClick=addTag("study")>Study</button>
-		<button class="button" id="sportsBtn" onClick=addTag("sports")>Sports</button>
-		<button class="button" id="foodBtn" onClick=addTag("food")>Food</button>
-		<button class="button" id="clubsBtn" onClick=addTag("clubs")>Clubs</button>
-		<button class="button" id="miscBtn" onClick=addTag("miscButton")>Miscellaneous</button>
+		<button class="button" id="studyBtn" onclick="changePic(1)" onClick=addTag("study")>Study</button>
+		<button class="button" id="sportsBtn" onclick="changePic(2)" onClick=addTag("sports")>Sports</button>
+		<button class="button" id="foodBtn" onclick="changePic(3)" onClick=addTag("food")>Food</button>
+		<button class="button" id="clubsBtn" onclick="changePic(4)" onClick=addTag("clubs")>Clubs</button>
+		<button class="button" id="miscBtn" onclick="changePic(5)" onClick=addTag("miscButton")>Miscellaneous</button>
+	<script>
+	var id = 0;
+	function changePic(id) {
+		switch(id) {
+			case 1:
+				document.getElementById("studyBtn").style.background = "url('images/tag_icons/study_check.png') no-repeat";
+				document.getElementById("studyBtn").style.backgroundSize = "90% 90%";
+				document.getElementById("studyBtn").style.backgroundPosition = "center";
+				document.getElementById("studyBtn").style.backgroundColor = "#856088";
+				
+				break;
+				
+			case 2:
+				document.getElementById("sportsBtn").style.background = "url('images/tag_icons/sports_check.png') no-repeat";
+				document.getElementById("sportsBtn").style.backgroundSize = "90% 90%";
+				document.getElementById("sportsBtn").style.backgroundPosition = "center";
+				document.getElementById("sportsBtn").style.backgroundColor = "#856088";
+
+				break;
+				
+			case 3:
+				document.getElementById("foodBtn").style.background = "url('images/tag_icons/food_check.png') no-repeat";
+				document.getElementById("foodBtn").style.backgroundSize = "90% 90%";
+				document.getElementById("foodBtn").style.backgroundPosition = "center";
+				document.getElementById("foodBtn").style.backgroundColor = "#856088";
+
+				break;
+				
+			case 4:
+				document.getElementById("clubsBtn").style.background = "url('images/tag_icons/clubs_check.png') no-repeat";
+				document.getElementById("clubsBtn").style.backgroundSize = "90% 90%";
+				document.getElementById("clubsBtn").style.backgroundPosition = "center";
+				document.getElementById("clubsBtn").style.backgroundColor = "#856088";
+
+				break;
+				
+			case 5:
+				document.getElementById("miscBtn").style.background = "url('images/tag_icons/misc_check.png') no-repeat";
+				document.getElementById("miscBtn").style.backgroundSize = "90% 90%";
+				document.getElementById("miscBtn").style.backgroundPosition = "center";
+				document.getElementById("miscBtn").style.backgroundColor = "#856088";
+
+				break;
+				
+			default:
+				console.log("yeeboi");
+		}
+	}
+	
+	</script>
 	<div id="content">
 		<button class="button" id="next-tags" page="events.html"><a href="events.html">Next</a></button>
 	</div>
