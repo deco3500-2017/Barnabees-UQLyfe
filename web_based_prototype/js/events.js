@@ -47,10 +47,24 @@ $(document).ready(function(){
 		}
 		
 	});
-	console.log(arrayAttendingEvents[0]);
+	console.log(arrayAttendingEvents);
 	
 	for(i=0 ; i<arrayAttendingEvents.length ; i++){
+		
+		
+		
 		$('#event-scroll').append('<div class="event-card"><div class="card-left"><h1>'+ arrayAttendingEvents[i].hour+':'+arrayAttendingEvents[i].minute +'</h1><h1 class="building">'+ arrayAttendingEvents[i].place +'</h1></div><div class="card-right"><h2>'+ arrayAttendingEvents[i].eventName +'</h2><p>'+ arrayAttendingEvents[i].description +'</p><img class="arrow" src="images/downArrow.png"></div></div>');
+		
+		if($('.dayBreak').length == 0){
+			$('#event-scroll').prepend("<div class='dayBreak' >" +arrayAttendingEvents[i].day + "/" + arrayAttendingEvents[i].month + "/17</div>");
+		}
+		
+		if(arrayAttendingEvents[i+1]){
+			if(arrayAttendingEvents[i].day != arrayAttendingEvents[i+1].day){
+				$('#event-scroll').append("<div class='dayBreak' >" +arrayAttendingEvents[i+1].day + "/" + arrayAttendingEvents[i+1].month + "/17</div>");
+			}
+		}
+		
 	}
 	
 	/* $.each(attendingEvents, function(){

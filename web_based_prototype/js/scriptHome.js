@@ -24,13 +24,11 @@ $(document).ready(function(){
 	$.each(attendingEvents, function(key, val){
 		nameArray.push(val.eventName);
 	});
-	
-	console.log(nameArray);
+
 	
 	//Checks to see if evenet has already been attended
 	for(i=2; i < 6 ; i++){
 		for(j=0; j < nameArray.length; j++){
-			console.log($('.event-card:nth-of-type('+ i +')').html().indexOf(nameArray[j]));
 			
 			if($('.event-card:nth-of-type('+ i +')').html().indexOf(nameArray[j]) != -1){
 				
@@ -40,7 +38,6 @@ $(document).ready(function(){
 			}
 		}
 	}
-
 	
 	setTime('#time1');
 	setTime('#time2');
