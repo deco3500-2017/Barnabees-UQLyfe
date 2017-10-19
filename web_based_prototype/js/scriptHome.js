@@ -39,22 +39,27 @@ $(document).ready(function(){
 		}
 	}
 	
+	
 	setTime('#time1');
 	setTime('#time2');
 	setTime('#time3');
 	setTime('#time4');
+	
 });
 
 $('.event-card').on('click',function(){
 	$(this).children('.card-right').children('p').slideToggle('slow');
-	$(this).children('.card-left').children('.building').slideToggle('slow',function(){
-		var bottom = $(this).offset().top + $(this).outerHeight();
-		var windowBottom = $('body').offset().top + $(this).outerHeight();
-	});
+	$(this).children('.card-left').children('.building').slideToggle('slow');
 	
 	
 })
 $(document).on('click', '.attend', function(){
+	
+	//removes attend button so it cant be attended twice
+	$(this).slideUp('slow',function(){
+		$(this).remove();
+	});
+	
 	var title = $(this).siblings('h2').html();
 	
 	var time = $(this).parent('.card-right').parent('.event-card').children('.card-left').children('h1').html();
@@ -76,24 +81,10 @@ $(document).on('click', '.attend', function(){
 	}
 	
 	
-	//this cant be set to 3. it has to be able to be changed
-	//console.log(Object.keys(attendingEvents).length); use this to get current JSON size!
 	var currentSize = Object.keys(attendingEvents).length +1;
 	var currentSizeString = (currentSize.toString());
 	
-	//console.log(currentSizeString);
-	
-	//tester[currentSize] = newEvent;
-	
-	//console.log(tester);
-	
-	//would actually need to check if users is set in storage then reset if it is
-	
 	attendingEvents[currentSize] = newEvent;
-	
-	//attendingEvents = $.extend(attendingEvents, tester);
-	
-	console.log(attendingEvents);
 	
 	sessionStorage.removeItem('attending');
 	sessionStorage.setItem('attending', JSON.stringify(attendingEvents));
