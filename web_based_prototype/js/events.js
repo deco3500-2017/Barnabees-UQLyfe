@@ -18,16 +18,16 @@ var events = [
 ];
 
 var attendingEvents ='';
-var counter = 1;
+
 $(document).ready(function(){
 	
 	attendingEvents = JSON.parse(sessionStorage.attending);
-
-	//to be used to sort the array
+	
+	//puts JSON into array so it can be sorted
 	var arrayAttendingEvents = makeArray(attendingEvents);
 	
+	//sorts all events in order
 	arrayAttendingEvents.sort(function(a, b){
-		//sorts shortest month first
 		
 		if(a["month"] - b["month"] ==0){
 			if(a["day"] - b["day"] == 0){
@@ -47,18 +47,18 @@ $(document).ready(function(){
 		}
 		
 	});
-	console.log(arrayAttendingEvents);
 	
+	//displays events in sorted array
 	for(i=0 ; i<arrayAttendingEvents.length ; i++){
-		
-		
-		
+
 		$('#event-scroll').append('<div class="event-card"><div class="card-left"><h1>'+ arrayAttendingEvents[i].hour+':'+arrayAttendingEvents[i].minute +'</h1><h1 class="building">'+ arrayAttendingEvents[i].place +'</h1></div><div class="card-right"><h2>'+ arrayAttendingEvents[i].eventName +'</h2><p>'+ arrayAttendingEvents[i].description +'</p><img class="arrow" src="images/downArrow.png"></div></div>');
 		
+		//if there is no date atm, add it at the top
 		if($('.dayBreak').length == 0){
 			$('#event-scroll').prepend("<div class='dayBreak' >" +arrayAttendingEvents[i].day + "/" + arrayAttendingEvents[i].month + "/17</div>");
 		}
 		
+		//if the day changed, put in day break for display
 		if(arrayAttendingEvents[i+1]){
 			if(arrayAttendingEvents[i].day != arrayAttendingEvents[i+1].day){
 				$('#event-scroll').append("<div class='dayBreak' >" +arrayAttendingEvents[i+1].day + "/" + arrayAttendingEvents[i+1].month + "/17</div>");
@@ -66,20 +66,10 @@ $(document).ready(function(){
 		}
 		
 	}
-	
-	/* $.each(attendingEvents, function(){
-		
-		
-		if(attendingEvents[counter]){
-			
-			$('#event-scroll').prepend('<div class="event-card"><div class="card-left"><h1>'+ attendingEvents[counter].time +'</h1><h1 class="building">'+ attendingEvents[counter].place +'</h1></div><div class="card-right"><h2>'+ attendingEvents[counter].eventName +'</h2><p>'+ attendingEvents[counter].description +'</p><img class="arrow" src="images/downArrow.png"></div></div>');
-		}
-		
-		counter++;
-	}) */
-	
+
 })
 
+//displays lower parts or event
 $(document).on('click','.event-card',function(){
 	$(this).children('.card-right').children('p').slideToggle('slow');
 	$(this).children('.card-left').children('.building').slideToggle('slow');

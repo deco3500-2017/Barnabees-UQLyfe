@@ -1,3 +1,8 @@
+//These are to store events that the person is ATTENDING
+//Please follow the structure for all other events that are created
+//Used by scriptHome.js and event.js
+
+
 var event1 = {"eventName": 'Rick & Morty Trivia', "description": "Yo- You- You have to come to the red room Morty! There's trivia at the red room - bring you friends Morty!", "minute":00, "hour":19, "day":20, "month":10 ,"place": "Sample", "location": {"latitude": -27.4974511,
 "longitude": 153.0154073}}
 
