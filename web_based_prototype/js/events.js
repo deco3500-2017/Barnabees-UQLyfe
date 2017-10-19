@@ -23,6 +23,7 @@ $(document).ready(function(){
 	
 	attendingEvents = JSON.parse(sessionStorage.attending);
 	console.log(attendingEvents);
+	
 	$.each(attendingEvents, function(){
 		console.log(attendingEvents[counter]);
 		

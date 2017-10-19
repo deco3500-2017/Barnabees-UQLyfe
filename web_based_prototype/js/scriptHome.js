@@ -13,11 +13,40 @@ var originalHour = d.getHours();
 var maxHour = originalHour +1;
 
 var attendingEvents ='';
-
+var nameArray = [];
 
 $(document).ready(function(){
 	
 	$('#date').append(day +"/" + month + "/" + year);
+	
+	attendingEvents = JSON.parse(sessionStorage.attending);
+	
+	$.each(attendingEvents, function(key, val){
+		nameArray.push(val.eventName);
+	});
+	
+	console.log(nameArray);
+	
+	/* console.log($('.event-card:nth-of-type(3)').html());
+	console.log($('.event-card:nth-of-type(3)').html().indexOf('Ideas Hub Talk')); */
+	
+	//first for loop goes through every position
+	for(i=2; i < 6 ; i++){
+		for(j=0; j < nameArray.length; j++){
+			console.log($('.event-card:nth-of-type('+ i +')').html().indexOf(nameArray[j]));
+			
+			if($('.event-card:nth-of-type('+ i +')').html().indexOf(nameArray[j]) != -1){
+				$('.event-card:nth-of-type('+ i +') .attend').remove();
+				$('.event-card:nth-of-type('+ i +')  .card-right').prepend("<img class='tick' src='images/tick.png'>")
+				//could also add a tick in here.
+			}
+		}
+	}
+	/* if($('.event-card:nth-of-type(2)').html().indexOf('Ideas Hub Talk') != 1){
+		$('.event-card:nth-of-type(2) .attend').remove();
+		
+		//could also add a tick in here.
+	} */
 	
 	setTime('#time1');
 	setTime('#time2');
@@ -30,7 +59,6 @@ $('.event-card').on('click',function(){
 	$(this).children('.card-left').children('.building').slideToggle('slow',function(){
 		var bottom = $(this).offset().top + $(this).outerHeight();
 		var windowBottom = $('body').offset().top + $(this).outerHeight();
-		console.log(windowBottom);
 	});
 	
 	
@@ -43,7 +71,7 @@ $('.attend').on('click', function(){
 	var newEvent = {"eventName": title, "description": descriptionClick, "time":time, "location": {"latitude": -27.4974511,
 	"longitude": 153.0154073}
 	}
-	var attendingEvents = JSON.parse(sessionStorage.attending);
+	
 	//this cant be set to 3. it has to be able to be changed
 	//console.log(Object.keys(attendingEvents).length); use this to get current JSON size!
 	var currentSize = Object.keys(attendingEvents).length +1;
@@ -51,7 +79,6 @@ $('.attend').on('click', function(){
 	
 	//console.log(currentSizeString);
 	
-	var tester = {};
 	//tester[currentSize] = newEvent;
 	
 	//console.log(tester);
@@ -66,6 +93,8 @@ $('.attend').on('click', function(){
 	
 	sessionStorage.removeItem('attending');
 	sessionStorage.setItem('attending', JSON.stringify(attendingEvents));
+	
+	$(this).parent('.card-right').prepend("<img class='tick' src='images/tick.png'>");
 	//would also need to include a secont storage that holds all events
 })
 
@@ -74,7 +103,6 @@ $('.attend').on('click', function(){
 function setTime(id){
 	var random = (10* Math.random());
 	minute = minute + random;
-	console.log(minute);
 	
 	if(minute > 59){
 		minute = random;
