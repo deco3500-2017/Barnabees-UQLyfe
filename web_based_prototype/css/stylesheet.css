@@ -251,24 +251,24 @@ body {
 }
 
 #foodBtn{
-	background: url(../images/tag_icons/food.png) no-repeat;
+	background: url(../images/tag_icons/food_not.png) no-repeat;
 	background-color: #856088;
 	background-position: center;
-	background-size: 70% 70%;
+	background-size: 90% 90%;
 }
 
 #clubsBtn{
-	background: url(../images/tag_icons/clubs.png) no-repeat;
+	background: url(../images/tag_icons/clubs_not.png) no-repeat;
 	background-color: #856088;
 	background-position: center;
-	background-size: 70% 70%;
+	background-size: 90% 90%;
 }
 
 #miscBtn{
-	background: url(../images/tag_icons/misc.png) no-repeat;
+	background: url(../images/tag_icons/misc_not.png) no-repeat;
 	background-color: #856088;
 	background-position: center;
-	background-size: 70% 70%;
+	background-size: 90% 90%;
 }
 
 #tag_labels{

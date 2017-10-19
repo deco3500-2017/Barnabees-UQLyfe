@@ -23,11 +23,12 @@
 		<label for="sport" id="tag_labels">Study</label>
 		<button class="button" id="sportsBtn" onclick="changePic(2)" page="createEvent2.html" href="createEvent2.html"/>
 		<label for="sport" id="tag_labels">Sport</label>
-		<button class="button" id="foodBtn" page="createEvent2.html"><a href="createEvent2.html">Food</a></button>
+		<button class="button" id="foodBtn" onclick="changePic(3)" page="createEvent2.html" href="createEvent2.html"/>
 		<label for="food" id="tag_labels">Food</label>
-		<button class="button" id="clubsBtn" page="createEvent2.html"><a href="createEvent2.html">Clubs</a></button>
+		<button class="button" id="clubsBtn" onclick="changePic(4)" page="createEvent2.html" href="createEvent2.html"/>
 		<label for="clubs" id="tag_labels">Clubs</label>
-		<button class="button" id="miscBtn" page="createEvent2.html"><a href="createEvent2.html">Miscellaneous</a></button>
+		<button class="button" id="miscBtn" onclick="changePic(5)" page="createEvent2.html" href="createEvent2.html"/>
+		<label for="misc" id="tag_labels">Miscellaneous</label>
 	<script>
 	var id = 0;
 	function changePic(id) {
@@ -48,13 +49,37 @@
 
 				break;
 				
+			case 3:
+				document.getElementById("foodBtn").style.background = "url('images/tag_icons/food_check.png') no-repeat";
+				document.getElementById("foodBtn").style.backgroundSize = "90% 90%";
+				document.getElementById("foodBtn").style.backgroundPosition = "center";
+				document.getElementById("foodBtn").style.backgroundColor = "#856088";
+
+				break;
+				
+			case 4:
+				document.getElementById("clubsBtn").style.background = "url('images/tag_icons/clubs_check.png') no-repeat";
+				document.getElementById("clubsBtn").style.backgroundSize = "90% 90%";
+				document.getElementById("clubsBtn").style.backgroundPosition = "center";
+				document.getElementById("clubsBtn").style.backgroundColor = "#856088";
+
+				break;
+				
+			case 5:
+				document.getElementById("miscBtn").style.background = "url('images/tag_icons/misc_check.png') no-repeat";
+				document.getElementById("miscBtn").style.backgroundSize = "90% 90%";
+				document.getElementById("miscBtn").style.backgroundPosition = "center";
+				document.getElementById("miscBtn").style.backgroundColor = "#856088";
+
+				break;
+				
 			default:
 				console.log("yeeboi");
 		}
 	}
 	
 	</script>
-		<label for="misc" id="tag_labels">Miscellaneous</label>
+
 		<div id="dummy2"></div>
 	</div>
 </body>
