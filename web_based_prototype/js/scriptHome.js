@@ -27,26 +27,20 @@ $(document).ready(function(){
 	
 	console.log(nameArray);
 	
-	/* console.log($('.event-card:nth-of-type(3)').html());
-	console.log($('.event-card:nth-of-type(3)').html().indexOf('Ideas Hub Talk')); */
-	
-	//first for loop goes through every position
+	//Checks to see if evenet has already been attended
 	for(i=2; i < 6 ; i++){
 		for(j=0; j < nameArray.length; j++){
 			console.log($('.event-card:nth-of-type('+ i +')').html().indexOf(nameArray[j]));
 			
 			if($('.event-card:nth-of-type('+ i +')').html().indexOf(nameArray[j]) != -1){
+				
 				$('.event-card:nth-of-type('+ i +') .attend').remove();
 				$('.event-card:nth-of-type('+ i +')  .card-right').prepend("<img class='tick' src='images/tick.png'>")
 				//could also add a tick in here.
 			}
 		}
 	}
-	/* if($('.event-card:nth-of-type(2)').html().indexOf('Ideas Hub Talk') != 1){
-		$('.event-card:nth-of-type(2) .attend').remove();
-		
-		//could also add a tick in here.
-	} */
+
 	
 	setTime('#time1');
 	setTime('#time2');
@@ -63,14 +57,27 @@ $('.event-card').on('click',function(){
 	
 	
 })
-$('.attend').on('click', function(){
+$(document).on('click', '.attend', function(){
 	var title = $(this).siblings('h2').html();
+	
 	var time = $(this).parent('.card-right').parent('.event-card').children('.card-left').children('h1').html();
+	
 	var descriptionClick= $(this).siblings('p').html();
 	
-	var newEvent = {"eventName": title, "description": descriptionClick, "time":time, "location": {"latitude": -27.4974511,
+	var place = $(this).parent('.card-right').parent('.event-card').children('.card-left').children('.building').html();
+	
+	var hour = $(this).parent('.card-right').parent('.event-card').children('.card-left').children('h1').children('div.hour').html();
+	
+	var minute = $(this).parent('.card-right').parent('.event-card').children('.card-left').children('h1').children('div.minute').html();
+
+	
+	console.log(minute);
+	
+	var newEvent = {"eventName": title, "description": descriptionClick, "minute":minute, "hour":hour, "day":day, "month":month ,"place": place, "location": 
+	{"latitude": -27.4974511,
 	"longitude": 153.0154073}
 	}
+	
 	
 	//this cant be set to 3. it has to be able to be changed
 	//console.log(Object.keys(attendingEvents).length); use this to get current JSON size!
@@ -115,10 +122,10 @@ function setTime(id){
 	}
 	
 	if(minute <10 ){
-		$(id).append(hour + ": 0" + parseInt(minute));
+		$(id).append("<div class='hour'>" +hour+ "</div>:<div>0</div><div class='minute'>" + parseInt(minute) + "</div>");
 	}
 	else{
-		$(id).append(hour + ": " + parseInt(minute));
+		$(id).append("<div class='hour'>" +hour + "</div>:<div class='minute'>" + parseInt(minute) + "</div>");
 	}
 	
 }

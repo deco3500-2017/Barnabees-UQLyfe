@@ -31,3 +31,12 @@
 	width:8%;
 	float:right;
 }
+.minute{
+	display:inline;
+}
+.hour{
+	display:inline;
+}
+.card-left div{
+	display:inline;
+}
