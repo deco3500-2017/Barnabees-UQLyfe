@@ -1,7 +1,7 @@
-var event1 = {"eventName": 'Dog', "description": "TEST", "minute":10, "hour":13, "day":20, "month":10 ,"place": "Sample", "location": {"latitude": -27.4974511,
+var event1 = {"eventName": 'Rick & Morty Trivia', "description": "Yo- You- You have to come to the red room Morty! There's trivia at the red room - bring you friends Morty!", "minute":00, "hour":19, "day":20, "month":10 ,"place": "Sample", "location": {"latitude": -27.4974511,
 "longitude": 153.0154073}}
 
-var event2 = {'eventName': 'Cat', "description": "TEST", "minute":10, "hour":10, "day":29, "month":10 , "place": "Sample2", "location": {"latitude": -27.4974511,
+var event2 = {'eventName': 'Marketing & Memes', "description": "There's going to marketing, there's going to be memes, and there's going to be 15kg of illicit substances. Get Keen!", "minute":30, "hour":07, "day":29, "month":10 , "place": "Sample2", "location": {"latitude": -27.4974511,
 "longitude": 153.0154073}}
 
 var attending = {"1":event1,"2": event2};
