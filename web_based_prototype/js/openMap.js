@@ -19,8 +19,10 @@ $(document).on('click','.mapButton',function(){
 				console.log(currentLng);
 			}
 		}
+		
 	}
-	else if(eventsArray){
+	/* else if(eventsArray){
+		console.log("00000000");
 		for(i=0 ; i<eventsArray.length ; i++){
 
 			if(eventsArray[i].eventName == clickedName){
@@ -31,7 +33,7 @@ $(document).on('click','.mapButton',function(){
 				console.log(currentLng);
 			}
 		}
-	}
+	} */
 	else{
 		currentLat = ($(this).parent('.card-left').parent('.event-card').children('.lat').html());
 		

@@ -54,7 +54,8 @@ $(document).ready(function(){
 	//displays events in sorted array
 	for(i=0 ; i<arrayAttendingEvents.length ; i++){
 
-		$('#event-scroll').append('<div id="'+arrayAttendingEvents[i].eventName+'" class="event-card"><div class="card-left"><h1>'+ arrayAttendingEvents[i].hour+':'+arrayAttendingEvents[i].minute +'</h1><h1 class="building">'+ arrayAttendingEvents[i].place +'</h1><p class="mapButton"><img src="images/map.png"></p></div><div class="card-right"><h2>'+ arrayAttendingEvents[i].eventName +'</h2><p>'+ arrayAttendingEvents[i].description +'</p><img class="arrow" src="images/downArrow.png"></div></div>');
+		$('#event-scroll').append('<div id="'+arrayAttendingEvents[i].eventName+'" class="event-card"><div class="card-left"><h1><div class="hour">'+ arrayAttendingEvents[i].hour+'</div>:<div class="minute">'+arrayAttendingEvents[i].minute +'</div></h1><h1 class="building">'+ arrayAttendingEvents[i].place +'</h1><p class="mapButton"><img src="images/map.png"></p></div><div class="card-right"><h2>'+ arrayAttendingEvents[i].eventName +'</h2><p>'+ arrayAttendingEvents[i].description +'</p><img class="arrow" src="images/downArrow.png"></div></div>');
+		
 		
 		//if there is no date atm, add it at the top
 		if($('.dayBreak').length == 0){

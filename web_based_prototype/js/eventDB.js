@@ -1,7 +1,10 @@
-var event1 = {"eventName": 'Test1', "description": "Yo- You- You have to come to the red room Morty! There's trivia at the red room - bring you friends Morty!","tag": "tag2", "minute":00, "hour":19, "day":20, "month":10 ,"place": "Egypt", "location": {"latitude": 29.9792,
+//You can add any event here by copying the object and putting in the details. Anything you put in will show up on event
+
+
+var event1 = {"eventName": 'Google Talks', "description": "The head engineer of Google corp comes in and discussed the world. Lets talk privacy!!","tag": "tag2", "minute":10, "hour":19, "day":20, "month":10 ,"place": "Egypt", "location": {"latitude": 29.9792,
 "longitude": 31.1342}};
 
-var event2 = {"eventName": 'REST2', "description": "Yo- You- You have to come to the red room Morty! There's trivia at the red room - bring you friends Morty!","tag": "tag2", "minute":00, "hour":19, "day":20, "month":10 ,"place": "Egypt", "location": {"latitude": 29.9792,
+var event2 = {"eventName": 'Snags Gr8 Court', "description": "Snags are a bubbling, $2 for 1. Drinks $1. All funds go to cancer.","tag": "tag2", "minute":10, "hour":19, "day":22, "month":10 ,"place": "Egypt", "location": {"latitude": 29.9792,
 "longitude": 31.1342}};
 
 var events = {"1":event1,"2": event2};
