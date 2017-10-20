@@ -145,9 +145,19 @@ body {
 }
 
 /* Map Page */
+
+#myLocation{
+	position:absolute;
+	top:48%;
+	left:81%;
+	z-index:10;
+}
+#myLocation img{
+	height:25px;
+}
 #map {
-		margin-top: 20px;
-        height: 500px;
+		
+        height: 100%;
         width: 100%;
        }
        
@@ -373,7 +383,7 @@ h2{
 	padding: 20%;
 	border: 5px solid #856088;
 	border-radius: 5px;
-
+	
 }
 
 #dummy{
