@@ -3,18 +3,23 @@
 <head>
 	<script type="text/javascript" src='js/jquery.js'></script>
 	<script type="text/javascript" src='js/tags.js'></script>
-	<script type="text/javascript" src="js/scriptHome.js"></script>
+	
+	<!-- <script type="text/javascript" src="js/scriptHome.js"></script> -->
+	
+	<script type="text/javascript" src='js/attendingDB.js'></script>
+	<script type="text/javascript" src='js/eventDB.js'></script>
+	
+	
 	<link rel="stylesheet" href="css/colorbox.css" />
 	<link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+	<link rel="stylesheet" type="text/css" href="css/stylesheetHome.css">
 	
 </head>
 <body>
-	<script>
-		window.onload = function() {
-  			displayTags();
-		};
-	</script>
-		<div id="content">
+	<div id='event-container'>
+		
+	</div>
+		<!-- <div id="content">
 		
 		<h1>Tags Selected:</h1>
 		<p id="selectedTags">Sample Tags</p>
@@ -61,6 +66,13 @@
 		 	</div>
 		 </div>
 		
-		</div>
+		</div> -->
+	<script type="text/javascript" src='js/scriptEvent.js'></script>
+	<script src="js/openMap.js"></script>
+	<script src="js/jquery.colorbox.js"></script>
+	<script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAOujPO0o1rviGsN1YNVxjfv5z59OZ4wFQ">
+	
+    </script>
 </body>
 </html>

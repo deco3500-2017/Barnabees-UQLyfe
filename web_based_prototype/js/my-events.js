@@ -17,8 +17,8 @@ var events = [
 	}
 ];
 
-/* var arrayAttendingEvents;
-var pos;
+var arrayAttendingEvents;
+/*var pos;
 var infoWindow;
 var currentLat;
 var currentLat; */

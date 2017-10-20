@@ -19,7 +19,20 @@ $(document).on('click','.mapButton',function(){
 				console.log(currentLng);
 			}
 		}
-	}else{
+	}
+	else if(eventsArray){
+		for(i=0 ; i<eventsArray.length ; i++){
+
+			if(eventsArray[i].eventName == clickedName){
+				
+				currentLat = eventsArray[i].location.latitude;
+				currentLng = eventsArray[i].location.longitude;
+				
+				console.log(currentLng);
+			}
+		}
+	}
+	else{
 		currentLat = ($(this).parent('.card-left').parent('.event-card').children('.lat').html());
 		
 		currentLng = ($(this).parent('.card-left').parent('.event-card').children('.long').html());
