@@ -155,6 +155,9 @@ body {
 #myLocation img{
 	height:25px;
 }
+.mapButton img{
+	height:25px;
+}
 #map {
 		
         height: 100%;
