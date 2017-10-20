@@ -50,6 +50,7 @@ $(document).ready(function(){
 $('.event-card').on('click',function(){
 	$(this).children('.card-right').children('p').slideToggle('slow');
 	$(this).children('.card-left').children('.building').slideToggle('slow');
+	$(this).children('.card-left').children('.mapButton').slideToggle('slow');
 	
 	
 })
@@ -71,13 +72,16 @@ $(document).on('click', '.attend', function(){
 	var hour = $(this).parent('.card-right').parent('.event-card').children('.card-left').children('h1').children('div.hour').html();
 	
 	var minute = $(this).parent('.card-right').parent('.event-card').children('.card-left').children('h1').children('div.minute').html();
+	
+	var latitude = $(this).parent('.card-right').parent('.event-card').children('div.lat').html();
+	var longitude = $(this).parent('.card-right').parent('.event-card').children('div.long').html();
 
 	
 	console.log(minute);
 	
 	var newEvent = {"eventName": title, "description": descriptionClick, "minute":minute, "hour":hour, "day":day, "month":month ,"place": place, "location": 
-	{"latitude": -27.4974511,
-	"longitude": 153.0154073}
+	{"latitude": latitude,
+	"longitude": longitude}
 	}
 	
 	

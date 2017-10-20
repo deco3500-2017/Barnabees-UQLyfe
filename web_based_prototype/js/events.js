@@ -17,11 +17,11 @@ var events = [
 	}
 ];
 
-var arrayAttendingEvents;
+/* var arrayAttendingEvents;
 var pos;
 var infoWindow;
 var currentLat;
-var currentLat;
+var currentLat; */
 
 $(document).ready(function(){
 	
@@ -75,7 +75,7 @@ $(document).ready(function(){
 //displays lower parts or event
 $(document).on('click','.event-card',function(){
 	$(this).children('.card-right').children('p').slideToggle('slow');
-	$(this).children('.card-left').children('.building').slideToggle('slow');
+	$(this).children('.card-left').children('.building, .mapButton').slideToggle('slow');
 });
 
 function makeArray(json){
@@ -88,7 +88,7 @@ function makeArray(json){
 	
 	return arr;
 }
-
+/* Put into openMap.js. If you need to open a map use this!
 $(document).on('click','.mapButton',function(){
 	var clickedName = $(this).parent('.card-left').parent('.event-card').attr('id');
 	
@@ -149,7 +149,7 @@ function myMap(){
 	/* var myCenter = new google.maps.LatLng(-27.4974511, 153.0154073);
 	var marker = new google.maps.Marker({position:myCenter});
 	marker.setMap(map);
-	marker.setVisible(true); */
+	marker.setVisible(true); 
 }
 
 function currentLocation(){
@@ -181,5 +181,5 @@ function handleLocationError(browserHasGeolocation, infoWindow, pos) {
 	infoWindow.open(map);
 }
 
-
+ */
     

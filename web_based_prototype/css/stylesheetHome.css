@@ -40,3 +40,9 @@
 .card-left div{
 	display:inline;
 }
+.lat, .long{
+	display:none;
+}
+.mapButton{
+	display:none;
+}

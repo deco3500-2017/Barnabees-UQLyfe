@@ -607,3 +607,6 @@ select{
 	width: 75px;
 	float:right;
 }
+.mapButton{
+	display:none;
+}
