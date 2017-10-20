@@ -20,6 +20,8 @@ var events = [
 var arrayAttendingEvents;
 var pos;
 var infoWindow;
+var currentLat;
+var currentLat;
 
 $(document).ready(function(){
 	
@@ -88,12 +90,13 @@ function makeArray(json){
 }
 
 $(document).on('click','.mapButton',function(){
-	var clickedName = $(this).parent('.card-right').parent('.event-card').attr('id');
-	var currentLat;
-	var currentLat;
+	var clickedName = $(this).parent('.card-left').parent('.event-card').attr('id');
+	
 	
 	for(i=0 ; i<arrayAttendingEvents.length ; i++){
+
 		if(arrayAttendingEvents[i].eventName == clickedName){
+			
 			currentLat = arrayAttendingEvents[i].location.latitude;
 			currentLng = arrayAttendingEvents[i].location.longitude;
 			
@@ -114,6 +117,7 @@ $(document).on('click','.mapButton',function(){
 		//need to change this LatLng to be the event location
 		var myCenter = new google.maps.LatLng(currentLat, currentLng);
 		var marker = new google.maps.Marker({position:myCenter});
+		
 		marker.setMap(map);
 		marker.setVisible(true);
 		
