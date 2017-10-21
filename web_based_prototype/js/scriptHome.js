@@ -85,8 +85,9 @@ function addToEvents(){
 		var place = selector.children('div.card-left').children('.building').html();
 		var latitude = selector.children('.lat').html();
 		var longitude = selector.children('.long').html();
-
-		var newEvent = {"eventName": title, "description": descriptionClick, "minute":minute, "hour":hour, "day":day, "month":month ,"place": place, "location": 
+		var tag = selector.children('.tag').html();
+		
+		var newEvent = {"eventName": title, "description": descriptionClick,"tag": tag, "minute":minute, "hour":hour, "day":day, "month":month ,"place": place, "location": 
 			{"latitude": latitude,
 			"longitude": longitude}
 		}
@@ -127,10 +128,10 @@ $(document).on('click', '.attend', function(){
 	var latitude = $(this).parent('.card-right').parent('.event-card').children('div.lat').html();
 	var longitude = $(this).parent('.card-right').parent('.event-card').children('div.long').html();
 
+	var tag = $(this).parent('.card-right').parent('.event-card').children('div.tag').html();
+
 	
-	console.log(minute);
-	
-	var newEvent = {"eventName": title, "description": descriptionClick, "minute":minute, "hour":hour, "day":day, "month":month ,"place": place, "location": 
+	var newEvent = {"eventName": title, "description": descriptionClick,"tag": tag, "minute":minute, "hour":hour, "day":day, "month":month ,"place": place, "location": 
 	{"latitude": latitude,
 	"longitude": longitude}
 	}
