@@ -502,7 +502,6 @@ select{
 
 #content{
 	margin: auto;
-    width: 90%;
 }
 
 #next a{
@@ -609,4 +608,8 @@ select{
 }
 .mapButton{
 	display:none;
+}
+.dayBreak{
+	text-align:center;
+	font-size:0.8em;
 }

@@ -86,6 +86,7 @@ $(document).on('click', '#displayTag img', function(){
 	$('.tagButton').css('border','');
 	$('.tagButton').css('border-radius','');
 	
+	$('#event-container').empty();
 	displayEvents(eventsArray);
 })
 $(document).on('click', '.tagButton', function(){
