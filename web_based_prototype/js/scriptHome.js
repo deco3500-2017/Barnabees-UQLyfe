@@ -15,11 +15,18 @@ var maxHour = originalHour +1;
 var attendingEvents ='';
 var nameArray = [];
 
+var events;
+
+var setTime;
+var timeArray =[];
+
+
 $(document).ready(function(){
 	
 	$('#date').append(day +"/" + month + "/" + year);
 	
 	attendingEvents = JSON.parse(sessionStorage.attending);
+	events = JSON.parse(sessionStorage.events);
 	
 	$.each(attendingEvents, function(key, val){
 		nameArray.push(val.eventName);
@@ -38,13 +45,26 @@ $(document).ready(function(){
 			}
 		}
 	}
+	console.log(sessionStorage.timeSet);
 	
-	
-	setTime('#time1');
-	setTime('#time2');
-	setTime('#time3');
-	setTime('#time4');
-	
+	if(!sessionStorage.timeSet){
+		timeArray.push(setTime('#time1'));
+		timeArray.push(setTime('#time2'));
+		timeArray.push(setTime('#time3'));
+		timeArray.push(setTime('#time4'));
+		
+		sessionStorage.setItem('homeTime',JSON.stringify(timeArray));
+		
+		addToEvents()
+		sessionStorage.setItem('timeSet',true);
+	}else{
+		var newTimeArray = JSON.parse(sessionStorage.homeTime);
+		for(i=0; i < newTimeArray.length; i++){
+			$('#time'+(i+1)).append("<div class='hour'>" +newTimeArray[i][0] + "</div>:<div class='minute'>" + parseInt(newTimeArray[i][1]) + "</div>");
+		}
+	}
+
+
 });
 
 $('.event-card').on('click',function(){
@@ -54,6 +74,37 @@ $('.event-card').on('click',function(){
 	
 	
 })
+function addToEvents(){
+	for(i=2; i<6; i++){
+		var selector = $('.event-card:nth-of-type('+ i +')');
+		
+		var title = selector.children('div.card-right').children('h2').html();
+		var descriptionClick = selector.children('div.card-right').children('p').html();
+		var minute = selector.children('div.card-left').children('h1').children('div.minute').html();
+		var hour = selector.children('div.card-left').children('h1').children('div.hour').html();
+		var place = selector.children('div.card-left').children('.building').html();
+		var latitude = selector.children('.lat').html();
+		var longitude = selector.children('.long').html();
+
+		var newEvent = {"eventName": title, "description": descriptionClick, "minute":minute, "hour":hour, "day":day, "month":month ,"place": place, "location": 
+			{"latitude": latitude,
+			"longitude": longitude}
+		}
+		
+		console.log(newEvent);
+		var currentSize = Object.keys(events).length +1;
+		var currentSizeString = (currentSize.toString());
+		
+		events[currentSize] = newEvent;
+		
+		sessionStorage.removeItem('events');
+		sessionStorage.setItem('events', JSON.stringify(events));
+		
+		
+		//$(this).parent('.card-right').prepend("<img class='tick' src='images/tick.png'>");
+	}
+}
+
 $(document).on('click', '.attend', function(){
 	
 	//removes attend button so it cant be attended twice
@@ -120,4 +171,8 @@ function setTime(id){
 		$(id).append("<div class='hour'>" +hour + "</div>:<div class='minute'>" + parseInt(minute) + "</div>");
 	}
 	
+	var combined = [hour, minute];
+	console.log(combined);
+	return combined;
+	//console.log(timeArray);
 }
