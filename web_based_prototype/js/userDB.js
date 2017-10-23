@@ -1,4 +1,4 @@
-var pers1 = {"name":'Perzon Wun', "photo":'', "levelRaw":650,"date_created":"1 - 2 - 2017","events_created":0,'events_rsvp':10,"events_missed":2, "badges":{
+var pers1 = {"name":'Perzon Wun', "photo":'images/badges/faculty_gold.png', "levelRaw":650,"date_created":"1 - 2 - 2017","events_created":0,'events_rsvp':10,"events_missed":2, "badges":{
 	'sport':6,
 	'study':7,
 	'faculty':35,
@@ -15,7 +15,7 @@ var pers1 = {"name":'Perzon Wun', "photo":'', "levelRaw":650,"date_created":"1 -
 	'events_in_period':0,
 	'attendence_rate':0,
 	'certain_level':0,
-	'message_numbers':11,
+	'message_numbers':18,
 	'share_number':0
 	}
 }

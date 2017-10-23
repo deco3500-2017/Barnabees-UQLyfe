@@ -163,3 +163,10 @@ body {
 .center{
 	text-align:center;
 }
+#notification{
+	position:relative;
+	z-index:100;
+	height:18px;
+	bottom:85%;
+	left:65%;
+}

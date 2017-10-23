@@ -394,7 +394,7 @@ h2, h3{
 }
 
 #map{
-	height: 100px;
+	height: 100%;
 	padding: 20%;
 	border: 5px solid #856088;
 	border-radius: 5px;
@@ -610,9 +610,8 @@ select{
 
 #send{
 	width: 50px;
-	height: 25px;
-	padding: 0px;
 	float:right;
+
 }
 
 #send p{

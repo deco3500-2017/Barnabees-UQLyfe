@@ -1,6 +1,14 @@
+var users = '';
+var person1 = {};
 
+var displayCount = 2;
 
 $(document).ready(function(){
+	users = JSON.parse(sessionStorage.users);
+	person1 = users[1];
+	console.log(person1);
+	$('img.chatBadge.badgeRight').attr('src', person1.photo);
+	
 	setHeight('#2', '#1');
 	setHeight('#3', '#2');
 	setHeight('#4', '#3');
@@ -9,11 +17,35 @@ $(document).ready(function(){
 	setHeight('#7', '#6');
 });
 
-$('#chatBox').on('submit', function(e){
-	e.preventDefault();
+$('form').submit(function(event){
+
+	$('#'+displayCount).css('display','block');
+	$('input#message').val("");
+	window.scrollTo(0,document.body.scrollHeight);
 	
-	var message = $('#message').val();
-	$('#1').css('display', 'block');
+	if(displayCount == 4){
+		
+		//need to increase message by 2 in sessionStorage
+		person1.badges.message_numbers  =  20;
+		sessionStorage.removeItem("users");
+		sessionStorage.setItem('users', JSON.stringify(users));
+		
+		if(!sessionStorage.goldSet){
+			$('#newMedal').slideDown('slow', function(){
+				$('#newMedal').delay(1500).slideUp('slow');
+			
+				sessionStorage.setItem('newBadge', true);
+			});
+			
+		}
+		
+		
+	}
+	
+	displayCount++;
+	event.preventDefault(event);
+	
+	
 })
 
 
