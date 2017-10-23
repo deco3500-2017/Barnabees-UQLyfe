@@ -1,0 +1,45 @@
+body{
+
+}
+
+input{
+	color:black;
+	height:10%;
+	font-size:0.7em;
+	overflow:hidden;
+	margin:0;
+}
+.clear {
+    clear:both;
+    line-height:0;
+}
+#message{
+	height:40px;
+}
+#chat-footer{
+	position:fixed;
+	height:auto;
+	/* bottom:clear; */
+	/* top:100%; */
+	bottom:0%;
+	background-color:white;
+}
+#chatDiscussion{
+	
+	width:100%;
+	height:auto;
+	margin-bottom:50px;
+}
+#chatDiscussion img{
+	display:block;
+	width:90%;
+	overflow:hidden;
+}
+
+.personLeft{
+	left: 5px;
+}
+.personRight{
+	right: 5px;
+	float:right;
+}

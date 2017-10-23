@@ -60,7 +60,17 @@ $(document).ready(function(){
 	}else{
 		var newTimeArray = JSON.parse(sessionStorage.homeTime);
 		for(i=0; i < newTimeArray.length; i++){
-			$('#time'+(i+1)).append("<div class='hour'>" +newTimeArray[i][0] + "</div>:<div class='minute'>" + parseInt(newTimeArray[i][1]) + "</div>");
+			
+			if(newTimeArray[i][1] < 10){
+				newTimeArray[i][1] = '0' + parseInt(newTimeArray[i][1]);
+				console.log(newTimeArray[i][1]);
+				
+				$('#time'+(i+1)).append("<div class='hour'>" +newTimeArray[i][0] + "</div>:<div class='minute'>" + (newTimeArray[i][1]) + "</div>");
+			}else{
+				$('#time'+(i+1)).append("<div class='hour'>" +newTimeArray[i][0] + "</div>:<div class='minute'>" + parseInt(newTimeArray[i][1]) + "</div>");
+			}
+			console.log(newTimeArray[i][1]);
+			
 		}
 	}
 
@@ -153,7 +163,7 @@ $(document).on('click', '.attend', function(){
 //or should it change completely so that its never over?
 function setTime(id){
 	var random = (10* Math.random());
-	minute = minute + random;
+	minute = 10 + minute + random;
 	
 	if(minute > 59){
 		minute = random;

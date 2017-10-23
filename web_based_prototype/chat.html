@@ -2,6 +2,8 @@
 <html>
 <head>
 	<link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+	<link rel="stylesheet" type="text/css" href="css/stylesheetChat.css">
+	<script type="text/javascript" src='js/jquery.js'></script>
 </head>
 <body>
 	<h3>Disney Fundraising Movie Night</h3>
@@ -9,12 +11,41 @@
 		<p> 19:00 - 22:00 </p>
 		<p id="attendees"> 24 </p>
 	</div>
+	
+	<div id='chatDiscussion'>
+		<div>
+			<img id="1" class='personRight' src='images/chat/chat1.png'/>
+			<div class="clear"></div>
+			
+			<img id="2" class='personLeft' src='images/chat/chat.png'/>
+			<div class="clear"></div>
+			
+			<img id="3" class='personRight' src='images/chat/chat1.png'/>
+			<div class="clear"></div>
+			
+			<img id="4" class='personLeft' src='images/chat/chat.png'/>
+			<div class="clear"></div>
+			
+			<img id="5" class='personLeft' src='images/chat/chat.png'/>
+			<div class="clear"></div>
+			
+			<img id="6" class='personRight' src='images/chat/chat1.png'/>
+			<div class="clear"></div>
+			
+			<img id="7" class='personLeft' src='images/chat/chat.png'/>
+			<div class="clear"></div>
+		</div>
+	</div>
+	<br class='clear'>
 	<div id="chat-footer">
 		<div id="chat-break"></div>
 		
-		<input type="button" id="send" value="Send" onClick="sendMessage">
-		<input type="text" id="message" name="message" placeholder="Enter your message...">
+		<form id="chatBox">
+			<input type="submit" id="send" value="Send">
+			<input type="text" id="message" name="message" placeholder="Enter your message...">
+		</form>
 		
 	</div>
+	<script src="js/scriptChat.js"></script>
 </body>
 </html>
