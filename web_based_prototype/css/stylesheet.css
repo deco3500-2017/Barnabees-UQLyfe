@@ -19,6 +19,15 @@
 	margin-left: 6px;
 }
 
+a:link{
+	color: #fafafa;
+}
+
+a:visited{
+	color: #fafafa;
+	opacity: .5;
+}
+
 header {
 	background-color: #834088;
 	color: #fff;
@@ -386,8 +395,8 @@ h2, h3{
 
 
 #eventForm{
-	margin-left: 5%;
-	margin-right: 5%;
+	margin-left: 2%;
+	margin-right: 2%;
 
 
 	
@@ -400,11 +409,6 @@ h2, h3{
 	border-radius: 5px;
 
 	
-}
-
-#done{
-	margin-top: 7%;
-	background-color: #44146f;
 }
 
 label{
@@ -464,25 +468,33 @@ select{
 }
 
 #start_time{
-	width: 38%;
+	width: 35%;
 	float: left;
 	clear: left;
 }
 
 #end_time{
-	width: 38%;
+	width: 35%;
 	float: left;
 	clear: none;
 }
 
-#next, #next1{
+#next, #next1, #done{
 	background-color: #44146f;
-	width: 30%;
-	height: 60%;
+	height: 50px;
+	width: 80px;
 	margin-right: 9%;
 	float:right;
 	margin-bottom: 2%;
-	margin-top: 2%
+	margin-top: 2%;
+	clear: left;
+}
+
+#done{
+	margin-right: 6%;
+	margin-top: 10%;
+	height: 60px;
+	width: 200px;
 }
 
 #next1{
@@ -509,7 +521,7 @@ select{
 	margin: auto;
 }
 
-#next a{
+#next a, #done a{
 	opacity: 1;
 }
 
