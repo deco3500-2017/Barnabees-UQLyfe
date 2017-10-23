@@ -247,8 +247,8 @@ body {
 }
 
 #studyBtn, #sportsBtn, #foodBtn, #clubsBtn, #miscBtn{
-	height: 120px;
-	width: 120px;
+	height: 60px;
+	width: 60px;
 	float: left;
 	clear: left;
 	margin: 2%;
@@ -295,6 +295,7 @@ body {
 	float:left;
 	clear:none;
 	margin-top: 7%;
+	margin-left: 130%;
 	font-size: 25px;
 }
 
@@ -383,29 +384,22 @@ h2, h3{
 	margin-top: 20%;
 }
 
-#eventForm{
-	margin: 2%;
-	border: 3px solid #856088;
-	border-radius: 5px;
-}
 
-#map{
-	padding: 20%;
-	border: 5px solid #856088;
-	border-radius: 5px;
+#eventForm{
+	margin-left: 5%;
+	margin-right: 5%;
+
+
 	
 }
 
-#dummy{
-	border: 10px solid #fafafa;
+#map{
+	height: 100px;
+	padding: 20%;
+	border: 5px solid #856088;
 	border-radius: 5px;
-}
-#dummy2{
-	background-color: red;
-	border-top: 360px solid #fafafa;
-	border-left: 10px solid #fafafa;
-	border-bottom: 375px solid #fafafa;
-	border-radius: 5px;
+
+	
 }
 
 #done{
@@ -470,25 +464,29 @@ select{
 }
 
 #start_time{
-	width: 40%;
+	width: 38%;
 	float: left;
 	clear: left;
 }
 
 #end_time{
-	width: 40%;
+	width: 38%;
 	float: left;
 	clear: none;
 }
 
-#next{
+#next, #next1{
 	background-color: #44146f;
-	width: 20%;
-	height: 50%;
+	width: 30%;
+	height: 60%;
 	margin-right: 9%;
 	float:right;
 	margin-bottom: 2%;
 	margin-top: 2%
+}
+
+#next1{
+	margin-top: 30%
 }
 
 #next-tags{
