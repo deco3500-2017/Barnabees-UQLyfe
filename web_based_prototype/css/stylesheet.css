@@ -52,15 +52,17 @@ body {
    
 }
 
+
 ul {
 	list-style-type: none;
-	margin: 0;
+	
 	padding: 0;
 	overflow: hidden;
 	height: 100%;
 	background-color: white;
 	opacity: 50%;
-	border-top: solid white;	
+	border-top: solid white;
+	margin-bottom: 10px;
 }
 
 li {
@@ -83,10 +85,15 @@ li a{
 	height: 100%;
 }
 
+li a p{
+	font-size: 100px;
+}
+
 li a img{
 	width: 75%;
-	margin-top: 5%;
+	margin-top: 15%;
 	height: auto%;
+	
 
 }
 
@@ -159,6 +166,7 @@ a:active {
     bottom: 0px;
     text-align: center;
     width: 100%;
+	height: 13%;
 }
 
 #bottom-tabs > button {
