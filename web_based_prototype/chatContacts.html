@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	<script type="text/javascript" src='js/jquery.js'></script>
+	<link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+	<link rel="stylesheet" type="text/css" href="css/stylesheetHome.css">
+	<link rel="stylesheet" href="css/colorbox.css" />
+  </head>
+  <body>
+  	<div id="content">
+  		
+    		<h1>Chats</h1>
+    	
+    	<div id="event-scroll" >
+    		<a style="display:block" href="chat.html">
+    		
+    		<div class="chat-card">
+    			<div class="card-left">
+    				<h2> 2 *New* Messages </h2>
+    			</div>
+    			
+    			<div class="chat-card-right">
+    				<h2> Rick and Morty Trivia </h2>
+    				<p> Daniel: Hey is anyone still there? I was thinking of popping over. </p>
+    			</div>
+    		</div>
+    		</a>
+    		<a style="display:block" href="chat.html">
+    		
+    		<div class="chat-card">
+    			<div class="card-left">
+    				<h2> 8 *New* Messages </h2>
+    			</div>
+    			
+    			<div class="chat-card-right">
+    				<h2> Marketing & Memes </h2>
+    				<p> Mark: I'm still on chapter 2 so I have no idea what you guys are talking about </p>
+    			</div>
+    		</div>
+    		</a>
+    		<a style="display:block" href="chat.html">
+    		
+    		<div class="chat-card">
+    			<div class="card-left">
+    				<h2> 3 *New* Messages </h2>
+    			</div>
+    			
+    			<div class="chat-card-right">
+    				<h2> Snags Gr8 Court </h2>
+    				<p> Jessica: Worth </p>
+    			</div>
+    		</div>
+    		</a>
+     </div>
+    	
+    </div>
+	 <script type="text/javascript" src='js/jquery.js'>
+	 	$(".chat-card").click(function() {
+ 		 window.location = $(this).find("a").attr("href"); 
+  			return false;
+		});
+    </script>
+    <!-- <script type='text/javascript' src='js/mapAPI.js'></script> -->
+    
+   
+	
+	<script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAOujPO0o1rviGsN1YNVxjfv5z59OZ4wFQ">
+	
+    </script>
+  </body>
+</html>

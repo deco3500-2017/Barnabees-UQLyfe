@@ -535,6 +535,26 @@ select{
 	
 }
 
+.chat-card{
+	width: 100%;
+	background-color: #856088;
+	overflow: hidden;
+	margin-top: 10px;
+}
+
+.chat-card h2{
+	font-family: centuryGothicBold;
+	font-size: 12px;
+	text-align: center;
+	color: #fff;
+}
+
+.chat-card p{
+	color: #fff;
+	font-size: 12px;
+	padding-left: 15px;
+}
+
 .event-card{
 	width: 100%;
 	background-color: #856088;
@@ -567,6 +587,19 @@ select{
     margin-bottom: -100%;
 	background-color: #834088;
 	text-align:center;
+}
+
+.chat-card-right{
+	padding: 5px;
+	margin-left: 26%;
+}
+
+.chat-card .card-left{
+	width: 75px;
+}
+
+.chat-card .card-left h2{
+	margin-top: 5px;
 }
 
 .card-left h1{
