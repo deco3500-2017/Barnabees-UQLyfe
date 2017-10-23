@@ -398,19 +398,20 @@ h2, h3{
 #eventForm{
 	margin-left: 2%;
 	margin-right: 2%;
-
-
-	
 }
 
 #map{
 	height: 100%;
 	padding: 20%;
 	border: 5px solid #856088;
-	border-radius: 5px;
-
-	
+	border-radius: 5px;	
 }
+
+#eventForm #map{
+	height: 200px;
+}
+
+
 
 label{
 	margin-top: 2%;
