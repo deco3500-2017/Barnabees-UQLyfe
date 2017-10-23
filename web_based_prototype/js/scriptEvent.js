@@ -178,7 +178,7 @@ function displayEvents(fullArray){
 			fullArray[i].minute = "0" + fullArray[i].minute;
 		}
 		
-		$('#event-container').append('<div id="'+fullArray[i].eventName+'" class="event-card"><div class="lat">'+fullArray[i].location.latitude+'</div><div class="long">'+fullArray[i].location.longitude+'</div><div class="tag">'+ fullArray[i].tag +'</div><div class="card-left"><h1><div class="hour">'+ fullArray[i].hour+'</div>:<div class="minute">'+fullArray[i].minute +'</div></h1><p class="building">'+ fullArray[i].place +'</p><p class="mapButton"><img src="images/map.png"></p></div><div class="card-right"><h2>'+ fullArray[i].eventName +'</h2><p>'+ fullArray[i].description +'</p><p class="attend">Attened</p><img class="arrow" src="images/downArrow.png"></div></div>');
+		$('#event-container').append('<div id="'+fullArray[i].eventName+'" class="event-card"><div class="lat">'+fullArray[i].location.latitude+'</div><div class="long">'+fullArray[i].location.longitude+'</div><div class="tag">'+ fullArray[i].tag +'</div><div class="card-left"><h1><div class="hour">'+ fullArray[i].hour+'</div>:<div class="minute">'+fullArray[i].minute +'</div></h1><p class="building">'+ fullArray[i].place +'</p><p class="mapButton"><img src="images/map.png"></p></div><div class="card-right"><h2>'+ fullArray[i].eventName +'</h2><p>'+ fullArray[i].description +'</p><p class="attend">Attend</p><img class="arrow" src="images/downArrow.png"></div></div>');
 		
 		//if there is no date atm, add it at the top
 		if($('.dayBreak').length == 0){

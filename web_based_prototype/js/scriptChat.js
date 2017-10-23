@@ -26,7 +26,7 @@ $('form').submit(function(event){
 	if(displayCount == 4){
 		
 		//need to increase message by 2 in sessionStorage
-		person1.badges.message_numbers  =  20;
+		person1.badges.message_numbers  =  21;
 		sessionStorage.removeItem("users");
 		sessionStorage.setItem('users', JSON.stringify(users));
 		
