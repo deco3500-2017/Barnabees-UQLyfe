@@ -10,70 +10,10 @@ $(document).ready(function(){
 	
 	//puts JSON into array so it can be sorted
 	eventsArray = makeArray(events);
-
-	//sorts all events in order
-	eventsArray.sort(function(a, b){
-		if(a["month"] - b["month"] ==0){
-			if(a["day"] - b["day"] == 0){
-				if( a["hour"] - b["hour"] == 0){
-					return a["minute"] - b["minute"];
-				}
-				else{
-					return a["hour"] - b["hour"]
-				}
-			}
-			else{
-				return a["day"] - b["day"];
-			}
-		}
-		else{
-			return a["month"] - b["month"];
-		}
-		
-	});
+	fullSort(eventsArray);
+	
 	displayEvents(eventsArray);
-	/* for(i=0 ; i<eventsArray.length ; i++){
-
-		$('#event-container').append('<div id="'+eventsArray[i].eventName+'" class="event-card"><div class="lat">'+eventsArray[i].location.latitude+'</div><div class="long">'+eventsArray[i].location.longitude+'</div><div class="tag">'+ eventsArray[i].tag +'</div><div class="card-left"><h1><div class="hour">'+ eventsArray[i].hour+'</div>:<div class="minute">'+eventsArray[i].minute +'</div></h1><h1 class="building">'+ eventsArray[i].place +'</h1><p class="mapButton"><img src="images/map.png"></p></div><div class="card-right"><h2>'+ eventsArray[i].eventName +'</h2><p>'+ eventsArray[i].description +'</p><p class="attend">Attened</p><img class="arrow" src="images/downArrow.png"></div></div>');
-		
-		//if there is no date atm, add it at the top
-		if($('.dayBreak').length == 0){
-			$('#event-container').prepend("<div class='dayBreak' >" +eventsArray[i].day + "/" + eventsArray[i].month + "/17</div>");
-		}
-		
-		//if the day changed, put in day break for display
-		if(eventsArray[i+1]){
-			if(eventsArray[i].day != eventsArray[i+1].day){
-				$('#event-container').append("<div class='dayBreak' >" +eventsArray[i+1].day + "/" + eventsArray[i+1].month + "/17</div>");
-			}
-		}
-		
-	}
 	
-	
-	$.each(attendingEvents, function(key, val){
-		nameAttendingArray.push(val.eventName);
-	});
-
-	$.each(events, function(key, val){
-		eventsSize.push(val.eventName);
-	});
-	
-	
-	for(i=0; i< nameAttendingArray.length; i++){
-		for(j=0; j < eventsSize.length; j++){
-			
-			if(eventsSize[j] == nameAttendingArray[i]){
-
-				//[id='content Module']
-				$("[id='"+  nameAttendingArray[i] + "']").children('.card-right').children('.attend').remove();
-				$("[id='"+  nameAttendingArray[i] + "']").children('.card-right').prepend("<img class='tick' src='images/tick.png'>");
-				//$('#'+nameAttendingArray[i]+'  .card-right').prepend("<img class='tick' src='images/tick.png'>")
-			}
-			
-		}
-
-	} */
 	
 	
 	
@@ -122,6 +62,7 @@ $(document).on('click', '.tagButton', function(){
 		}
 	})
 	$('#event-container').empty();
+	fullSort(tagArray);
 	displayEvents(tagArray);
 });
 
@@ -174,7 +115,8 @@ $(document).on('click','.event-card',function(){
 function displayEvents(fullArray){
 	for(i=0 ; i<fullArray.length ; i++){
 		
-		if(fullArray[i].minute < 10){
+		if(fullArray[i].minute < 10 && fullArray[i].minute.length<2){
+			
 			fullArray[i].minute = "0" + fullArray[i].minute;
 		}
 		
@@ -222,6 +164,27 @@ function displayEvents(fullArray){
 
 	}
 }
+function fullSort(toSort){
+	toSort.sort(function(a, b){
+		if(a["month"] - b["month"] ==0){
+			if(a["day"] - b["day"] == 0){
+				if( a["hour"] - b["hour"] == 0){
+					return a["minute"] - b["minute"];
+				}
+				else{
+					return a["hour"] - b["hour"]
+				}
+			}
+			else{
+				return a["day"] - b["day"];
+			}
+		}
+		else{
+			return a["month"] - b["month"];
+		}
+		
+	});
+} 
 function makeArray(json){
 	
 	var arr =[];
