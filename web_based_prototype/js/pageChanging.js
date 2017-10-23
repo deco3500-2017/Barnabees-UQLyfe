@@ -16,5 +16,5 @@ $(document).ready(function(){
             $("#mainFrame").attr("src", $(this).attr("page") );
         }
     })
- 
+
 })  

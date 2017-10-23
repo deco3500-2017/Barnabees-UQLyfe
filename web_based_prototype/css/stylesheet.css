@@ -538,11 +538,13 @@ select{
 
 .event-card p{
 	color: #fff;
-	margin-left: 26%;
+	
 	font-size: 12px;
 	
 }
-
+.event-card .card-right p{
+	margin-left: 26%;
+}
 .card-left{
 	float: left;
 	width: 25%;
@@ -550,6 +552,7 @@ select{
     padding-bottom: 100%;
     margin-bottom: -100%;
 	background-color: #834088;
+	text-align:center;
 }
 
 .card-left h1{
