@@ -13,7 +13,7 @@ $('#chatBox').on('submit', function(e){
 	e.preventDefault();
 	
 	var message = $('#message').val();
-	console.log(message);
+	$('#1').css('display', 'block');
 })
 
 

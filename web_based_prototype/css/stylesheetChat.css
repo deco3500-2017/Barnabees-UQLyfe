@@ -30,7 +30,7 @@ input{
 	height:auto;
 	margin-bottom:50px;
 }
-#chatDiscussion img{
+#chatDiscussion .chatBox{
 	display:block;
 	width:90%;
 	overflow:hidden;
@@ -38,8 +38,29 @@ input{
 
 .personLeft{
 	left: 5px;
+	float:right;
 }
 .personRight{
 	right: 5px;
+	float:left;
+	
+}
+.chatBadge{
+	width:15%;
+	position:relative;
+	bottom:17px;
+}
+.badgeRight{
 	float:right;
+}
+
+.name{
+	display: inline-block;
+	bottom: 26px;
+	position: relative;
+	font-size:0.8em;
+}
+.nameRight{
+	float:right;
+	bottom:10px;
 }
