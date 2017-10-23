@@ -119,7 +119,7 @@ $(document).on('click', '#badgebox-wrap .badgebox', function(){
 	$.colorbox({
         height:"90%" , 
         width:"90%" , 
-        html: "<h2>" + details[0] + "</h2>" + '<img id="displayMedal" src="'+ image +'">' + '<p id="progress-badge" class="center"> '+ current+'/'+high +' </p><br><div id="medalProgress" class="progress-outside"><div class="progress-inside"></div></div><div id="description">Description<div>'+ details[1] +'</div></div>'
+        html: "<h2>" + details[0] + "</h2>" + '<img id="displayMedal" src="'+ image +'">' + '<p id="progress-badge" class="center"> '+ current+'/'+high +' </p><br><div id="medalProgress" class="progress-outside"><div class="progress-inside"></div></div><div id="description"><div>'+ details[1] +'</div></div>'
     });
 	$("#medalProgress .progress-inside").css('width', medalStats[1]+"%");
 	$("#medalProgress .progress-inside").prepend("<div class='percent'>"+ parseInt(medalStats[1]) +"%</div>");
@@ -180,57 +180,58 @@ $('#changeProfile').on('click', function(){
 
 })
 
+//This holds all the descripttions. Feel free to change it as you please
 function medalDetails(name){
 	var description ='';
 	var realName ='';
 	
 	switch(name){
 		case 'sport':
-			description = "Sport description";
+			description = "Experience gained by attending sports events around UQ.";
 			realName = 'Sport';
 			break;
 		case 'study':
-			description = "Study description";
+			description = "Experience gained by attending study events around UQ.";
 			realName = 'Study';
 			break;
 		case 'faculty':
-			description = "faculty description";
+			description = "Experience gained by attending faculty events around UQ.";
 			realName = 'Faculty';
 			break;
 		case 'food':
-			description = "food description";
+			description = "Experience gained by attending food events around UQ.";
 			realName = 'Food';
 			break;
 		case 'clubs':
-			description = "clubs description";
+			description = "Experience gained by attending club events around UQ.";
 			realName = 'Clubs';
 			break;
 		case 'misc':
-			description = "misc description";
+			description = "Experience gained by attending miscellaneous events around UQ.";
 			realName = 'Miscellaneous';
 			break;
 		case 'hass':
-			description = "hass description";
+			description = "Experience gained from HASS faculty events.";
 			realName = 'Humanities and Social Sciences';
 			break;
 		case 'bel':
-			description = "bel description";
+			description = "Experience gained from BEL faculty events.";
 			realName = 'Business, Economics and Law';
 			break;
 		case 'eait':
-			description = "eait description";
+			description = "Experience gained from BEL faculty events.";
 			realName = 'Engineering, Architecture and Information Technology';
 			break;
 		case 'habs':
-			description = "habs description";
+			description = "Experience gained from HABS faculty events.";
 			realName = 'Health and Behavioural Sciences';
 			break;
 		case 'med':
-			description = "med description";
+			description = "Experience gained from Med faculty events.";
 			realName = 'Medicine';
 			break;
 		case 'sci':
-			description = "sci description Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam consectetur facilisis velit a efficitur. Nullam ullamcorper tellus in mattis fermentum. Pellentesque varius augue quis mauris efficitur, at fermentum mauris aliquet. ";
+			description = "Experience gained from Sci faculty events. ";
 			realName = 'Science';
 			break;
 		case 'total_events':
@@ -238,27 +239,27 @@ function medalDetails(name){
 			realName = 'Total Events Attended';
 			break;
 		case 'total_events':
-			description = "Total events description";
+			description = "Records total events attended";
 			realName = 'Total Events Attended';
 			break;
 		case 'events_in_period':
-			description = "Events in a Period description";
+			description = "Attend a certain amount of events in a short time period";
 			realName = 'Events in a Period';
 			break;
 		case 'attendence_rate':
-			description = "Attendence Rate description";
+			description = "Have an attendence rate above the set level";
 			realName = 'Attendence Rate';
 			break;
 		case 'certain_level':
-			description = "Certain level description";
+			description = "Reach a certain level.";
 			realName = 'Certain Level';
 			break;
 		case 'message_numbers':
-			description = "Message numbers description";
+			description = "Total number of messages sent. Earn experience by communicating with your peers.";
 			realName = 'Messages Sent';
 			break;
 		case 'share_number':
-			description = "Share numbers description";
+			description = "Share events to gain experience.";
 			realName = 'Total Share';
 			break;
 	}
