@@ -92,6 +92,11 @@ $(document).ready(function(){
 	$('#stat1').append('<br>' + person1.events_created);
 	$('#stat2').append('<br>' + total_attendence_rate*100 +"%");
 	$('#stat3').append('<br>' + person1.date_created);
+	
+	if(sessionStorage.newBadge){
+		$('#message_numbers').append("<img id='notification' src='images/notification.png'>");
+		
+	}
 });
 
 
@@ -122,7 +127,17 @@ $(document).on('click', '#badgebox-wrap .badgebox', function(){
 	if(medalStats[1] < 15){
 		$('#medalProgress .percent').css('padding-right','0');
 	}
+	
+	
 });
+
+$(document).bind('cbox_cleanup', function(){
+	if(sessionStorage.newBadge){
+		$('#notification').remove();
+		sessionStorage.removeItem('newBadge');
+		sessionStorage.setItem('goldSet', true);
+	}
+})
 
 //sets images
 $(document).on('click', '#selectionChoices .badgebox', function(){

@@ -13,8 +13,14 @@ input{
     clear:both;
     line-height:0;
 }
+#send{
+	display:flex;
+	width:calc(100%/4);
+}
 #message{
 	height:40px;
+	display:flex;
+	width:calc(300%/4);
 }
 #chat-footer{
 	position:fixed;
@@ -35,7 +41,9 @@ input{
 	width:90%;
 	overflow:hidden;
 }
-
+.fullMessage{
+	display:none;
+}
 .personLeft{
 	left: 5px;
 	float:right;
@@ -56,11 +64,26 @@ input{
 
 .name{
 	display: inline-block;
-	bottom: 26px;
+	bottom: 22px;
 	position: relative;
 	font-size:0.8em;
 }
 .nameRight{
 	float:right;
-	bottom:10px;
+	bottom:3px;
+}
+#1.fullMessage{
+	display:block;
+}
+
+#newMedal{
+	padding-top:3%;
+	padding-bottom:3%;
+	width:100%;
+	text-align:center;
+	background-color:#856088;
+	position:fixed;
+	z-index:10;
+	display:none;
+	color:white;
 }
