@@ -53,7 +53,7 @@ $(document).on('click', '.tagButton', function(){
 	$('.tagButton').css('border','');
 	$('.tagButton').css('border-radius','');
 	
-	$(this).css('border','solid 2px #db7ae2');
+	$(this).css('border','solid 2px #48a3ff');
 	$(this).css('border-radius','4px');
 	
 	$.each(events, function(key, value){

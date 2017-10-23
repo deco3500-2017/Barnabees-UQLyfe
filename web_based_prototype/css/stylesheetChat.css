@@ -8,6 +8,7 @@ input{
 	font-size:0.7em;
 	overflow:hidden;
 	margin:0;
+	border-radius:0;
 }
 .clear {
     clear:both;
@@ -16,6 +17,7 @@ input{
 #send{
 	display:flex;
 	width:calc(100%/4);
+	padding:clear;
 }
 #message{
 	height:40px;
@@ -27,8 +29,9 @@ input{
 	height:auto;
 	/* bottom:clear; */
 	/* top:100%; */
-	bottom:0%;
+	bottom:5%;
 	background-color:white;
+	clear:both;
 }
 #chatDiscussion{
 	
