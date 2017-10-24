@@ -71,27 +71,27 @@ li {
 
 }
 
-li a{
+#bottom-tabs ul li a{
 	display: block;
 	color: black;
 	text-align: center;
 	text-decoration: none;
 	width: 100%;
 	height: 100%;
+    cursor: pointer;
 }
 
-li a img{
-	width: 75%;
-	height: auto%;
-	margin-top: 15%;
+#bottom-tabs ul li a img{
+	height: 36px;
+	margin-top: 12px;
 }
 
-li a:hover:not(.active) {
+#bottom-tabs ul li a:hover:not(.active) {
 	background-color: #856088;
 	border-bottom: solid white;
 }
 
-a:active {
+#bottom-tabs ul li a:active {
 	border-bottom: solid white;
 }
 
@@ -154,7 +154,7 @@ a:active {
     bottom: 0px;
     text-align: center;
     width: 100%;
-	height: 13%;
+	height: 60px;
 }
 
 #bottom-tabs > button {
