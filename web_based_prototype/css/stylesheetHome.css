@@ -47,20 +47,46 @@
 	display:none;
 }
 #tagBar{
-	display: flex;
-    flex-wrap: nowrap;
-	height:50px;
-	background-color:#834088;
-	margin:0;
-	padding-bottom:5px;
+	float: left;
+ 
+	width: 100%;
 }
 
+
 .tagButton{
-	width: calc(100%/6);
-    height: auto;
+	width: 100%;
+	float: left;
 	/* border:solid 2px #db7ae2;
 	border-radius: 4px; */
 }
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #834088;
+}
+
+li {
+    float: left;
+	width: 16%;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111;
+}
+
+
+
 #displayTag{
 	text-align:center;
 	display:none;
