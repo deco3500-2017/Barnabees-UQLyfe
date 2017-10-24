@@ -55,24 +55,19 @@ body {
 
 ul {
 	list-style-type: none;
-	
+	margin: 0;
 	padding: 0;
 	overflow: hidden;
+	background-color: #856088;
 	height: 100%;
-	background-color: white;
-	opacity: 50%;
 	border-top: solid white;
-	margin-bottom: 10px;
+	border-bottom: solid 856088;
 }
 
 li {
 	float: left;
-	width: 19%;
-	margin: 1px;
-	border-radius: 10px;
-	background-color: #856088;
-	height: 90%;
-
+	height: 100%;
+	width: 20%;
 
 }
 
@@ -85,26 +80,19 @@ li a{
 	height: 100%;
 }
 
-li a p{
-	font-size: 100px;
-}
-
 li a img{
 	width: 75%;
-	margin-top: 15%;
 	height: auto%;
-	
-
+	margin-top: 15%;
 }
 
 li a:hover:not(.active) {
-	background-color: #834088;
-	border-radius: 10px;
+	background-color: #856088;
+	border-bottom: solid white;
 }
 
 a:active {
-
-
+	border-bottom: solid white;
 }
 
 
