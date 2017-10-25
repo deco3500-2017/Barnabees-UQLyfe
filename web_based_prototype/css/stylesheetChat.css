@@ -17,7 +17,8 @@ input{
 #send{
 	display:flex;
 	width:calc(100%/4);
-	padding:clear;
+	color:white;
+	font-weight:bold;
 }
 #message{
 	height:40px;
