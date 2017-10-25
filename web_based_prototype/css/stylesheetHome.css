@@ -91,12 +91,14 @@ li a:hover {
 	text-align:center;
 	display:none;
 	margin-left:17px;
+	border: 1px solid transparent;
 }
 #displayTag img{
 	float:right;
 	height:16px;
 	margin-top:1px;
 	margin-right:1px;
+	
 }
 #topTag{
 	text-align:center;

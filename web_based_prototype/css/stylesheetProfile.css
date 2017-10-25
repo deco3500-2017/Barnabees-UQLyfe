@@ -129,9 +129,10 @@ body {
 	width:75%;
 }
 #displayMedal{
-	height:20%;
+	height:30%;
 	display:block;
 	margin: 0 auto;
+	margin-top:4%;
 }
 .percent{
 	float:right;
