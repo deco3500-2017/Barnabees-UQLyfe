@@ -90,3 +90,7 @@ input{
 	display:none;
 	color:white;
 }
+#chat-bar p{
+	float:right;
+	font-size:0.8em;
+}

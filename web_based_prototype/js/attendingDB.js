@@ -3,7 +3,7 @@
 //Used by scriptHome.js and event.js
 
 
-var attending1 = {"eventName": 'Rick & Morty Trivia', "description": "Yo- You- You have to come to the red room Morty! There's trivia at the red room - bring you friends Morty!","tag": "tag2", "minute":40, "hour":19, "day":20, "month":10 ,"place": "Egypt", "location": {"latitude": 29.9792,
+var attending1 = {"eventName": 'Rick & Morty Trivia', "description": "Yo- You- You have to come to the red room Morty! There's trivia at the red room - bring you friends Morty!","tag": "tag2", "minute":40, "hour":19, "day":26, "month":10 ,"place": "Egypt", "location": {"latitude": 29.9792,
 "longitude": 31.1342}}
 
 /* var attending2 = {'eventName': 'Marketing & Memes', "description": "There's going to marketing, there's going to be memes, and there's going to be 15kg of illicit substances. Get Keen!","tag": "tag2", "minute":30, "hour":07, "day":29, "month":10 , "place": "Sample2", "location": {"latitude": -27.4974511,

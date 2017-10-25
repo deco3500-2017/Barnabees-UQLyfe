@@ -119,7 +119,7 @@ $(document).on('click', '#badgebox-wrap .badgebox', function(){
 	$.colorbox({
         height:"90%" , 
         width:"90%" , 
-        html: "<h2>" + details[0] + "</h2>" + '<img id="displayMedal" src="'+ image +'">' + '<p id="progress-badge" class="center"> '+ current+'/'+high +' </p><br><div id="medalProgress" class="progress-outside"><div class="progress-inside"></div></div><div id="description"><div>'+ details[1] +'</div></div>'
+        html: "<h2>" + details[0] + "</h2>" + '<img id="displayMedal" src="'+ image +'">' + '<p id="progress-badge" class="center">Progress:  '+ current+'/'+high +' </p><br><div class="clearfix"></div><div id="medalProgress" class="progress-outside"><div class="progress-inside"></div></div><div id="description"><div>'+ details[1] +'</div></div>'
     });
 	$("#medalProgress .progress-inside").css('width', medalStats[1]+"%");
 	$("#medalProgress .progress-inside").prepend("<div class='percent'>"+ parseInt(medalStats[1]) +"%</div>");

@@ -98,7 +98,7 @@ function currentLocation(){
 			};
 
 			infoWindow.setPosition(pos);
-			infoWindow.setContent('Your Location is Here!');
+			infoWindow.setContent('Your are Here!');
 			infoWindow.open(map);
 			//map.setCenter(pos);
 		},
