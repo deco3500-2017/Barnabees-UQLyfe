@@ -10,6 +10,10 @@ body {
   height: 100%;
   color: white;
   background-color: black; }
+  
+iframe{
+
+}
 
 html {
   width: 100%;
@@ -99,6 +103,7 @@ a {
   width: 100%;
   height: auto;
   padding: 200px 0;
+  padding-bottom:0px;
   text-align: center;
   color: white;
   background: url("../img/front.JPG") no-repeat bottom center scroll;
@@ -150,7 +155,7 @@ a {
     background: rgba(255, 255, 255, 0.1); }
 
 .content-section {
-  padding-top: 150px;
+  padding-top: 0px;
   padding-bottom: 150px; }
 
 .download-section {
@@ -251,4 +256,7 @@ body {
     width: 50%;
     padding: 10px;
 	text-align:left;
+}
+html body#page-top section#about.content-section.text-center div.container div.row div.col-lg-8.mx-auto h2{
+	padding-top: 100px;
 }
