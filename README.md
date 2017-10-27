@@ -1,4 +1,91 @@
 # Barnabees-UQLyfe
+[Original Proposal](#introduction)
+
+[Promotional Site](https://s4395647-uq-lyfe.uqcloud.net/promotional.html)
+
+[Promotional Poster](https://i.imgur.com/3PwwKmw.jpg)
+
+[Web Prototype](https://s4395647-uq-lyfe.uqcloud.net)
+
+
+## How to use
+The final prototype is in the form of web based application that mimics a mobile application. We have created a temporary backend by using the clients local storage (sessionStorage) to create an interactive experience. The future prospect of integrating a database has been thoroughly considered throughout the development of the prototype, with a firm JSON structure being created. The major features include:
+
+- Events that are RSVP’d to appear in My Events
+- Full google maps integration
+- Ability to change profile badge that is used throughout site
+- Events can be dynamically sorted by tag type
+- Events are displayed in chronological order
+- Imitation chat that provides examples of how badges are earned
+- Full mock-up of create event properties
+- Lightbox integration
+
+If you would like to reset the prototype to its original state, you must close the browser and reopen the site. We have created a site specifically designed to be viewed on a mobile phone. This is to create another level of immersion. It can be viewed at: [Mobile Prototype](https://s4395647-uq-lyfe.uqcloud.net/mobile.html)
+
+## Problem Space
+
+User   research   indicated   that   a   prevalent   amount of university students aren’t involved with  activities  and  social  events  around  their  campus. The cause for this lack of engagement can come  down  to  a  variety  of  issues, such as a lack of personal motivation or a lack of awareness. This disconnection could also stem from a lack of incentive to participate in activity outside of their classes.
+
+An  ideal  solution  is  a  central  platform  that  everyone   at   the   University   of   Queensland   uses and is kept up to date by. Such a platform would  eliminate  the  requirement  of  external  social software to create and explore campus events.  Coordination  of  all  event  services  on  said  platform,  allows  for  extended  features,  such as any action pertaining to events would occur    on    this    platform    whether    that    is    creating events, ¬finding events, collaborating on  events,  or  anything  else.  With  the  entire  university’s eyes on a singular platform, advertising for events should be much more active,  and  participation at events should  be much higher as well. Overall awareness of what is happening on   campus would be much improved. A solution like this would help enhance the entire university community.
+
+The initial research also discovered that students put greater importance in time, rather than location. The majority of the students suggested that they would be willing to become more involved in the UQ community if there was a way of quickly seeing available events. A common example of use that was expressed to us was to fill in the gap between classes. We accommodated this time dependency by having the landing page showing events within the next hour. This would help to satisfy the core user.
+
+We initially had a very detailed display to show all the events. After conducting a heuristic walkthrough, the team realized that this reduce the impact of the system and created confusion. We then decided to revisit our initial gathered requirements and focus on what was most important to the user, time. By stripping the interface back, the tests showed that we created a more efficient system.
+
+
+## Process
+When first developing our solution to the problem, we created a development plan. After we received positive feedback of its structure, we decided to stick to its structure. The design process was divided into 4 key stages that were concluded by a stand-up session with an expert (tutor). The completed stages were: (They want images in here)
+
+### Stage 1 – Requirements
+  - Identify Users
+  - Create Personas
+  - Survey Users
+  - Identify Use Context
+
+![Stage 1](https://i.imgur.com/68BTF6o.png)
+
+---
+
+### Stage 2 - Design
+  - Wireframes and Mock-ups
+  - Paper Prototype
+  - User Interviews
+  - Low Fidelity User Testing
+
+![Stage 2](https://i.imgur.com/68BTF6o.png)
+
+---
+
+### Stage 3 - Development
+  - High Fidelity Prototype (InVision)
+  - User Walkthrough
+  - High Fidelity User Testing
+
+![Stage 3](https://i.imgur.com/sHP3rN8.png)
+
+---
+
+### Stage 4 – Final Delivery
+  - Front end Development
+  - Back end Development
+  - Deliver Final Prototype (Web-based)
+
+![Stage 4](https://i.imgur.com/78IS0tO.png)
+
+---
+
+### Limitations
+One of the major limitations we retrospectively acknowledge, is the limited exposure we had with clubs managers around UQ. We initially gathered their input within the requirements stage, however as the  project progress we used more of a major user-base. This was because we were more concerned with content consumers over the creators, putting the majority of the focus into appeasing their needs. This was evident in the final prototype, having a more comprehensive event and profile component. If we were to develop the application for full commercial use,  we would use the same process but focus entirely on UQ clubs and societies.
+
+## Contribution
+### Glenn 
+-	Requirements
+-	User Profile functionality test
+-	User Interviews
+-	Web feasibility test
+-	Web prototype
+
+---
 
 ## Table of Contents
 1. [Introduction](#introduction)
