@@ -88,6 +88,13 @@ One of the major limitations we retrospectively acknowledge, is the limited expo
 -	Web feasibility test
 -	Web prototype
 
+### Nicole
+- Initial Research
+- Low fidelity prototypes
+- High fidelity prototypes
+- User Testing
+- Web prototype
+
 ---
 
 ## Table of Contents
