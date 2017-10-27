@@ -52,7 +52,7 @@ When first developing our solution to the problem, we created a development plan
   - User Interviews
   - Low Fidelity User Testing
 
-![Stage 2](https://i.imgur.com/68BTF6o.png)
+![Stage 2](https://i.imgur.com/QrygJZ7.png)
 
 ---
 
