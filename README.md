@@ -37,6 +37,9 @@ We initially had a very detailed display to show all the events. After conductin
 
 
 ## Process
+
+[Research Documentation](https://github.com/deco3500-2017/Barnabees-UQLyfe/tree/master/Research)
+
 When first developing our solution to the problem, we created a development plan. After we received positive feedback of its structure, we decided to stick to its structure. The design process was divided into 4 key stages that were concluded by a stand-up session with an expert (tutor). The completed stages were: (They want images in here)
 
 ### Stage 1 – Requirements
